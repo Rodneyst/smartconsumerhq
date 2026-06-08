@@ -1,36 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Consumer HQ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Smart Consumer HQ | Independent Product Reviews & Buying Guides</title>
+  <meta name="description" content="Independent product reviews, comparisons, and buying guides to help consumers make smarter buying decisions." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://smartconsumerhq.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://smartconsumerhq.com/" />
+  <meta property="og:title" content="Smart Consumer HQ | Independent Product Reviews & Buying Guides" />
+  <meta property="og:description" content="Independent product reviews, comparisons, and buying guides to help consumers make smarter buying decisions." />
+  <meta property="og:image" content="https://smartconsumerhq.com/og-image.jpg" />
+  <meta property="og:site_name" content="Smart Consumer HQ" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Smart Consumer HQ | Independent Product Reviews & Buying Guides" />
+  <meta name="twitter:description" content="Independent product reviews, comparisons, and buying guides to help consumers make smarter buying decisions." />
+  <meta name="twitter:image" content="https://smartconsumerhq.com/og-image.jpg" />
+
+  <!-- Schema.org Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Smart Consumer HQ",
+    "url": "https://smartconsumerhq.com",
+    "logo": "https://smartconsumerhq.com/logo.png",
+    "description": "Independent product reviews, comparisons, and buying guides to help consumers make smarter buying decisions.",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <h1>Smart Consumer HQ</h1>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Smart Consumer HQ Home">
+        <span class="logo-icon">🔍</span>
+        <span class="logo-text">Smart Consumer <strong>HQ</strong></span>
+      </a>
 
-    <h2>Helping Consumers Make Smarter Buying Decisions</h2>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#guides">Guides</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
 
-    <p>
-        We research products, compare options, and create easy-to-understand guides
-        to help consumers save money and avoid bad purchases.
-    </p>
+      <div class="header-actions">
+        <a href="#newsletter" class="btn btn-primary btn-sm">Subscribe</a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <h3>What You'll Find</h3>
+  <main>
 
-    <ul>
-        <li>Product Reviews</li>
-        <li>Best Product Comparisons</li>
-        <li>Buying Guides</li>
-        <li>Consumer Tips</li>
-        <li>Money-Saving Recommendations</li>
-    </ul>
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg-pattern" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="badge" role="text">
+            <span class="badge-dot"></span>
+            INDEPENDENT PRODUCT RESEARCH
+          </div>
+          <h1 id="hero-heading" class="hero-headline">
+            Smarter Buying<br /><em>Decisions</em> Start Here
+          </h1>
+          <p class="hero-sub">
+            We research products, compare options, and create simple buying guides to help consumers save money and avoid bad purchases.
+          </p>
+          <div class="hero-actions">
+            <a href="#guides" class="btn btn-primary btn-lg">Explore Buying Guides</a>
+            <a href="#categories" class="btn btn-outline btn-lg">Browse Categories</a>
+          </div>
+          <ul class="trust-indicators" aria-label="Trust indicators">
+            <li><span class="trust-check" aria-hidden="true">✓</span> Unbiased Reviews</li>
+            <li><span class="trust-check" aria-hidden="true">✓</span> Expert Research</li>
+            <li><span class="trust-check" aria-hidden="true">✓</span> Money-Saving Tips</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card-stack">
+            <div class="hc hc-1">
+              <div class="hc-badge">Top Pick</div>
+              <div class="hc-title">Best Home Gym<br>Equipment 2026</div>
+              <div class="hc-rating">★★★★★ <span>5.0</span></div>
+            </div>
+            <div class="hc hc-2">
+              <div class="hc-badge tested">Tested</div>
+              <div class="hc-title">Standing Desks<br>Under $400</div>
+              <div class="hc-rating">★★★★☆ <span>4.5</span></div>
+            </div>
+            <div class="hc hc-3">
+              <div class="hc-badge value">Best Value</div>
+              <div class="hc-title">Smart Watches<br>Under $300</div>
+              <div class="hc-rating">★★★★★ <span>4.8</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h3>Coming Soon</h3>
+    <!-- ===== CATEGORIES ===== -->
+    <section class="categories-section section" id="categories" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="categories-heading" class="section-title">Browse by Category</h2>
+          <p class="section-sub">Find expert guides across every area of your life.</p>
+        </div>
+        <div class="categories-grid">
 
-    <p>
-        AI-powered product recommendations and in-depth consumer research.
-    </p>
+          <article class="category-card" tabindex="0">
+            <div class="cat-icon" aria-hidden="true">🏋️</div>
+            <h3 class="cat-title">Home Fitness</h3>
+            <p class="cat-desc">Treadmills, weights, and smart fitness gear reviewed by real users.</p>
+            <a href="#" class="cat-link" aria-label="Explore Home Fitness guides">Explore →</a>
+          </article>
 
+          <article class="category-card" tabindex="0">
+            <div class="cat-icon" aria-hidden="true">💻</div>
+            <h3 class="cat-title">Tech & Gadgets</h3>
+            <p class="cat-desc">Phones, laptops, headphones, and smart home devices compared.</p>
+            <a href="#" class="cat-link" aria-label="Explore Tech & Gadgets guides">Explore →</a>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="cat-icon" aria-hidden="true">🖥️</div>
+            <h3 class="cat-title">Home Office</h3>
+            <p class="cat-desc">Standing desks, monitors, and ergonomic gear for productive work.</p>
+            <a href="#" class="cat-link" aria-label="Explore Home Office guides">Explore →</a>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="cat-icon" aria-hidden="true">👨‍👩‍👧</div>
+            <h3 class="cat-title">Family & Parenting</h3>
+            <p class="cat-desc">Trusted picks for car seats, strollers, and everyday family essentials.</p>
+            <a href="#" class="cat-link" aria-label="Explore Family & Parenting guides">Explore →</a>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="cat-icon" aria-hidden="true">💰</div>
+            <h3 class="cat-title">Money Saving</h3>
+            <p class="cat-desc">Apps, services, and strategies to stretch your budget further.</p>
+            <a href="#" class="cat-link" aria-label="Explore Money Saving guides">Explore →</a>
+          </article>
+
+          <article class="category-card" tabindex="0">
+            <div class="cat-icon" aria-hidden="true">🏠</div>
+            <h3 class="cat-title">Home Products</h3>
+            <p class="cat-desc">Kitchen appliances, cleaning tools, and everyday essentials.</p>
+            <a href="#" class="cat-link" aria-label="Explore Home Products guides">Explore →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED GUIDES ===== -->
+    <section class="guides-section section" id="guides" aria-labelledby="guides-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="guides-heading" class="section-title">Featured Guides</h2>
+          <p class="section-sub">Honest, hands-on reviews and comparisons from our research team.</p>
+        </div>
+        <div class="guides-grid">
+
+          <article class="guide-card">
+            <div class="guide-card-top">
+              <span class="guide-category-tag">Home Fitness</span>
+              <span class="guide-badge top-pick">Top Pick</span>
+            </div>
+            <div class="guide-card-body">
+              <h3 class="guide-title">Best Home Gym Equipment for Beginners</h3>
+              <p class="guide-desc">Our top picks for building a complete home gym without overspending.</p>
+            </div>
+            <div class="guide-card-footer">
+              <span class="guide-read-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                10 min read
+              </span>
+              <a href="#" class="btn btn-ghost btn-sm">Read Guide →</a>
+            </div>
+          </article>
+
+          <article class="guide-card">
+            <div class="guide-card-top">
+              <span class="guide-category-tag">Home Office</span>
+              <span class="guide-badge tested">Tested</span>
+            </div>
+            <div class="guide-card-body">
+              <h3 class="guide-title">Best Budget Standing Desks</h3>
+              <p class="guide-desc">Affordable standing desks under $400 tested for stability and durability.</p>
+            </div>
+            <div class="guide-card-footer">
+              <span class="guide-read-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                8 min read
+              </span>
+              <a href="#" class="btn btn-ghost btn-sm">Read Guide →</a>
+            </div>
+          </article>
+
+          <article class="guide-card">
+            <div class="guide-card-top">
+              <span class="guide-category-tag">Tech & Gadgets</span>
+              <span class="guide-badge value">Best Value</span>
+            </div>
+            <div class="guide-card-body">
+              <h3 class="guide-title">Best Smart Watches Under $300</h3>
+              <p class="guide-desc">Affordable smart watches that offer premium features without the premium price.</p>
+            </div>
+            <div class="guide-card-footer">
+              <span class="guide-read-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                9 min read
+              </span>
+              <a href="#" class="btn btn-ghost btn-sm">Read Guide →</a>
+            </div>
+          </article>
+
+          <article class="guide-card">
+            <div class="guide-card-top">
+              <span class="guide-category-tag">Family & Parenting</span>
+              <span class="guide-badge comparison">Comparison</span>
+            </div>
+            <div class="guide-card-body">
+              <h3 class="guide-title">Best Family SUVs for Value</h3>
+              <p class="guide-desc">Reliable SUVs that balance safety, comfort, and affordability.</p>
+            </div>
+            <div class="guide-card-footer">
+              <span class="guide-read-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                12 min read
+              </span>
+              <a href="#" class="btn btn-ghost btn-sm">Read Guide →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about-section section" id="about" aria-labelledby="about-heading">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2 id="about-heading" class="section-title">About Smart Consumer HQ</h2>
+          <p class="about-body">
+            Smart Consumer HQ is an independent product research site dedicated to helping shoppers make informed decisions. Our team spends hours researching, testing, and comparing products so you don't have to. We don't accept payment for reviews, and we never recommend products we wouldn't buy ourselves.
+          </p>
+        </div>
+        <div class="pillars-grid">
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">⚖️</div>
+            <h3 class="pillar-title">Independent</h3>
+            <p class="pillar-desc">No brand owns our opinions. Every review is honest and unbiased.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">🔬</div>
+            <h3 class="pillar-title">Thorough</h3>
+            <p class="pillar-desc">We test products hands-on and dig into specs other sites skip.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">💡</div>
+            <h3 class="pillar-title">Helpful</h3>
+            <p class="pillar-desc">We explain why a product is great — or why you should skip it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container newsletter-inner">
+        <div class="newsletter-content">
+          <h2 id="newsletter-heading" class="newsletter-title">Get Smarter Buying Advice</h2>
+          <p class="newsletter-sub">Join our newsletter for buying guides, product comparisons, and money-saving recommendations.</p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <div class="form-group">
+            <label for="email-input" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="email-input"
+              name="email"
+              class="newsletter-input"
+              placeholder="Enter your email address"
+              required
+              autocomplete="email"
+            />
+            <button type="submit" class="btn btn-white btn-lg">Subscribe</button>
+          </div>
+          <p class="form-note">No spam. Unsubscribe anytime.</p>
+          <p class="form-success" id="form-success" aria-live="polite" hidden>🎉 Thanks for subscribing! Watch your inbox.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" aria-labelledby="footer-brand">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand-col">
+        <a href="#" class="logo footer-logo" id="footer-brand">
+          <span class="logo-icon">🔍</span>
+          <span class="logo-text">Smart Consumer <strong>HQ</strong></span>
+        </a>
+        <p class="footer-tagline">Helping Consumers Make Smarter Buying Decisions</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#guides">Buying Guides</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Categories</h3>
+        <ul class="footer-links">
+          <li><a href="#">Home Fitness</a></li>
+          <li><a href="#">Tech & Gadgets</a></li>
+          <li><a href="#">Home Office</a></li>
+          <li><a href="#">Family & Parenting</a></li>
+          <li><a href="#">Money Saving</a></li>
+          <li><a href="#">Home Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Contact</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@smartconsumerhq.com">hello@smartconsumerhq.com</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">© 2026 Smart Consumer HQ. All rights reserved.</p>
+        <p class="footer-disclosure">Smart Consumer HQ participates in affiliate programs. We may earn commissions on qualifying purchases.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
