@@ -21,7 +21,7 @@
 - [x] Create docs/ documentation framework (CLAUDE.md, DEPLOYMENT.md, PROJECT_STATUS.md, ROADMAP.md, SEO_SETUP.md, AI_HANDOFF.md)
 - [x] Establish session log standard and startup/shutdown procedures
 - [x] Analytics foundation:
-  - [x] GA4 tracking code installed in `script.js` (IIFE #10) — placeholder ID, ready to activate
+  - [x] GA4 tracking code installed in `script.js` (IIFE #10) — **`G-KNC6546GMH` ACTIVE as of 2026-06-09**
   - [x] GSC verification meta tag in `index.html` — placeholder code, ready to activate
   - [x] `docs/05_research/GA4_SETUP.md` — step-by-step activation guide
   - [x] `docs/05_research/SEARCH_CONSOLE_SETUP.md` — step-by-step verification guide
@@ -48,7 +48,7 @@
 
 ### SEO and Analytics
 - [ ] **Activate Google Search Console** — placeholder meta tag in `index.html`; get verification code from GSC → update `index.html` → push → click Verify → submit sitemap. See `docs/05_research/SEARCH_CONSOLE_SETUP.md`
-- [ ] **Activate GA4** — code installed in `script.js` IIFE #10; create property at analytics.google.com → get Measurement ID → replace `G-XXXXXXXXXX` in `script.js`. See `docs/05_research/GA4_SETUP.md`
+- [x] **Activate GA4** — `G-KNC6546GMH` installed in `script.js` IIFE #10; tracking live on all pages as of 2026-06-09
 - [ ] **Apply for Amazon Associates** — see application checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`; write 2 more full guides before applying
 
 ### Monetization

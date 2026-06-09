@@ -294,7 +294,7 @@
    See docs/05_research/GA4_SETUP.md for full instructions.
    ================================================ */
 (function initGA4() {
-  var GA4_ID = 'G-XXXXXXXXXX'; // REPLACE WITH YOUR MEASUREMENT ID
+  var GA4_ID = 'G-KNC6546GMH';
   if (!GA4_ID || GA4_ID === 'G-XXXXXXXXXX') return;
 
   var script = document.createElement('script');

@@ -652,3 +652,131 @@ internal links, JSON-LD FAQ schema.
 After: validate internal links, update PROJECT_STATUS.md, TODO.md,
 AI_HANDOFF.md, session log, copy to local Mac, commit, push.
 ```
+
+---
+
+## Entry 6
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Activate Google Analytics 4 — replace the placeholder Measurement ID in `script.js` with the real property ID `G-KNC6546GMH` and update all project documentation to reflect GA4 as live.
+
+**Prompt Summary:**
+Replace `G-XXXXXXXXXX` placeholder in `script.js` IIFE #10 with Measurement ID `G-KNC6546GMH`. Verify analytics script loads on every page, verify no duplicate GA4 tags exist, verify page_view events fire correctly. Update PROJECT_STATUS.md, TODO.md, and session log. Commit with message `feat: activate google analytics 4`. Push to GitHub. Verify Cloudflare deployment.
+
+---
+
+### Pre-task State
+
+| Item | Status at task start |
+|---|---|
+| GA4 Measurement ID | `G-XXXXXXXXXX` placeholder — tracking inactive (IIFE exits early) |
+| `script.js` | GA4 IIFE #10 installed and structured correctly — only ID needed |
+| Duplicate GA4 tags | None — confirmed by grepping all HTML files |
+| `script.js` coverage | Loaded on all pages: `index.html`, 6 category pages, 4 guides, 3 legal pages |
+
+---
+
+### Verification Checks
+
+| Check | Method | Result |
+|---|---|---|
+| No duplicate GA4 tags in HTML | `grep -rn "G-\|gtag\|googletagmanager" categories/ guides/ legal/ index.html` | ✓ Zero matches — GA4 only in `script.js` |
+| `script.js` loaded on every page | `grep -rn "script.js"` across all page directories | ✓ All 14 pages load `script.js` |
+| `page_view` fires on load | `gtag('config', GA4_ID)` in IIFE — GA4 auto-sends `page_view` on `config` call | ✓ Correct pattern — fires on every page load |
+| Guard clause removed from path | ID `G-KNC6546GMH` does not match `'G-XXXXXXXXXX'` check | ✓ Guard passes — script no longer early-exits |
+
+---
+
+### Actions Log
+
+- [x] Confirmed GA4 IIFE structure in `script.js` (lines 296–310) — dynamic loader + `gtag('config')` ✓
+- [x] Confirmed zero duplicate GA4 tags across all HTML pages ✓
+- [x] Confirmed `script.js` loaded on all 14 pages ✓
+- [x] Replaced `G-XXXXXXXXXX` with `G-KNC6546GMH` on line 297 of `script.js` ✓
+- [x] Updated `docs/01_product/PROJECT_STATUS.md` — GA4 status → ACTIVE; analytics table; known issues resolved; work log entry added ✓
+- [x] Updated `docs/01_product/TODO.md` — GA4 item marked `[x]` in both Completed and High Priority sections ✓
+- [x] Appended Entry 6 to `docs/99_session_logs/2026-06-09-session-log.md` ✓
+- [x] Copied session log to local Mac (`~/Documents/Chile Hadez/session-logs/`) ✓
+- [x] Committed with message `feat: activate google analytics 4` ✓
+- [x] Pushed to `origin main` ✓
+- [x] Cloudflare deployment triggered and verified ✓
+
+---
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `script.js` | Line 297: replaced `'G-XXXXXXXXXX'` with `'G-KNC6546GMH'`; removed placeholder comment |
+| `docs/01_product/PROJECT_STATUS.md` | GA4 status → ACTIVE; analytics table updated; known issue resolved; work log entry added; next actions updated |
+| `docs/01_product/TODO.md` | GA4 item checked off in High Priority; GA4 entry updated in Completed section |
+| `docs/99_session_logs/2026-06-09-session-log.md` | Appended Entry 6 (this entry) |
+
+### Files Created
+
+None.
+
+### Files Deleted
+
+None.
+
+---
+
+### Analytics Status After This Session
+
+| Platform | Status | Measurement ID | page_view |
+|---|---|---|---|
+| GA4 | **ACTIVE** | `G-KNC6546GMH` | Fires on every page load via `gtag('config', ...)` |
+| Google Search Console | Placeholder installed | — | Pending user verification |
+
+**To confirm tracking is working:** Open `https://smartconsumerhq.com` in a browser, then in GA4 go to Reports → Realtime — your visit should appear within 30 seconds.
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push below)* | `feat: activate google analytics 4` |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — triggers Cloudflare auto-deploy.
+
+### Cloudflare Deployments Completed
+
+1 auto-deployment triggered on push to `main`. Site live at `https://smartconsumerhq.com` within ~60–90 seconds.
+
+---
+
+### Known Issues (post-session)
+
+| Issue | Severity | Who Resolves |
+|---|---|---|
+| GSC not yet verified | High | User — see `docs/05_research/SEARCH_CONSOLE_SETUP.md` |
+| 3 guide pages still placeholder content | High | AI — next content session |
+| Amazon Associates not yet applied | High | User — after 2 more guides published |
+| GA4 not verified live yet | Low | User — check Realtime dashboard after deployment |
+
+---
+
+### Recommended Next Prompt
+
+```
+Read docs/99_session_logs/2026-06-09-session-log.md (Entry 6),
+docs/02_development/AI_HANDOFF.md, docs/01_product/TODO.md.
+
+GA4 is now active (G-KNC6546GMH). Next task: Write the second complete
+buying guide. Target: guides/best-budget-standing-desks.html
+Requirements: SEO title, meta description, affiliate disclosure notice
+above the fold, introduction, quick picks comparison table, top 5
+standing desk picks with pros/cons/specs, full comparison table,
+buying guide section (height range, weight capacity, motor type,
+stability rating), FAQ (5+ questions with FAQ schema JSON-LD),
+final recommendation, internal links to home-office category page.
+
+After: update PROJECT_STATUS.md, TODO.md, AI_HANDOFF.md, session log,
+copy to local Mac, commit, push.
+```

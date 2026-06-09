@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 5)
+**Last updated:** 2026-06-09 (Entry 6)
 
 ---
 
@@ -164,7 +164,7 @@ All 4 guides contain intro copy and "coming soon" placeholders. Full article con
 | sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — 14 URLs |
 | robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
 | Google Search Console | **Verification placeholder installed** — awaiting verification code from user |
-| GA4 | **Tracking code installed (placeholder ID)** — awaiting Measurement ID from user |
+| GA4 | **ACTIVE** — Measurement ID `G-KNC6546GMH` installed in `script.js` IIFE #10 |
 | Schema.org JSON-LD | Present on all pages |
 | Canonical URLs | Present on all pages, correctly set |
 | Meta tags (OG, Twitter Card) | Present on all pages |
@@ -176,7 +176,7 @@ All 4 guides contain intro copy and "coming soon" placeholders. Full article con
 
 | Platform | Status | Action Required |
 |---|---|---|
-| GA4 | Code installed — placeholder ID | Replace `G-XXXXXXXXXX` in `script.js` IIFE #10 with real Measurement ID from analytics.google.com |
+| GA4 | **ACTIVE** — Measurement ID `G-KNC6546GMH` | Tracking live — verify in GA4 Realtime dashboard |
 | Google Search Console | Meta tag placeholder in `index.html` | Get verification code from GSC, replace `REPLACE_WITH_GSC_VERIFICATION_CODE` in `index.html`, push, then click Verify in GSC and submit sitemap |
 
 See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.md` for step-by-step instructions.
@@ -214,7 +214,7 @@ The site is built as an affiliate content business:
 |---|---|---|
 | 3 guide pages still contain placeholder content only | High | Pending — home-gym guide now complete |
 | Google Search Console not verified | High | Placeholder installed — user must complete verification |
-| GA4 not active | Medium | Code installed — user must add Measurement ID |
+| GA4 not active | ~~Medium~~ | **RESOLVED** — `G-KNC6546GMH` activated 2026-06-09 |
 | Newsletter form not connected to real provider | Medium | Pending |
 | No affiliate links on any page | High | Pending — requires Amazon Associates approval |
 | Money Saving and Home Products have no real guides | Medium | Pending |
@@ -236,6 +236,7 @@ The site is built as an affiliate content business:
 | 2026-06-09 | *(Entry 2)* | Build content engine foundation (templates, backlog, workflow, system docs) |
 | 2026-06-09 | *(Entry 3)* | Write full buying guide: guides/best-home-gym-equipment.html (5 products, ~2,400 words) |
 | 2026-06-09 | *(Entry 5)* | Analytics foundation: GA4 code + GSC meta tag installed; AFFILIATE_LINK_MAP.md, GA4_SETUP.md, SEARCH_CONSOLE_SETUP.md created |
+| 2026-06-09 | *(Entry 6)* | **Activate GA4** — replaced `G-XXXXXXXXXX` with `G-KNC6546GMH` in `script.js`; tracking live on all pages |
 
 ---
 
@@ -243,7 +244,7 @@ The site is built as an affiliate content business:
 
 **Immediate (this session or next):**
 1. Complete GSC verification — get code from GSC, update `index.html`, push, verify, submit sitemap (see `docs/05_research/SEARCH_CONSOLE_SETUP.md`)
-2. Activate GA4 — create property, get Measurement ID, replace `G-XXXXXXXXXX` in `script.js` (see `docs/05_research/GA4_SETUP.md`)
+2. ~~Activate GA4~~ — **DONE** `G-KNC6546GMH` active as of 2026-06-09
 3. Write next full guide: `guides/best-budget-standing-desks.html`
 
 **Short term:**
