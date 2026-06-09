@@ -125,7 +125,7 @@ Full documentation: `docs/02_development/affiliate-system.md`
 
 Product specifications and affiliate data are stored as JSON in `content/products/`. Example: `content/products/flexispot-e7.json`. These can be loaded via JavaScript to populate product cards dynamically, or used as reference data when creating new guide pages.
 
-### Adding a New Article
+### Adding a New Article (Manual)
 
 1. Pick an idea from `content/article_ideas/master-article-backlog.csv`
 2. Draft in `content/articles/{slug}.md` using the markdown template
@@ -137,6 +137,49 @@ Product specifications and affiliate data are stored as JSON in `content/product
 8. Commit and push
 
 Full workflow: `tools/content-workflow.md`
+
+---
+
+## Automated Content Pipeline
+
+SmartConsumerHQ has a fully documented automated content agent pipeline. An AI agent can generate, stage, review-gate, publish, and deploy articles without manual HTML writing.
+
+### How It Works
+
+```
+QUEUED → DRAFTING → REVIEW_NEEDED → APPROVED → PUBLISHED
+```
+
+| File | Role |
+|---|---|
+| `content/content-queue.json` | 20 articles queued, ordered by priority |
+| `content/drafts/` | Staging area — nothing here is live |
+| `content/published-content.json` | Registry of all live articles |
+| `tools/generate-article.md` | Workflow: pick from queue → research → draft → save → mark review_needed |
+| `tools/publish-article.md` | Workflow: approved draft → guides/ → real affiliate URLs → sitemap → push |
+
+### Generate the Next Article
+
+> **Prompt:** "Generate the next article in the content queue for SmartConsumerHQ. Read `content/content-queue.json`, pick the first queued item, and follow `tools/generate-article.md` exactly. Save the draft to `content/drafts/{slug}.html` and set status to `review_needed`. Do not publish. Report draft location, word count, and products covered."
+
+### Publish an Approved Article
+
+After you review `content/drafts/{slug}.html` and set `"status": "approved"` in `content-queue.json`:
+
+> **Prompt:** "Publish the approved article with slug `{slug}` from `content/drafts/{slug}.html`. Follow `tools/publish-article.md` exactly. Do not push without my confirmation."
+
+### Content Queue — Next 5 Articles
+
+| Priority | Title | Category |
+|---|---|---|
+| 1 | Best Ergonomic Office Chairs Under $300 | Home Office |
+| 2 | Best Air Fryers Under $150 | Kitchen Tools |
+| 3 | Best Wireless Earbuds Under $100 | Tech & Gadgets |
+| 4 | Best Resistance Bands for Home Workouts | Home Fitness |
+| 5 | Best Instant Pots and Pressure Cookers | Kitchen Tools |
+
+Full documentation: `docs/02_development/AUTOMATED_CONTENT_AGENT.md`  
+Review checklist: `docs/02_development/ARTICLE_REVIEW_CHECKLIST.md`
 
 ---
 

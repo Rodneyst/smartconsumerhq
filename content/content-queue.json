@@ -1,0 +1,485 @@
+{
+  "version": "1.1",
+  "last_updated": "2026-06-09",
+  "queue": [
+    {
+      "id": "q001",
+      "title": "Best Ergonomic Office Chairs Under $300 (2026)",
+      "slug": "best-ergonomic-office-chairs-under-300",
+      "category": "home-office",
+      "target_keyword": "best ergonomic office chairs under 300",
+      "secondary_keywords": [
+        "affordable ergonomic chair",
+        "best office chair for back pain",
+        "ergonomic chair review",
+        "best budget office chair"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 1,
+      "estimated_word_count": 4500,
+      "internal_links": [
+        "/categories/home-office",
+        "/guides/best-budget-standing-desks",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Flexispot BS9, Autonomous ErgoChair Pro, Nouhaus Ergo3D, Hbada Ergonomic, Sihoo M57. Budget $150–$300. High commercial intent — strong Amazon conversion category."
+    },
+    {
+      "id": "q002",
+      "title": "Best Air Fryers Under $150 (2026): Top 5 Ranked",
+      "slug": "best-air-fryers-under-150",
+      "category": "kitchen-tools",
+      "target_keyword": "best air fryers under 150",
+      "secondary_keywords": [
+        "best air fryer 2026",
+        "air fryer buying guide",
+        "best budget air fryer",
+        "air fryer review"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 2,
+      "estimated_word_count": 4000,
+      "internal_links": [
+        "/buying-guides",
+        "/blog"
+      ],
+      "notes": "Top picks: Cosori Pro II, Ninja AF101, Instant Vortex Plus, Philips Essential, COSORI Dual Blaze. Massive search volume. Walmart carries most of these — good dual-network opportunity."
+    },
+    {
+      "id": "q003",
+      "title": "Best Wireless Earbuds Under $100 (2026)",
+      "slug": "best-wireless-earbuds-under-100",
+      "category": "tech-gadgets",
+      "target_keyword": "best wireless earbuds under 100",
+      "secondary_keywords": [
+        "best budget wireless earbuds",
+        "wireless earbuds review 2026",
+        "best earbuds for the money",
+        "ANC earbuds under 100"
+      ],
+      "affiliate_network_priority": ["amazon", "cj"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 3,
+      "estimated_word_count": 4000,
+      "internal_links": [
+        "/categories/tech-gadgets",
+        "/guides/best-smartwatches-under-300",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Sony WF-C700N, Jabra Elite 4, Anker Soundcore Liberty 4 NC, Samsung Galaxy Buds FE, JLab GO Air ANC. CJ affiliate — Best Buy carries most of these."
+    },
+    {
+      "id": "q004",
+      "title": "Best Resistance Bands for Home Workouts (2026)",
+      "slug": "best-resistance-bands-home-workouts",
+      "category": "home-fitness",
+      "target_keyword": "best resistance bands for home workouts",
+      "secondary_keywords": [
+        "resistance band set review",
+        "best resistance bands 2026",
+        "workout resistance bands",
+        "loop resistance bands vs tube bands"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 4,
+      "estimated_word_count": 3500,
+      "internal_links": [
+        "/categories/home-fitness",
+        "/guides/best-home-gym-equipment",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Fit Simplify, WODFitters, Undersun, Letsfit, SPRI. Low price point but high volume. Easy first Amazon sale. Great internal linking to home gym guide."
+    },
+    {
+      "id": "q005",
+      "title": "Best Instant Pots and Pressure Cookers (2026)",
+      "slug": "best-instant-pots-pressure-cookers",
+      "category": "kitchen-tools",
+      "target_keyword": "best instant pot pressure cooker 2026",
+      "secondary_keywords": [
+        "instant pot buying guide",
+        "best pressure cooker review",
+        "instant pot vs ninja foodi",
+        "best multi cooker"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 5,
+      "estimated_word_count": 4000,
+      "internal_links": [
+        "/buying-guides",
+        "/guides/best-air-fryers-under-150",
+        "/blog"
+      ],
+      "notes": "Top picks: Instant Pot Duo 7-in-1, Ninja Foodi, Instant Pot Pro, Breville Fast Slow Pro, Cuisinart CPC-600. Huge Amazon category. Walmart strong for Instant Pot brand."
+    },
+    {
+      "id": "q006",
+      "title": "Best Yoga Mats Under $100 (2026)",
+      "slug": "best-yoga-mats-under-100",
+      "category": "home-fitness",
+      "target_keyword": "best yoga mats under 100",
+      "secondary_keywords": [
+        "best yoga mat review",
+        "thick yoga mat",
+        "non slip yoga mat",
+        "best beginner yoga mat"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 6,
+      "estimated_word_count": 3500,
+      "internal_links": [
+        "/categories/home-fitness",
+        "/guides/best-home-gym-equipment",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Manduka PRO Lite, Liforme, Gaiam Premium, Lululemon 5mm, Jade Harmony. High volume keyword. Strong Amazon inventory. Target also carries most brands."
+    },
+    {
+      "id": "q007",
+      "title": "Best Coffee Makers Under $100 (2026): Drip, Pod, and Pour-Over",
+      "slug": "best-coffee-makers-under-100",
+      "category": "kitchen-tools",
+      "target_keyword": "best coffee makers under 100",
+      "secondary_keywords": [
+        "best drip coffee maker",
+        "best pod coffee maker review",
+        "coffee maker buying guide",
+        "programmable coffee maker"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 7,
+      "estimated_word_count": 4000,
+      "internal_links": [
+        "/buying-guides",
+        "/blog"
+      ],
+      "notes": "Top picks: Cuisinart DCC-3200, Hamilton Beach 46310, Mr. Coffee 12-Cup, Ninja CE251, Keurig K-Compact. Very high search volume. Walmart price-competitive. Best Buy also carries premium models."
+    },
+    {
+      "id": "q008",
+      "title": "Best Laptop Stands for Working from Home (2026)",
+      "slug": "best-laptop-stands-work-from-home",
+      "category": "home-office",
+      "target_keyword": "best laptop stands for working from home",
+      "secondary_keywords": [
+        "best laptop stand review",
+        "adjustable laptop stand",
+        "laptop stand for desk ergonomics",
+        "portable laptop stand"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 8,
+      "estimated_word_count": 3500,
+      "internal_links": [
+        "/categories/home-office",
+        "/guides/best-budget-standing-desks",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Nexstand K2, Nulaxy C2, Rain Design mStand, Lamicall S, Vari laptop stand. Great pairing with standing desk guide. Amazon dominant. Low price point, volume-play."
+    },
+    {
+      "id": "q009",
+      "title": "Best Baby Monitors (2026): Video, Audio, and Smart Monitors",
+      "slug": "best-baby-monitors-2026",
+      "category": "family-parenting",
+      "target_keyword": "best baby monitors 2026",
+      "secondary_keywords": [
+        "best video baby monitor",
+        "smart baby monitor review",
+        "baby monitor with wifi",
+        "best baby monitor under 200"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 9,
+      "estimated_word_count": 4500,
+      "internal_links": [
+        "/categories/family-parenting",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Nanit Pro, Owlet Dream Duo, Infant Optics DXR-8 Pro, Motorola VM75, Eufy SpaceView. High-price items = higher commissions. Strong Amazon + Walmart dual inventory."
+    },
+    {
+      "id": "q010",
+      "title": "Best Portable Chargers and Power Banks (2026)",
+      "slug": "best-portable-chargers-power-banks",
+      "category": "tech-gadgets",
+      "target_keyword": "best portable chargers power banks 2026",
+      "secondary_keywords": [
+        "best power bank review",
+        "portable charger buying guide",
+        "best fast charging power bank",
+        "high capacity power bank"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 10,
+      "estimated_word_count": 3500,
+      "internal_links": [
+        "/categories/tech-gadgets",
+        "/guides/best-smartwatches-under-300",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Anker 737, Anker 622 MagSafe, Mophie Powerstation, INIU 25600mAh, Baseus 20000mAh. Amazon dominant. Budget range $20–$60. Volume play with decent commissions."
+    },
+    {
+      "id": "q011",
+      "title": "Best Monitor Arms for Desk Setup (2026)",
+      "slug": "best-monitor-arms-desk-setup",
+      "category": "home-office",
+      "target_keyword": "best monitor arms for desk setup",
+      "secondary_keywords": [
+        "best monitor arm review",
+        "dual monitor arm",
+        "monitor arm vs stand",
+        "best vesa mount arm"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 11,
+      "estimated_word_count": 3500,
+      "internal_links": [
+        "/categories/home-office",
+        "/guides/best-budget-standing-desks",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Ergotron LX, Amazon Basics (white label), HUANUO dual arm, Flexispot monitor arm, North Bayou. Great upsell for standing desk buyers."
+    },
+    {
+      "id": "q012",
+      "title": "Best Pull-Up Bars for Home Workouts (2026)",
+      "slug": "best-pull-up-bars-home-workouts",
+      "category": "home-fitness",
+      "target_keyword": "best pull up bars for home",
+      "secondary_keywords": [
+        "doorway pull up bar",
+        "best pull up bar review",
+        "ceiling mounted pull up bar",
+        "pull up bar buying guide"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 12,
+      "estimated_word_count": 3500,
+      "internal_links": [
+        "/categories/home-fitness",
+        "/guides/best-home-gym-equipment",
+        "/guides/best-resistance-bands-home-workouts",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Iron Gym Total Upper Body, Garren Fitness Maximiza, Perfect Fitness Multi-Gym, CAP Barbell, Rogue Monster Lat Pulldown (premium). Low price point, high volume."
+    },
+    {
+      "id": "q013",
+      "title": "Best Knife Sets for Home Cooks (2026)",
+      "slug": "best-knife-sets-home-cooks",
+      "category": "kitchen-tools",
+      "target_keyword": "best knife sets for home cooks",
+      "secondary_keywords": [
+        "best kitchen knife set review",
+        "budget knife set",
+        "knife set buying guide",
+        "best chef knife set under 100"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 13,
+      "estimated_word_count": 4000,
+      "internal_links": [
+        "/buying-guides",
+        "/blog"
+      ],
+      "notes": "Top picks: Wusthof Classic Ikon, Victorinox Swiss Classic, J.A. Henckels Classic, Chicago Cutlery, Cuisinart C77SS-15PK. Good commission range. Target + Best Buy via CJ."
+    },
+    {
+      "id": "q014",
+      "title": "Best Foam Rollers for Recovery (2026)",
+      "slug": "best-foam-rollers-recovery",
+      "category": "home-fitness",
+      "target_keyword": "best foam rollers for recovery",
+      "secondary_keywords": [
+        "foam roller review",
+        "best vibrating foam roller",
+        "foam roller buying guide",
+        "muscle recovery foam roller"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 14,
+      "estimated_word_count": 3000,
+      "internal_links": [
+        "/categories/home-fitness",
+        "/guides/best-home-gym-equipment",
+        "/guides/best-resistance-bands-home-workouts",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: TriggerPoint Grid, Hyperice Vyper 2.0, Amazon Basics high-density, OPTP Pro-Roller, RumbleRoller. Quick write. Strong internal linking to fitness cluster."
+    },
+    {
+      "id": "q015",
+      "title": "Best Standing Desk Mats for Comfort (2026)",
+      "slug": "best-standing-desk-mats",
+      "category": "home-office",
+      "target_keyword": "best standing desk mats",
+      "secondary_keywords": [
+        "anti fatigue mat for standing desk",
+        "standing desk mat review",
+        "ergonomic mat for standing",
+        "best anti fatigue mat under 100"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 15,
+      "estimated_word_count": 3000,
+      "internal_links": [
+        "/categories/home-office",
+        "/guides/best-budget-standing-desks",
+        "/guides/best-ergonomic-office-chairs-under-300",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Topo by Ergodriven, Flexispot SM01, Sky Mat, Amazon Basics, CumulusPRO. Natural companion purchase to standing desk. Easy affiliate win."
+    },
+    {
+      "id": "q016",
+      "title": "Best Kids Tablets and Learning Devices (2026)",
+      "slug": "best-kids-tablets-learning-devices",
+      "category": "family-parenting",
+      "target_keyword": "best kids tablets learning devices 2026",
+      "secondary_keywords": [
+        "best tablet for kids review",
+        "educational tablet for kids",
+        "Amazon Fire HD kids review",
+        "best kids tablet under 100"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 16,
+      "estimated_word_count": 4000,
+      "internal_links": [
+        "/categories/family-parenting",
+        "/guides/best-baby-monitors-2026",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Amazon Fire HD 8 Kids, Amazon Fire 7 Kids, iPad (base model), Samsung Galaxy Tab A8 Kids, LeapFrog LeapPad. Amazon Fire tablets have strong margins and brand familiarity."
+    },
+    {
+      "id": "q017",
+      "title": "Best Webcams for Home Office and Video Calls (2026)",
+      "slug": "best-webcams-home-office",
+      "category": "home-office",
+      "target_keyword": "best webcams for home office 2026",
+      "secondary_keywords": [
+        "best webcam for video calls",
+        "4K webcam review",
+        "best budget webcam",
+        "webcam for streaming"
+      ],
+      "affiliate_network_priority": ["amazon", "cj"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 17,
+      "estimated_word_count": 3500,
+      "internal_links": [
+        "/categories/home-office",
+        "/guides/best-budget-standing-desks",
+        "/guides/best-laptop-stands-work-from-home",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Logitech C920, Logitech Brio 4K, Microsoft LifeCam HD-3000, Razer Kiyo Pro, Anker PowerConf C300. Best Buy carries all — good CJ opportunity."
+    },
+    {
+      "id": "q018",
+      "title": "Best Smart Home Devices for Beginners (2026)",
+      "slug": "best-smart-home-devices-beginners",
+      "category": "tech-gadgets",
+      "target_keyword": "best smart home devices for beginners 2026",
+      "secondary_keywords": [
+        "smart home starter kit",
+        "best smart home devices review",
+        "Alexa vs Google Home",
+        "best smart plug and bulb set"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 18,
+      "estimated_word_count": 4000,
+      "internal_links": [
+        "/categories/tech-gadgets",
+        "/guides/best-wireless-earbuds-under-100",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: Amazon Echo Dot, Google Nest Mini, Kasa Smart Plug, Philips Hue Starter Kit, Ring Video Doorbell. Amazon Echo = captive Amazon commission. Very strong brand."
+    },
+    {
+      "id": "q019",
+      "title": "Best Double Strollers for Families (2026)",
+      "slug": "best-double-strollers-families",
+      "category": "family-parenting",
+      "target_keyword": "best double strollers for families 2026",
+      "secondary_keywords": [
+        "best double stroller review",
+        "side by side double stroller",
+        "tandem stroller vs side by side",
+        "best double stroller under 500"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 19,
+      "estimated_word_count": 4500,
+      "internal_links": [
+        "/categories/family-parenting",
+        "/guides/best-family-suvs-for-value",
+        "/buying-guides"
+      ],
+      "notes": "Top picks: UPPAbaby Vista V2, Baby Jogger City Select 2, Contours Curve, Joovy Scooter X2, Graco Ready2Grow. Higher price point = larger commissions. Strong buying intent."
+    },
+    {
+      "id": "q020",
+      "title": "Best Budget Robot Vacuums Under $300 (2026)",
+      "slug": "best-budget-robot-vacuums-under-300",
+      "category": "home-products",
+      "target_keyword": "best budget robot vacuums under 300",
+      "secondary_keywords": [
+        "best robot vacuum review 2026",
+        "affordable robot vacuum",
+        "robot vacuum buying guide",
+        "Roomba alternatives"
+      ],
+      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "article_type": "buying-guide",
+      "status": "queued",
+      "priority": 20,
+      "estimated_word_count": 4000,
+      "internal_links": [
+        "/buying-guides",
+        "/blog"
+      ],
+      "notes": "Top picks: eufy RoboVac 11S, iRobot Roomba 694, Shark IQ, Dreame D9, Ecovacs Deebot N8+. Fills empty home-products category. Great CJ opportunity via Best Buy."
+    }
+  ]
+}

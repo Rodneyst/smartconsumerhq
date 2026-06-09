@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-06-09",
+  "total_published": 4,
+  "total_word_count": 18007,
+  "articles": [
+    {
+      "id": "best-home-gym-equipment",
+      "title": "Best Home Gym Equipment for Beginners (2026)",
+      "slug": "best-home-gym-equipment",
+      "url": "https://smartconsumerhq.com/guides/best-home-gym-equipment",
+      "category": "home-fitness",
+      "publish_date": "2026-06-09",
+      "word_count": 3681,
+      "affiliate_status": "placeholders",
+      "affiliate_networks": ["amazon"],
+      "indexed_status": "submitted",
+      "sitemap_included": true,
+      "schema_types": ["Article", "FAQPage"],
+      "last_updated": "2026-06-09",
+      "notes": "5 products reviewed. Amazon Associates links are placeholder href='#'. Replace with real ASINs using tag=smartconsu0ca-20."
+    },
+    {
+      "id": "best-budget-standing-desks",
+      "title": "Best Budget Standing Desks Under $400 (2026)",
+      "slug": "best-budget-standing-desks",
+      "url": "https://smartconsumerhq.com/guides/best-budget-standing-desks",
+      "category": "home-office",
+      "publish_date": "2026-06-09",
+      "word_count": 4663,
+      "affiliate_status": "placeholders",
+      "affiliate_networks": ["amazon"],
+      "indexed_status": "submitted",
+      "sitemap_included": true,
+      "schema_types": ["Article", "FAQPage"],
+      "last_updated": "2026-06-09",
+      "notes": "5 desks reviewed. FlexiSpot E7 top pick. Comparison table included. Placeholder affiliate links need real ASINs."
+    },
+    {
+      "id": "best-smartwatches-under-300",
+      "title": "Best Smartwatches Under $300 (2026)",
+      "slug": "best-smartwatches-under-300",
+      "url": "https://smartconsumerhq.com/guides/best-smartwatches-under-300",
+      "category": "tech-gadgets",
+      "publish_date": "2026-06-09",
+      "word_count": 4475,
+      "affiliate_status": "placeholders",
+      "affiliate_networks": ["amazon"],
+      "indexed_status": "submitted",
+      "sitemap_included": true,
+      "schema_types": ["Article", "FAQPage"],
+      "last_updated": "2026-06-09",
+      "notes": "5 watches reviewed. Apple Watch SE 2 top pick. Placeholder affiliate links need real ASINs."
+    },
+    {
+      "id": "best-family-suvs-for-value",
+      "title": "Best Family SUVs for Value (2026)",
+      "slug": "best-family-suvs-for-value",
+      "url": "https://smartconsumerhq.com/guides/best-family-suvs-for-value",
+      "category": "family-parenting",
+      "publish_date": "2026-06-09",
+      "word_count": 5188,
+      "affiliate_status": "n/a",
+      "affiliate_networks": [],
+      "indexed_status": "submitted",
+      "sitemap_included": true,
+      "schema_types": ["Article", "FAQPage"],
+      "last_updated": "2026-06-09",
+      "notes": "5 SUVs reviewed. Honda CR-V top pick. Non-Amazon product — no affiliate links applicable. Consider adding car-related affiliate programs."
+    }
+  ]
+}

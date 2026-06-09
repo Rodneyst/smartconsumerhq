@@ -1686,3 +1686,98 @@ All 5 pages: full SEO metadata, canonical, OG/Twitter Card, JSON-LD, breadcrumb,
 2. **Apply to CJ advertiser programs** — Best Buy, Target, Home Depot via CJ dashboard.
 3. **Monitor Walmart approval** — Activate links when approved.
 4. **Write next guide** — Money Saving or Home Products categories have no real content.
+
+---
+
+## Entry 18
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Phase 2B — Build the automated content agent workflow: content queue, drafting workflow, review-gated publish workflow, agent handoff documentation, and updated project docs.
+
+---
+
+### Work Completed
+
+1. **Created `content/content-queue.json`** — 20 articles queued with all required fields: id, title, slug, category, target_keyword, secondary_keywords[], affiliate_network_priority[], article_type, status ("queued"), priority (1–20), estimated_word_count, internal_links[], notes. Articles span: home office (4), home fitness (4), tech gadgets (4), kitchen tools (4), family products (3), home products (1).
+
+2. **Created `content/drafts/`** — Staging area directory for AI-generated article drafts. Nothing in this folder is live. Articles move from drafts/ → guides/ only after human approval via the publish workflow.
+
+3. **Created `content/published-content.json`** — Registry tracking all 4 published guides with: id, title, slug, url, category, publish_date, word_count, affiliate_status, affiliate_networks[], indexed_status, sitemap_included, schema_types[], last_updated, notes.
+
+4. **Created `tools/generate-article.md`** — 8-step AI workflow for article generation: pick from queue → research 5 products → draft HTML → self-review → save to drafts/ → set status "review_needed" → update session log → notify user. Includes: required sections checklist, affiliate comment format (`<!-- AFFILIATE: amazon ASIN: XXXXXXXXXX -->`), word count requirements, error recovery instructions.
+
+5. **Created `tools/publish-article.md`** — 14-step publish workflow (review-gated): verify approved status → copy draft to guides/ → replace affiliate placeholders with real URLs → update sitemap → update category page → update buying-guides.html → verify SEO → update tracking files → stage specific files → commit → **confirm with user** → push → verify deployment → update session log.
+
+6. **Created `docs/02_development/AUTOMATED_CONTENT_AGENT.md`** — Full agent handoff documentation: system overview, article lifecycle diagram, how the agent works, how to generate articles, how to approve drafts, how to publish, how to update affiliate links, how to avoid overwriting previous work, session log requirements, quality standards, adding new queue items, file ownership table.
+
+7. **Created `docs/02_development/ARTICLE_REVIEW_CHECKLIST.md`** — 35-item human review checklist organized into sections: editorial quality, FTC compliance, affiliate links, internal links, SEO metadata, HTML structure, mobile layout, pre-publish verification. Includes approval step (set status to "approved" in content-queue.json).
+
+8. **Updated `docs/01_product/PROJECT_STATUS.md`** — Content System section expanded to reflect full automation pipeline (11 new file entries), last updated timestamp updated.
+
+9. **Updated `docs/01_product/TODO.md`** — Reorganized High Priority section. Added Phase 2B tasks (all marked complete). Added affiliate link replacement as top priority. Added CJ advertiser programs and sitemap resubmission tasks. Updated timestamp.
+
+10. **Updated `README.md`** — Added "Automated Content Pipeline" section with: system diagram, generate-article prompt template, publish prompt template, queue table (next 5 articles), links to documentation.
+
+---
+
+### Files Created
+
+| File | Description |
+|---|---|
+| `content/content-queue.json` | 20 articles queued, priorities 1–20 |
+| `content/drafts/.gitkeep` | Drafts staging directory |
+| `content/published-content.json` | Published content tracker (4 articles) |
+| `tools/generate-article.md` | AI article generation workflow |
+| `tools/publish-article.md` | Review-gated publish workflow |
+| `docs/02_development/AUTOMATED_CONTENT_AGENT.md` | Agent handoff documentation |
+| `docs/02_development/ARTICLE_REVIEW_CHECKLIST.md` | Human review checklist |
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `docs/01_product/PROJECT_STATUS.md` | Content system section expanded, timestamp updated |
+| `docs/01_product/TODO.md` | Phase 2B tasks added, priorities reorganized |
+| `README.md` | Automated content pipeline section added |
+
+---
+
+### Content Queue Summary
+
+20 articles queued across 5 categories:
+
+| Priority | Slug | Category | Est. Words |
+|---|---|---|---|
+| 1 | best-ergonomic-office-chairs-under-300 | home-office | 4,500 |
+| 2 | best-air-fryers-under-150 | kitchen-tools | 4,000 |
+| 3 | best-wireless-earbuds-under-100 | tech-gadgets | 4,000 |
+| 4 | best-resistance-bands-home-workouts | home-fitness | 3,500 |
+| 5 | best-instant-pots-pressure-cookers | kitchen-tools | 4,000 |
+| 6–20 | … | mixed | 3,000–4,500 |
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push)* | `feat: Phase 2B automated content agent pipeline` |
+
+### GitHub Pushes Completed (Entry 18)
+
+1 push to `origin main` — Cloudflare auto-deploy triggered.
+
+---
+
+### Recommended Next Steps
+
+1. **[IMMEDIATE] Replace affiliate link placeholders** — All 4 existing guides have `href="#"`. Use `docs/05_research/AFFILIATE_LINK_MAP.md` to locate every placeholder and replace with real Amazon URLs using `tag=smartconsu0ca-20`. This is the only thing blocking first revenue.
+
+2. **[NEXT SESSION] Generate first article from queue** — Use this prompt:
+   > "Generate the next article in the content queue for SmartConsumerHQ. Read `content/content-queue.json`, pick the first queued item, and follow `tools/generate-article.md` exactly. Save the draft to `content/drafts/` and set status to `review_needed`. Do not publish."
+
+3. **[THIS WEEK] Apply to CJ advertiser programs** — Best Buy, Target, Home Depot.
+
+4. **[ONGOING] Monitor Walmart Affiliates approval**.

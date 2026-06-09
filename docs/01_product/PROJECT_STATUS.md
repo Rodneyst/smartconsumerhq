@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 16)
+**Last updated:** 2026-06-09 (Entry 18)
 
 ---
 
@@ -145,15 +145,24 @@ smartconsumerhq/
 
 ## Content System
 
-**Status:** Foundation built — content system is operational but no articles drafted yet.
+**Status:** Automated pipeline operational. Content queue loaded with 20 articles. Drafts staging area ready.
 
 | Asset | Location | Status |
 |---|---|---|
-| Buying guide template | `content/templates/buying-guide-template.md` | Complete |
+| Buying guide template (Markdown) | `content/templates/buying-guide-template.md` | Complete |
+| Article template (HTML) | `content/templates/article-template.html` | Complete — Phase 2A |
+| Content queue (20 articles) | `content/content-queue.json` | Complete — Phase 2B |
+| Published content tracker | `content/published-content.json` | 4 articles tracked |
+| Drafts staging area | `content/drafts/` | Empty — ready for use |
+| Product data JSON | `content/products/` | 2 sample files |
 | Article backlog (100 ideas) | `content/article_ideas/master-article-backlog.csv` | Complete |
-| Article drafts folder | `content/articles/` | Empty — ready for use |
+| Article drafts folder | `content/articles/` | Ready for use |
 | Content system documentation | `docs/02_development/CONTENT_SYSTEM.md` | Complete |
-| Content workflow | `tools/content-workflow.md` | Complete |
+| Automated agent documentation | `docs/02_development/AUTOMATED_CONTENT_AGENT.md` | Complete — Phase 2B |
+| Article review checklist | `docs/02_development/ARTICLE_REVIEW_CHECKLIST.md` | Complete — Phase 2B |
+| Generate article workflow | `tools/generate-article.md` | Complete — Phase 2B |
+| Publish article workflow | `tools/publish-article.md` | Complete — Phase 2B |
+| Content workflow (manual) | `tools/content-workflow.md` | Complete |
 
 ---
 

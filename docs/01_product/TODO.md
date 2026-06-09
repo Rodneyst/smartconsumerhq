@@ -1,6 +1,6 @@
 # TODO — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 12)
+**Last updated:** 2026-06-09 (Entry 18)
 
 ---
 
@@ -44,22 +44,40 @@
 
 ## High Priority
 
-### Content (Phase 2 — start here)
-- [x] **Write full content: `guides/best-home-gym-equipment.html`** — 3,681 words; 5 products, 2 comparison tables, 6-question FAQ + schema, verdict box, affiliate links, internal links, SEO complete. Audited 2026-06-09 ✓
-- [x] **Write full content: `guides/best-budget-standing-desks.html`** — 4,663 words; 5 desks, 2 comparison tables, 6-question FAQ + schema, verdict box, affiliate links, buying guide, common mistakes. Published 2026-06-09 ✓
-- [x] **Write full content: `guides/best-smartwatches-under-300.html`** — 4,475 words; 5 watches, full specs table, 6-question FAQ + schema, buying guide, common mistakes. Published 2026-06-09 ✓
-- [x] **Write full content: `guides/best-family-suvs-for-value.html`** — 5,188 words; Honda CR-V, Toyota RAV4, Mazda CX-5, Hyundai Tucson, Subaru Forester. Full specs table, 6-question FAQ + schema, buying guide, common mistakes. Published 2026-06-09 ✓
-- [ ] **Add affiliate disclosure notice** to top of each guide page (above the fold)
-- [ ] **Write first Money Saving guide** — pick from backlog (recommend: Best Cashback Apps 2026)
-- [ ] **Write first Home Products guide** — pick from backlog (recommend: Best Robot Vacuums for Every Budget)
+### Affiliate Links (do this first — zero revenue until done)
+- [ ] **Replace `href="#"` affiliate placeholders in all 4 guides** with real Amazon URLs `?tag=smartconsu0ca-20`. Reference `docs/05_research/AFFILIATE_LINK_MAP.md` for all locations.
+
+### Content Automation Pipeline (Phase 2B — complete)
+- [x] **Content queue created** — `content/content-queue.json` — 20 articles, priorities 1–20 ✓
+- [x] **Drafts folder created** — `content/drafts/` — staging area for generated articles ✓
+- [x] **Published content tracker** — `content/published-content.json` — 4 existing guides tracked ✓
+- [x] **Generate article workflow** — `tools/generate-article.md` — repeatable AI workflow ✓
+- [x] **Publish article workflow** — `tools/publish-article.md` — review-gated publish process ✓
+- [x] **AUTOMATED_CONTENT_AGENT.md** — full agent handoff documentation ✓
+- [x] **ARTICLE_REVIEW_CHECKLIST.md** — human review checklist before publishing ✓
+- [ ] **Generate next article** — run generate workflow for queue item `q001` (Best Ergonomic Office Chairs Under $300)
+- [ ] **Review and approve draft** — use `ARTICLE_REVIEW_CHECKLIST.md`
+- [ ] **Publish approved draft** — run publish workflow for approved item
+
+### Content (Phase 2 — published guides)
+- [x] **Write full content: `guides/best-home-gym-equipment.html`** — 3,681 words. Audited 2026-06-09 ✓
+- [x] **Write full content: `guides/best-budget-standing-desks.html`** — 4,663 words. Published 2026-06-09 ✓
+- [x] **Write full content: `guides/best-smartwatches-under-300.html`** — 4,475 words. Published 2026-06-09 ✓
+- [x] **Write full content: `guides/best-family-suvs-for-value.html`** — 5,188 words. Published 2026-06-09 ✓
+- [ ] **Write first Money Saving guide** — "Best Cashback Apps 2026" recommended
+- [ ] **Write first Home Products guide** — `q020` Best Budget Robot Vacuums is in queue
 
 ### SEO and Analytics
-- [x] **Activate Google Search Console** — verified 2026-06-09 via Cloudflare DNS TXT record; sitemap (14 URLs) submitted to GSC
-- [x] **Activate GA4** — `G-KNC6546GMH` installed in `script.js` IIFE #10; tracking live on all pages as of 2026-06-09
-- [ ] **Apply for Amazon Associates** — see application checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`; write 2 more full guides before applying
+- [x] **Activate Google Search Console** — verified 2026-06-09; sitemap submitted ✓
+- [x] **Activate GA4** — `G-KNC6546GMH` active since 2026-06-09 ✓
+- [x] **Submit updated sitemap** — 19 URLs as of Phase 2A. Resubmit to GSC.
+- [ ] **Resubmit sitemap to GSC** — sitemap now has 19 URLs (was 14); resubmit at search.google.com/search-console
 
 ### Monetization
-- [ ] **Add real affiliate links to guides** — after Amazon Associates approval
+- [x] **Amazon Associates active** — Store ID `smartconsu0ca-20` ✓
+- [x] **CJ Affiliate active** — Property ID `101779331` ✓
+- [ ] **Apply to CJ advertiser programs** — Best Buy, Target, Home Depot via CJ dashboard
+- [ ] **Monitor Walmart Affiliates approval** — application submitted; activate links when approved
 - [ ] **Connect newsletter form to real email provider** — Mailchimp or ConvertKit
 
 ---
