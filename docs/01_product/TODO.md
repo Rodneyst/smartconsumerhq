@@ -1,6 +1,6 @@
 # TODO — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 11)
+**Last updated:** 2026-06-09 (Entry 12)
 
 ---
 
@@ -48,7 +48,7 @@
 - [x] **Write full content: `guides/best-home-gym-equipment.html`** — 3,681 words; 5 products, 2 comparison tables, 6-question FAQ + schema, verdict box, affiliate links, internal links, SEO complete. Audited 2026-06-09 ✓
 - [x] **Write full content: `guides/best-budget-standing-desks.html`** — 4,663 words; 5 desks, 2 comparison tables, 6-question FAQ + schema, verdict box, affiliate links, buying guide, common mistakes. Published 2026-06-09 ✓
 - [x] **Write full content: `guides/best-smartwatches-under-300.html`** — 4,475 words; 5 watches, full specs table, 6-question FAQ + schema, buying guide, common mistakes. Published 2026-06-09 ✓
-- [ ] **Write full content: `guides/best-family-suvs-for-value.html`** — use buying guide template
+- [x] **Write full content: `guides/best-family-suvs-for-value.html`** — 5,188 words; Honda CR-V, Toyota RAV4, Mazda CX-5, Hyundai Tucson, Subaru Forester. Full specs table, 6-question FAQ + schema, buying guide, common mistakes. Published 2026-06-09 ✓
 - [ ] **Add affiliate disclosure notice** to top of each guide page (above the fold)
 - [ ] **Write first Money Saving guide** — pick from backlog (recommend: Best Cashback Apps 2026)
 - [ ] **Write first Home Products guide** — pick from backlog (recommend: Best Robot Vacuums for Every Budget)

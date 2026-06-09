@@ -140,7 +140,7 @@ The full workflow is documented in `tools/content-workflow.md`. The short versio
 ## Current Roadmap Status
 
 - **Phase 1 (Foundation):** **100% complete.** sitemap.xml, robots.txt, Cloudflare deployment, GSC verified, sitemap submitted, GA4 active.
-- **Phase 2 (Content):** 3 of 4 placeholder guides complete (best-home-gym-equipment, best-budget-standing-desks, best-smartwatches-under-300). Next: best-family-suvs-for-value. Full plan in `docs/01_product/CONTENT_ROADMAP.md`.
+- **Phase 2 (Content):** **4 of 4 placeholder guides complete.** All initial guides published. Next: Guides 4–5 in CONTENT_ROADMAP (cashback apps, robot vacuums to fill empty categories). Full plan in `docs/01_product/CONTENT_ROADMAP.md`.
 - **Phase 3 (SEO):** Foundation complete. GA4 collecting data. Organic rankings to develop as content grows.
 - **Phases 4–5 (Monetization):** Not started. Plan in `docs/01_product/MONETIZATION_PLAN.md`. Amazon Associates requires 2+ more complete guides first.
 
@@ -158,7 +158,9 @@ See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 3. ~~Write full content for `guides/best-home-gym-equipment.html`~~ — **Done 2026-06-09** ✓
 4. ~~Write `guides/best-budget-standing-desks.html`~~ — **Done 2026-06-09** ✓ (4,663 words)
 5. ~~Write `guides/best-smartwatches-under-300.html`~~ — **Done 2026-06-09** ✓ (4,475 words)
-6. **Write `guides/best-family-suvs-for-value.html`** — next immediate task
+6. ~~Write `guides/best-family-suvs-for-value.html`~~ — **Done 2026-06-09** ✓ (5,188 words)
+7. **Apply for Amazon Associates** — 4 complete guides qualify. Checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`
+8. Write first Money Saving guide + first Home Products guide (fills empty categories)
 7. Apply for Amazon Associates (after 3 complete guides) — checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`
 8. Write first Money Saving guide + first Home Products guide
 
@@ -172,7 +174,7 @@ See `docs/01_product/TODO.md` for the complete task list.
 
 | Issue | Severity | Notes |
 |---|---|---|
-| 1 guide page still contains placeholder content | High | Next AI task — best-family-suvs-for-value |
+| ~~All 4 placeholder guides complete~~ | ~~High~~ | **RESOLVED 2026-06-09** — all 4 guides published |
 | No affiliate links on any page — zero revenue potential | High | Blocked on Amazon Associates approval |
 | Newsletter form not connected to real provider | Medium | Pending — Mailchimp or ConvertKit |
 | Money Saving and Home Products have zero real guides | Medium | Guides 5–7 in content roadmap |
@@ -186,7 +188,7 @@ See `docs/01_product/TODO.md` for the complete task list.
 
 **Infrastructure complete.** All Phase 1 setup tasks are done.
 
-**AI next task:** Write `guides/best-smartwatches-under-300.html` full content (Priority #2 in CONTENT_ROADMAP.md). Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md`. Target: 5 products, comparison table, buying guide section, FAQ, internal links to tech-gadgets category.
+**AI next task:** Apply for Amazon Associates (4 complete guides now qualify — checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`). Then write first Money Saving guide and first Home Products guide to fill the two empty categories.
 
 **User action after 3 complete guides:** Apply for Amazon Associates — checklist at `docs/05_research/AFFILIATE_LINK_MAP.md`.
 
