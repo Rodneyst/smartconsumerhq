@@ -1459,3 +1459,47 @@ All tasks for this session are complete:
 ### GitHub Pushes Completed
 
 1 push to `origin main` — Cloudflare auto-deploy triggered.
+
+---
+
+## Entry 15
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Add Impact Radius site verification meta tag directly into `index.html` `<head>` — required because Impact Radius's verification crawler does not execute JavaScript, making the previous IIFE #12 injection insufficient for bot-based verification.
+
+---
+
+### Work Completed
+
+1. **Added meta tag directly to `index.html` line 15** (inside `<head>`, after GSC verification tag):
+   ```html
+   <meta name="impact-site-verification" value="8cd897e2-197c-4834-b4e7-0b269ff012cf" />
+   ```
+
+2. **IIFE #12 in script.js retained** — continues to inject the tag dynamically on all other pages for human visitors and JavaScript-capable crawlers.
+
+3. **Verification coverage:**
+   - `index.html`: static meta tag in `<head>` — readable by all crawlers including Impact Radius bot
+   - All other pages: dynamic injection via script.js IIFE #12
+
+---
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `index.html` | Added `<meta name="impact-site-verification" value="8cd897e2-197c-4834-b4e7-0b269ff012cf" />` at line 15 |
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push)* | `fix: add Impact Radius verification meta tag directly to index.html head` |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — Cloudflare auto-deploy triggered.
