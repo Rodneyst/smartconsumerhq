@@ -339,3 +339,163 @@ After publishing: update sitemap.xml, categories/home-fitness.html,
 PROJECT_STATUS.md, TODO.md, write session log entry, copy to local Mac,
 commit specific files, push.
 ```
+
+---
+
+## Entry 3
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Write the first complete buying guide for `guides/best-home-gym-equipment.html` — replacing all placeholder content with a full 1,800–2,500 word article per the content system spec.
+
+**Prompt Summary:**
+Replace all placeholder content in guides/best-home-gym-equipment.html with a complete buying guide including: SEO title, meta description, affiliate disclosure, introduction, quick picks table, top 5 products with pros/cons, comparison table, buying guide section, common mistakes section, FAQ (minimum 5 questions), final recommendation, internal links, and JSON-LD FAQ schema.
+
+---
+
+### Work Completed
+
+1. **Read all required context files** — session log, AI_HANDOFF.md, PROJECT_STATUS.md, TODO.md, CONTENT_SYSTEM.md, content-workflow.md, existing placeholder HTML.
+
+2. **Audited existing placeholder file** — identified incorrect canonical/OG URLs (had `.html` extension), minimal JSON-LD (Article only, no FAQ schema), placeholder product cards. Confirmed sitemap already contained this URL — no sitemap update needed.
+
+3. **Researched available CSS classes** — confirmed `.disclosure-box`, `.article-prose`, `.product-card`, `.product-rank`, `.pros-cons`, `.comparison-table-wrap`, `.faq-section`, `.verdict-box` all exist in styles.css with correct structure.
+
+4. **Wrote complete buying guide** — `guides/best-home-gym-equipment.html`. Full HTML rewrite covering:
+   - Fixed canonical and OG URLs to extension-free format
+   - Added complete Article + FAQPage JSON-LD schemas
+   - Added `.disclosure-box` affiliate notice above the fold
+   - Introduction (~200 words)
+   - Quick picks summary table (5 products)
+   - 5 product cards with `.product-rank`, `.pros-cons`, affiliate CTA buttons:
+     1. Bowflex SelectTech 552 Adjustable Dumbbells — Best Overall
+     2. Marcy Foldable Utility Bench — Best Weight Bench
+     3. WHATAFIT Resistance Bands Set — Best Budget
+     4. Iron Gym Total Upper Body Bar — Best Bodyweight
+     5. Sunny Health SF-RW5623 Rowing Machine — Best Cardio
+   - Full comparison table with 6 columns and `.highlight-row` for top pick
+   - Buying guide section (~500 words) — budget, space, training goal alignment, durability
+   - Common mistakes section (5 mistakes, ~250 words)
+   - FAQ accordion (6 questions) using `.faq-section` / `.faq-item` structure
+   - `.verdict-box` final recommendation
+   - 3 internal links: `../categories/home-fitness.html`, `../guides/best-smartwatches-under-300.html`, `../guides/best-budget-standing-desks.html`
+   - All affiliate links set to `href="#"` pending Amazon Associates approval, with `rel="nofollow sponsored" target="_blank"`
+
+5. **Validated internal links** — all 3 referenced files confirmed to exist.
+
+6. **Updated documentation:**
+   - `docs/01_product/PROJECT_STATUS.md` — marked guide as published, updated known issues, added to completed work log
+   - `docs/01_product/TODO.md` — marked best-home-gym-equipment as complete ✓
+   - `docs/02_development/AI_HANDOFF.md` — updated recommended next milestone, TODO status, open issues
+
+---
+
+### Files Created
+
+None.
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `guides/best-home-gym-equipment.html` | Complete rewrite — placeholder replaced with full buying guide |
+| `docs/01_product/PROJECT_STATUS.md` | Updated guide status, known issues, recommended actions, work log |
+| `docs/01_product/TODO.md` | Marked best-home-gym-equipment task complete |
+| `docs/02_development/AI_HANDOFF.md` | Updated immediate priority, open issues, recommended next milestone |
+| `docs/99_session_logs/2026-06-09-session-log.md` | Appended Entry 3 (this entry) |
+
+### Files Moved / Deleted
+
+None.
+
+---
+
+### Content Published
+
+| Page | URL | Word count (approx) | Products featured |
+|---|---|---|---|
+| Best Home Gym Equipment for Beginners | `/guides/best-home-gym-equipment` | ~2,400 words | 5 (Bowflex 552, Marcy Bench, WHATAFIT Bands, Iron Gym Bar, Sunny Rower) |
+
+### SEO Changes
+
+- Fixed canonical URL: removed `.html` extension → `https://smartconsumerhq.com/guides/best-home-gym-equipment`
+- Fixed OG URL: removed `.html` extension
+- Added FAQPage JSON-LD schema (6 questions)
+- Added Article JSON-LD schema with datePublished and dateModified
+- Added full affiliate disclosure visible above the fold
+
+### Sitemap Changes
+
+None — `best-home-gym-equipment` URL was already present in sitemap.xml.
+
+---
+
+### Git Status Summary
+
+Files staged for commit:
+- `guides/best-home-gym-equipment.html`
+- `docs/01_product/PROJECT_STATUS.md`
+- `docs/01_product/TODO.md`
+- `docs/02_development/AI_HANDOFF.md`
+- `docs/99_session_logs/2026-06-09-session-log.md`
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(this session)* | content: publish first complete buying guide (best-home-gym-equipment) |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — pending user confirmation.
+
+### Cloudflare Deployments Completed
+
+1 auto-deployment — pending push.
+
+---
+
+### Known Issues (post-session)
+
+| Issue | Severity | Status |
+|---|---|---|
+| 3 guide pages still contain placeholder content | High | Pending |
+| Google Search Console not configured | High | Pending |
+| No affiliate links (using href="#" placeholders) | High | Pending — requires Amazon Associates approval |
+| GA4 not installed | Medium | Pending |
+| Newsletter form not connected | Medium | Pending |
+| No product images on guide pages | Medium | Pending |
+
+### Outstanding Tasks
+
+1. Write full content for `guides/best-budget-standing-desks.html` (next priority)
+2. Write full content for `guides/best-smartwatches-under-300.html`
+3. Write full content for `guides/best-family-suvs-for-value.html`
+4. Set up Google Search Console
+5. Install GA4
+6. Apply for Amazon Associates
+7. Write first Money Saving guide (Best Cashback Apps 2026)
+8. Write first Home Products guide (Best Robot Vacuums)
+
+### Recommended Next Prompt
+
+```
+Read docs/99_session_logs/2026-06-09-session-log.md (Entry 3),
+docs/02_development/AI_HANDOFF.md, docs/01_product/TODO.md.
+
+Next task: Write the second complete buying guide.
+Follow tools/content-workflow.md.
+Use content/templates/buying-guide-template.md.
+Target: guides/best-budget-standing-desks.html — replace all placeholder
+content with a complete 1,800–2,500 word buying guide including:
+SEO title, meta description, affiliate disclosure, introduction,
+quick picks table, top 5 standing desk picks with pros/cons,
+comparison table, buying guide section (what to look for),
+common mistakes section, FAQ (5+ questions), final recommendation,
+internal links, and JSON-LD FAQ schema.
+
+After: validate internal links, update PROJECT_STATUS.md, TODO.md,
+AI_HANDOFF.md, write session log, copy to local Mac,
+commit specific files, push.
+```

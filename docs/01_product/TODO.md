@@ -32,7 +32,7 @@
 ## High Priority
 
 ### Content (Phase 2 — start here)
-- [ ] **Write full content: `guides/best-home-gym-equipment.html`** — use buying guide template; 1,800+ words; 5 products; comparison table; FAQ
+- [x] **Write full content: `guides/best-home-gym-equipment.html`** — complete 2026-06-09; 5 products, comparison table, FAQ, verdict box, affiliate disclosure ✓
 - [ ] **Write full content: `guides/best-budget-standing-desks.html`** — use buying guide template
 - [ ] **Write full content: `guides/best-smartwatches-under-300.html`** — use buying guide template
 - [ ] **Write full content: `guides/best-family-suvs-for-value.html`** — use buying guide template

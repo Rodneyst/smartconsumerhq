@@ -2,7 +2,7 @@
 
 This document is the primary entry point for any AI agent beginning work on this project. Read this first, then read the files listed in "Required Reading."
 
-**Last updated:** 2026-06-09
+**Last updated:** 2026-06-09 (Entry 3)
 
 ---
 
@@ -137,12 +137,13 @@ See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 ## Current TODO Status
 
 **Immediate priority:**
-1. Write full content for `guides/best-home-gym-equipment.html`
-2. Write full content for remaining 3 placeholder guides
-3. Set up Google Search Console and submit sitemap
-4. Install GA4
-5. Apply for Amazon Associates
-6. Write first guides for Money Saving and Home Products categories
+1. ~~Write full content for `guides/best-home-gym-equipment.html`~~ — **Done 2026-06-09** ✓
+2. Write full content for `guides/best-budget-standing-desks.html` (next)
+3. Write full content for remaining 2 placeholder guides (smartwatches, family SUVs)
+4. Set up Google Search Console and submit sitemap
+5. Install GA4
+6. Apply for Amazon Associates
+7. Write first guides for Money Saving and Home Products categories
 
 See `docs/01_product/TODO.md` for the complete task list.
 
@@ -152,7 +153,7 @@ See `docs/01_product/TODO.md` for the complete task list.
 
 | Issue | Severity |
 |---|---|
-| All 4 guide pages contain placeholder content — not SEO-ready | High |
+| 3 guide pages still contain placeholder content | High |
 | Google Search Console not configured | High |
 | No affiliate links on any page — zero revenue potential | High |
 | GA4 not installed — no traffic data | Medium |
@@ -164,9 +165,9 @@ See `docs/01_product/TODO.md` for the complete task list.
 
 ## Recommended Next Milestone
 
-**Immediate:** Write the first complete buying guide for `guides/best-home-gym-equipment.html`. Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md` step by step.
+**Immediate:** Write the second complete buying guide for `guides/best-budget-standing-desks.html`. Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md` step by step.
 
-**After first guide:** Set up Google Search Console (15-minute task, no code changes required).
+**After that:** Set up Google Search Console (15-minute task, no code changes required).
 
 ---
 

@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09
+**Last updated:** 2026-06-09 (Entry 3)
 
 ---
 
@@ -124,7 +124,7 @@ smartconsumerhq/
 
 | Guide | Category | URL | Status |
 |---|---|---|---|
-| Best Home Gym Equipment for Beginners | Home Fitness | `/guides/best-home-gym-equipment` | Live — placeholder content only |
+| Best Home Gym Equipment for Beginners | Home Fitness | `/guides/best-home-gym-equipment` | **Live — full content published 2026-06-09** |
 | Best Budget Standing Desks Under $400 | Home Office | `/guides/best-budget-standing-desks` | Live — placeholder content only |
 | Best Smart Watches Under $300 | Tech & Gadgets | `/guides/best-smartwatches-under-300` | Live — placeholder content only |
 | Best Family SUVs for Value | Family & Parenting | `/guides/best-family-suvs-for-value` | Live — placeholder content only |
@@ -207,7 +207,7 @@ The site is built as an affiliate content business:
 
 | Issue | Severity | Status |
 |---|---|---|
-| All 4 guide pages contain placeholder content only | High | Pending — content system now ready to use |
+| 3 guide pages still contain placeholder content only | High | Pending — home-gym guide now complete |
 | Google Search Console not configured | High | Pending |
 | GA4 not installed | Medium | Pending |
 | Newsletter form not connected to real provider | Medium | Pending |
@@ -228,18 +228,19 @@ The site is built as an affiliate content business:
 | 2026-06-09 | `a9a47d1` | Add session summary for June 8 2026 |
 | 2026-06-09 | `51989d9` | Establish docs/ documentation and continuity framework |
 | 2026-06-09 | `a93096b` | Add local Mac backup step to session log procedure |
-| 2026-06-09 | *(this session)* | Build content engine foundation (templates, backlog, workflow, system docs) |
+| 2026-06-09 | *(Entry 2)* | Build content engine foundation (templates, backlog, workflow, system docs) |
+| 2026-06-09 | *(Entry 3)* | Write full buying guide: guides/best-home-gym-equipment.html (5 products, ~2,400 words) |
 
 ---
 
 ## Next Recommended Actions
 
 **Immediate (this session or next):**
-1. Write first full guide: `guides/best-home-gym-equipment.html` — use `content/templates/buying-guide-template.md`
+1. Write next full guide: `guides/best-budget-standing-desks.html`
 2. Set up Google Search Console — verify domain, submit sitemap
 
 **Short term:**
-3. Write remaining 3 placeholder guides (standing desks, smartwatches, family SUVs)
+3. Write remaining 2 placeholder guides (smartwatches, family SUVs)
 4. Write 2 Money Saving guides and 2 Home Products guides
 5. Install GA4 — add measurement script to `script.js`
 6. Apply for Amazon Associates
