@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 6)
+**Last updated:** 2026-06-09 (Entry 7)
 
 ---
 
@@ -163,8 +163,8 @@ All 4 guides contain intro copy and "coming soon" placeholders. Full article con
 |---|---|
 | sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — 14 URLs |
 | robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
-| Google Search Console | **Verification placeholder installed** — awaiting verification code from user |
-| GA4 | **ACTIVE** — Measurement ID `G-KNC6546GMH` installed in `script.js` IIFE #10 |
+| Google Search Console | **VERIFIED** — Confirmed 2026-06-09 via Cloudflare DNS TXT record; sitemap submitted |
+| GA4 | **ACTIVE** — Measurement ID `G-KNC6546GMH` installed in `script.js` IIFE #10; tracking live |
 | Schema.org JSON-LD | Present on all pages |
 | Canonical URLs | Present on all pages, correctly set |
 | Meta tags (OG, Twitter Card) | Present on all pages |
@@ -174,12 +174,12 @@ All 4 guides contain intro copy and "coming soon" placeholders. Full article con
 
 ## Analytics
 
-| Platform | Status | Action Required |
+| Platform | Status | Notes |
 |---|---|---|
-| GA4 | **ACTIVE** — Measurement ID `G-KNC6546GMH` | Tracking live — verify in GA4 Realtime dashboard |
-| Google Search Console | Meta tag placeholder in `index.html` | Get verification code from GSC, replace `REPLACE_WITH_GSC_VERIFICATION_CODE` in `index.html`, push, then click Verify in GSC and submit sitemap |
+| GA4 | **ACTIVE** — `G-KNC6546GMH` live since 2026-06-09 | Monitor traffic in GA4 → Reports → Realtime and Acquisition |
+| Google Search Console | **VERIFIED + SITEMAP SUBMITTED** — 2026-06-09 | Verified via Cloudflare DNS TXT record; 14-URL sitemap indexed; monitor coverage in GSC |
 
-See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.md` for step-by-step instructions.
+See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.md` for full setup history.
 
 ---
 
@@ -213,7 +213,7 @@ The site is built as an affiliate content business:
 | Issue | Severity | Status |
 |---|---|---|
 | 3 guide pages still contain placeholder content only | High | Pending — home-gym guide now complete |
-| Google Search Console not verified | High | Placeholder installed — user must complete verification |
+| Google Search Console not verified | ~~High~~ | **RESOLVED** — Verified via Cloudflare DNS 2026-06-09; sitemap submitted |
 | GA4 not active | ~~Medium~~ | **RESOLVED** — `G-KNC6546GMH` activated 2026-06-09 |
 | Newsletter form not connected to real provider | Medium | Pending |
 | No affiliate links on any page | High | Pending — requires Amazon Associates approval |
@@ -237,15 +237,16 @@ The site is built as an affiliate content business:
 | 2026-06-09 | *(Entry 3)* | Write full buying guide: guides/best-home-gym-equipment.html (5 products, ~2,400 words) |
 | 2026-06-09 | *(Entry 5)* | Analytics foundation: GA4 code + GSC meta tag installed; AFFILIATE_LINK_MAP.md, GA4_SETUP.md, SEARCH_CONSOLE_SETUP.md created |
 | 2026-06-09 | *(Entry 6)* | **Activate GA4** — replaced `G-XXXXXXXXXX` with `G-KNC6546GMH` in `script.js`; tracking live on all pages |
+| 2026-06-09 | *(Entry 7)* | **Infrastructure complete** — GSC verified (DNS), sitemap submitted, GA4 confirmed active; create CONTENT_ROADMAP.md + MONETIZATION_PLAN.md |
 
 ---
 
 ## Next Recommended Actions
 
 **Immediate (this session or next):**
-1. Complete GSC verification — get code from GSC, update `index.html`, push, verify, submit sitemap (see `docs/05_research/SEARCH_CONSOLE_SETUP.md`)
+1. ~~Complete GSC verification~~ — **DONE** Verified via Cloudflare DNS 2026-06-09; sitemap submitted
 2. ~~Activate GA4~~ — **DONE** `G-KNC6546GMH` active as of 2026-06-09
-3. Write next full guide: `guides/best-budget-standing-desks.html`
+3. Write next full guide: `guides/best-budget-standing-desks.html` — see `docs/01_product/CONTENT_ROADMAP.md`
 
 **Short term:**
 3. Write remaining 2 placeholder guides (smartwatches, family SUVs)

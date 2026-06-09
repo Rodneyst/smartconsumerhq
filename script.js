@@ -289,9 +289,8 @@
 
 /* ================================================
    10. GOOGLE ANALYTICS 4
-   Replace GA4_ID value with your Measurement ID from
-   analytics.google.com to activate tracking.
-   See docs/05_research/GA4_SETUP.md for full instructions.
+   Active — Measurement ID: G-KNC6546GMH
+   Verified live 2026-06-09. See docs/05_research/GA4_SETUP.md.
    ================================================ */
 (function initGA4() {
   var GA4_ID = 'G-KNC6546GMH';

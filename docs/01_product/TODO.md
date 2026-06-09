@@ -1,6 +1,6 @@
 # TODO — Smart Consumer HQ
 
-**Last updated:** 2026-06-09
+**Last updated:** 2026-06-09 (Entry 7)
 
 ---
 
@@ -20,6 +20,13 @@
 - [x] Create `robots.txt` — allow all crawlers, reference sitemap, live at `/robots.txt`
 - [x] Create docs/ documentation framework (CLAUDE.md, DEPLOYMENT.md, PROJECT_STATUS.md, ROADMAP.md, SEO_SETUP.md, AI_HANDOFF.md)
 - [x] Establish session log standard and startup/shutdown procedures
+- [x] Infrastructure complete (2026-06-09):
+  - [x] Cloudflare deployment confirmed auto-deploying on push to `main`
+  - [x] Google Search Console verified via Cloudflare DNS TXT record
+  - [x] Sitemap (14 URLs) submitted to GSC
+  - [x] GA4 property active — Measurement ID `G-KNC6546GMH`
+  - [x] `docs/01_product/CONTENT_ROADMAP.md` — Top 20 guides with priority, search intent, monetization score
+  - [x] `docs/01_product/MONETIZATION_PLAN.md` — Amazon Associates, Walmart, Impact, CJ, display ads milestones
 - [x] Analytics foundation:
   - [x] GA4 tracking code installed in `script.js` (IIFE #10) — **`G-KNC6546GMH` ACTIVE as of 2026-06-09**
   - [x] GSC verification meta tag in `index.html` — placeholder code, ready to activate
@@ -47,7 +54,7 @@
 - [ ] **Write first Home Products guide** — pick from backlog (recommend: Best Robot Vacuums for Every Budget)
 
 ### SEO and Analytics
-- [ ] **Activate Google Search Console** — placeholder meta tag in `index.html`; get verification code from GSC → update `index.html` → push → click Verify → submit sitemap. See `docs/05_research/SEARCH_CONSOLE_SETUP.md`
+- [x] **Activate Google Search Console** — verified 2026-06-09 via Cloudflare DNS TXT record; sitemap (14 URLs) submitted to GSC
 - [x] **Activate GA4** — `G-KNC6546GMH` installed in `script.js` IIFE #10; tracking live on all pages as of 2026-06-09
 - [ ] **Apply for Amazon Associates** — see application checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`; write 2 more full guides before applying
 

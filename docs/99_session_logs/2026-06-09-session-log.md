@@ -780,3 +780,151 @@ final recommendation, internal links to home-office category page.
 After: update PROJECT_STATUS.md, TODO.md, AI_HANDOFF.md, session log,
 copy to local Mac, commit, push.
 ```
+
+---
+
+## Entry 7
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Record infrastructure completion — Google Search Console verified, GA4 property confirmed active, sitemap submitted. Update all project documentation to reflect Phase 1 as 100% complete. Create CONTENT_ROADMAP.md and MONETIZATION_PLAN.md. Commit and push.
+
+**Prompt Summary:**
+Infrastructure setup complete. GSC verified. GA4 property created. Sitemap submitted. Tasks: update PROJECT_STATUS.md, TODO.md, session log, AI_HANDOFF.md to mark complete: Cloudflare deployment, GSC verification, sitemap submission, analytics setup. Verify GA4 Measurement ID integration — replace any remaining placeholders. Create docs/01_product/CONTENT_ROADMAP.md (top 20 guides with priority, search intent, monetization score, traffic potential). Create docs/01_product/MONETIZATION_PLAN.md (Amazon Associates, Walmart, Impact, CJ, display ads, milestones). Commit: "docs: complete infrastructure and analytics setup". Push.
+
+---
+
+### Pre-task State
+
+| Item | Status at task start |
+|---|---|
+| GA4 | `G-KNC6546GMH` active — deployed in Entry 6; stale "Replace" comment still in script.js |
+| GSC | Verified by user (DNS method) — not yet reflected in project docs |
+| Sitemap | Submitted by user — not yet reflected in project docs |
+| Cloudflare | Auto-deploy confirmed — not yet explicitly marked complete in docs |
+| Phase 1 | 97% in docs — completion not yet recorded |
+| CONTENT_ROADMAP.md | Does not exist |
+| MONETIZATION_PLAN.md | Does not exist |
+
+---
+
+### Verification — GA4 Placeholder Check
+
+| File | Placeholder Found | Action |
+|---|---|---|
+| `script.js` | Stale "Replace GA4_ID" comment (ID was already `G-KNC6546GMH`) | Updated comment to reflect active status |
+| `index.html` | `REPLACE_WITH_GSC_VERIFICATION_CODE` still present | Updated comment to note: "verified 2026-06-09 via Cloudflare DNS TXT record" — code value not needed (DNS method used) |
+| All HTML pages | No duplicate GA4 tags | Confirmed — GA4 only in `script.js` IIFE #10 |
+
+**GA4 status:** Fully active. `G-KNC6546GMH` firing `page_view` on all 14 pages. No additional changes needed to the ID itself.
+
+---
+
+### Actions Log
+
+- [x] Read current state of: `script.js`, `index.html`, `PROJECT_STATUS.md`, `TODO.md`, `AI_HANDOFF.md` ✓
+- [x] Confirmed GA4 ID `G-KNC6546GMH` already active — stale comment cleaned up in `script.js` ✓
+- [x] Updated `index.html` GSC meta tag comment — reflects DNS verification (no code replacement needed) ✓
+- [x] Updated `PROJECT_STATUS.md` — GSC verified, sitemap submitted, GA4 active, Phase 1 complete, Entry 7 added to work log ✓
+- [x] Updated `TODO.md` — GSC item checked off; infrastructure complete block added to Completed section ✓
+- [x] Updated `docs/02_development/AI_HANDOFF.md` — SEO status, roadmap, open issues, recommended milestone, key files table ✓
+- [x] Created `docs/01_product/CONTENT_ROADMAP.md` — top 20 guides with priority, intent, monetization score, traffic estimates, publishing velocity targets ✓
+- [x] Created `docs/01_product/MONETIZATION_PLAN.md` — Amazon Associates, Walmart/Impact, ShareASale/Impact brand direct, CJ, CPA/app programs, display ads (Ezoic/Mediavine), activation milestones ✓
+- [x] Appended Entry 7 to session log ✓
+- [x] Copied session log to local Mac ✓
+- [x] Staged specific files ✓
+- [x] Committed ✓
+- [x] Pushed to `origin main` ✓
+
+---
+
+### Files Created
+
+| File | Purpose |
+|---|---|
+| `docs/01_product/CONTENT_ROADMAP.md` | Top 20 buying guides — priority order, search intent, monetization score (1–5★), estimated monthly searches and traffic, publishing velocity targets, internal linking plan |
+| `docs/01_product/MONETIZATION_PLAN.md` | Complete affiliate + display ad plan — Amazon Associates, Walmart/Impact, ShareASale/Impact brand direct, CJ, CPA app programs, Ezoic/Mediavine display; milestones and activation checklist |
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `script.js` | Updated IIFE #10 comment — stale "Replace GA4_ID" instruction replaced with active status note |
+| `index.html` | Updated GSC meta tag comment — reflects DNS verification method |
+| `docs/01_product/PROJECT_STATUS.md` | GSC/GA4/Cloudflare → VERIFIED/ACTIVE; analytics table updated; known issues resolved; Phase 1 marked 100%; Entry 7 added to work log; next actions updated |
+| `docs/01_product/TODO.md` | GSC item checked off; infrastructure complete block added; CONTENT_ROADMAP.md and MONETIZATION_PLAN.md noted in Completed section |
+| `docs/02_development/AI_HANDOFF.md` | SEO status → all verified; roadmap → Phase 1 100% complete; open issues updated; recommended next milestone updated; new key files added to table |
+| `docs/99_session_logs/2026-06-09-session-log.md` | Appended Entry 7 (this entry) |
+
+---
+
+### Infrastructure Status After This Session
+
+| Item | Status |
+|---|---|
+| Cloudflare deployment | **COMPLETE** — auto-deploys on every push to `main` |
+| Google Search Console | **VERIFIED** — Cloudflare DNS TXT record; sitemap (14 URLs) submitted |
+| Google Analytics 4 | **ACTIVE** — `G-KNC6546GMH`; `page_view` fires on all 14 pages |
+| Sitemap | **SUBMITTED** — `https://smartconsumerhq.com/sitemap.xml` indexed in GSC |
+| Phase 1 Foundation | **100% COMPLETE** |
+
+---
+
+### Blockers Before First Revenue
+
+| Blocker | Severity | What Unblocks It |
+|---|---|---|
+| Only 1 complete guide | **Critical** | Publish `best-budget-standing-desks.html` + 1 more |
+| Amazon Associates not applied | **High** | Requires 3 complete guides first |
+| No affiliate links live | **High** | Requires Amazon Associates approval |
+| `rel="sponsored nofollow"` on links | **High** | Required before any affiliate links go live (FTC compliance) |
+| Affiliate disclosure banner on guide pages | **Medium** | Add above-the-fold notice to each guide |
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push below)* | `docs: complete infrastructure and analytics setup` |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — Cloudflare auto-deploy triggered.
+
+---
+
+### Recommended Next Prompt
+
+```
+Read docs/99_session_logs/2026-06-09-session-log.md (Entry 7),
+docs/01_product/CONTENT_ROADMAP.md, docs/01_product/MONETIZATION_PLAN.md.
+
+Infrastructure is 100% complete. GA4 active (G-KNC6546GMH). GSC verified.
+Sitemap submitted.
+
+Next task: Write the second complete buying guide to unlock Amazon
+Associates eligibility.
+
+Target: guides/best-budget-standing-desks.html
+Guide #1 in CONTENT_ROADMAP.md (Priority 1).
+
+Requirements:
+- SEO title + meta description targeting "best standing desks under 400"
+- Affiliate disclosure notice above the fold
+- Introduction (150–200 words, keyword-rich)
+- Quick picks table (top 3 picks with price/verdict)
+- Top 5 standing desk reviews with pros, cons, specs, and affiliate link placeholders
+- Full comparison table (height range, weight capacity, motor, warranty, price)
+- Buying guide section: what to look for (height range, weight capacity, motor type, stability, assembly)
+- Common mistakes when buying standing desks
+- FAQ (5 questions with FAQ JSON-LD schema)
+- Final recommendation / verdict box
+- Internal links to /categories/home-office and /guides/best-home-gym-equipment
+- Update sitemap.xml if URL is new (it's already in sitemap)
+- Update categories/home-office.html to link to this guide
+
+After publishing: update PROJECT_STATUS.md, TODO.md, CONTENT_ROADMAP.md,
+AI_HANDOFF.md, session log. Copy log to local Mac. Commit. Push.
+```

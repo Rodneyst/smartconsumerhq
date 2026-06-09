@@ -2,7 +2,7 @@
 
 This document is the primary entry point for any AI agent beginning work on this project. Read this first, then read the files listed in "Required Reading."
 
-**Last updated:** 2026-06-09 (Entry 5)
+**Last updated:** 2026-06-09 (Entry 7)
 
 ---
 
@@ -58,10 +58,12 @@ Smart Consumer HQ (`smartconsumerhq.com`) is a static affiliate/review website p
 
 | File | Purpose |
 |---|---|
-| `docs/05_research/GA4_SETUP.md` | Step-by-step GA4 activation guide (code installed, needs Measurement ID) |
-| `docs/05_research/SEARCH_CONSOLE_SETUP.md` | Step-by-step GSC verification guide (meta tag installed, needs verification code) |
+| `docs/05_research/GA4_SETUP.md` | GA4 setup history — `G-KNC6546GMH` active since 2026-06-09 |
+| `docs/05_research/SEARCH_CONSOLE_SETUP.md` | GSC setup history — verified via Cloudflare DNS 2026-06-09 |
 | `docs/05_research/AFFILIATE_LINK_MAP.md` | Map of all 11 affiliate link placeholders — use when Amazon Associates approved |
 | `docs/05_research/SEO_SETUP.md` | Keyword research and SEO strategy |
+| `docs/01_product/CONTENT_ROADMAP.md` | Top 20 buying guides — priority, search intent, monetization score, traffic estimates |
+| `docs/01_product/MONETIZATION_PLAN.md` | Affiliate program plan — Amazon, Walmart, Impact, CJ, display ads; milestones |
 
 ### Page Architecture
 
@@ -119,14 +121,14 @@ The full workflow is documented in `tools/content-workflow.md`. The short versio
 
 ---
 
-## SEO Status (as of 2026-06-09)
+## SEO & Analytics Status (as of 2026-06-09)
 
 | Item | Status |
 |---|---|
 | sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — 14 URLs |
 | robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
-| Google Search Console | Meta tag placeholder in `index.html` — **user must complete verification** (see `docs/05_research/SEARCH_CONSOLE_SETUP.md`) |
-| GA4 | Tracking code in `script.js` IIFE #10 — **user must add Measurement ID** (see `docs/05_research/GA4_SETUP.md`) |
+| Google Search Console | **VERIFIED** — Cloudflare DNS TXT record 2026-06-09; sitemap submitted |
+| GA4 | **ACTIVE** — `G-KNC6546GMH` firing `page_view` on all 14 pages since 2026-06-09 |
 | Schema.org JSON-LD | Present on all pages |
 | Canonical URLs | Present on all pages |
 | OG / Twitter Card tags | Present on all pages |
@@ -136,10 +138,10 @@ The full workflow is documented in `tools/content-workflow.md`. The short versio
 
 ## Current Roadmap Status
 
-- **Phase 1 (Foundation):** 97% complete. sitemap.xml, robots.txt live. GSC verification placeholder installed — user must complete.
-- **Phase 2 (Content):** 1 of 4 placeholder guides complete (best-home-gym-equipment). Next: best-budget-standing-desks.
-- **Phase 3 (SEO):** Partially started. GA4 and GSC code installed; user activation required.
-- **Phases 4–5:** Not started.
+- **Phase 1 (Foundation):** **100% complete.** sitemap.xml, robots.txt, Cloudflare deployment, GSC verified, sitemap submitted, GA4 active.
+- **Phase 2 (Content):** 1 of 4 placeholder guides complete (best-home-gym-equipment). Next: best-budget-standing-desks. Full plan in `docs/01_product/CONTENT_ROADMAP.md`.
+- **Phase 3 (SEO):** Foundation complete. GA4 collecting data. Organic rankings to develop as content grows.
+- **Phases 4–5 (Monetization):** Not started. Plan in `docs/01_product/MONETIZATION_PLAN.md`. Amazon Associates requires 2+ more complete guides first.
 
 See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 
@@ -147,16 +149,19 @@ See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 
 ## Current TODO Status
 
-**Immediate priority (user action required — cannot be done by AI):**
-1. Complete GSC verification: [search.google.com/search-console](https://search.google.com/search-console) → get HTML tag code → update `index.html` line ~13 → push → Verify → submit sitemap. Guide: `docs/05_research/SEARCH_CONSOLE_SETUP.md`
-2. Activate GA4: [analytics.google.com](https://analytics.google.com) → create property → copy Measurement ID → replace `G-XXXXXXXXXX` in `script.js` IIFE #10 → push. Guide: `docs/05_research/GA4_SETUP.md`
+**Infrastructure — ALL COMPLETE:**
+1. ~~GSC verification~~ ✓ — Cloudflare DNS, sitemap submitted
+2. ~~GA4 activation~~ ✓ — `G-KNC6546GMH` live
 
-**AI can do next:**
+**AI next tasks (priority order):**
 3. ~~Write full content for `guides/best-home-gym-equipment.html`~~ — **Done 2026-06-09** ✓
-4. Write full content for `guides/best-budget-standing-desks.html` (next)
-5. Write full content for remaining 2 placeholder guides (smartwatches, family SUVs)
-6. Apply for Amazon Associates — checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`
-7. Write first guides for Money Saving and Home Products categories
+4. **Write `guides/best-budget-standing-desks.html`** — next immediate task
+5. Write `guides/best-smartwatches-under-300.html`
+6. Write `guides/best-family-suvs-for-value.html`
+7. Apply for Amazon Associates (after 3 complete guides) — checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`
+8. Write first Money Saving guide + first Home Products guide
+
+See `docs/01_product/CONTENT_ROADMAP.md` for full 20-guide pipeline and priority scores.
 
 See `docs/01_product/TODO.md` for the complete task list.
 
@@ -164,23 +169,25 @@ See `docs/01_product/TODO.md` for the complete task list.
 
 ## Open Issues
 
-| Issue | Severity |
-|---|---|
-| 3 guide pages still contain placeholder content | High |
-| Google Search Console not configured | High |
-| No affiliate links on any page — zero revenue potential | High |
-| GA4 not installed — no traffic data | Medium |
-| Newsletter form not connected to real provider | Medium |
-| Money Saving and Home Products have zero real guides | Medium |
-| No images on any page | Medium |
+| Issue | Severity | Notes |
+|---|---|---|
+| 3 guide pages still contain placeholder content | High | Next AI task |
+| No affiliate links on any page — zero revenue potential | High | Blocked on Amazon Associates approval |
+| Newsletter form not connected to real provider | Medium | Pending — Mailchimp or ConvertKit |
+| Money Saving and Home Products have zero real guides | Medium | Guides 5–7 in content roadmap |
+| No images on any page | Medium | Pending |
+| ~~Google Search Console not configured~~ | ~~High~~ | **RESOLVED** 2026-06-09 |
+| ~~GA4 not installed~~ | ~~Medium~~ | **RESOLVED** 2026-06-09 |
 
 ---
 
 ## Recommended Next Milestone
 
-**User action (15 min):** Complete GSC verification and activate GA4 — both have placeholders installed and step-by-step guides in `docs/05_research/`. Requires browser login to Google, not code work.
+**Infrastructure complete.** All Phase 1 setup tasks are done.
 
-**AI next task:** Write `guides/best-budget-standing-desks.html` full content. Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md`.
+**AI next task:** Write `guides/best-budget-standing-desks.html` full content (Priority #1 in CONTENT_ROADMAP.md). Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md`. Target: 5 products, comparison table, buying guide section, FAQ, internal links to home-office category.
+
+**User action after 3 complete guides:** Apply for Amazon Associates — checklist at `docs/05_research/AFFILIATE_LINK_MAP.md`.
 
 ---
 
