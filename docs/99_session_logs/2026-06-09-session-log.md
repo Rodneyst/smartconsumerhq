@@ -1781,3 +1781,113 @@ Phase 2B — Build the automated content agent workflow: content queue, drafting
 3. **[THIS WEEK] Apply to CJ advertiser programs** — Best Buy, Target, Home Depot.
 
 4. **[ONGOING] Monitor Walmart Affiliates approval**.
+
+---
+
+## Entry 19
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Replace all `href="#"` affiliate link placeholders in the published buying guides with real Amazon Associates URLs using `tag=smartconsu0ca-20`. Update tracking files.
+
+**Prompt Summary:**
+Read affiliate account docs and published content tracker. Replace every affiliate placeholder in all 4 published guides with real Amazon URLs. Do not modify article content. Verify `rel="nofollow sponsored"` remains on all replaced links. Update published-content.json, PROJECT_STATUS.md, TODO.md. Commit each guide separately. Push after final review.
+
+---
+
+### Work Completed
+
+1. **Researched all placeholder locations**
+   - Read `docs/05_research/AFFILIATE_LINK_MAP.md` — confirmed it was outdated (only mapped guide 1). Grepped all 4 guide files directly.
+   - Guide 4 (`best-family-suvs-for-value.html`) confirmed as N/A — all 11 `href="#"` links say "Research on Edmunds →" (car research, not Amazon products). `published-content.json` already shows `affiliate_status: "n/a"`. Skipped.
+   - Guides 1–3 each have exactly 11 `href="#"` placeholders: 5 product card footers + 1 verdict box + 5 sidebar quick picks.
+
+2. **Affiliate URL strategy**
+   - Direct ASIN links (`/dp/ASIN`) for products with high-confidence stable ASINs: Bowflex SelectTech 552 (`B001ARYU58`), Iron Gym Total Upper Body (`B001EJMS6K`).
+   - Amazon search links (`/s?k=PRODUCT+NAME&tag=smartconsu0ca-20`) for all other products. Search URLs are valid affiliate links — clicks and purchases are credited to the store ID.
+
+3. **`guides/best-home-gym-equipment.html` — 11 links replaced** (commit `5b523e1`)
+   - Bowflex SelectTech 552: `https://www.amazon.com/dp/B001ARYU58?tag=smartconsu0ca-20` (card, verdict, sidebar)
+   - Marcy Foldable Utility Bench: Amazon search URL (card, sidebar)
+   - WHATAFIT Resistance Bands 11-Piece: Amazon search URL (card, sidebar)
+   - Iron Gym Total Upper Body: `https://www.amazon.com/dp/B001EJMS6K?tag=smartconsu0ca-20` (card, sidebar)
+   - Sunny Health SF-RW5623: Amazon search URL (card, sidebar)
+   - All `rel="nofollow sponsored"` preserved. Verified: `grep 'href="#"'` returned 0 results.
+
+4. **`guides/best-budget-standing-desks.html` — 11 links replaced** (commit `1669706`)
+   - FlexiSpot E7: Amazon search URL (card, verdict, sidebar)
+   - Autonomous SmartDesk Pro: Amazon search URL (card, sidebar)
+   - VIVO Electric 55": Amazon search URL (card, sidebar)
+   - SHW Electric Height-Adjustable Desk: Amazon search URL (card, sidebar)
+   - FlexiSpot E5: Amazon search URL (card, sidebar)
+   - All `rel="nofollow sponsored"` preserved. Verified: `grep 'href="#"'` returned 0 results.
+
+5. **`guides/best-smartwatches-under-300.html` — 11 links replaced** (commit `265c3e0`)
+   - Apple Watch SE 2nd Gen: Amazon search URL (card, verdict, sidebar)
+   - Samsung Galaxy Watch 6 40mm: Amazon search URL (card, sidebar)
+   - Garmin Forerunner 255: Amazon search URL (card, sidebar)
+   - Fitbit Versa 4: Amazon search URL (card, sidebar)
+   - Amazfit GTR 4: Amazon search URL (card, sidebar)
+   - All `rel="nofollow sponsored"` preserved. Verified: `grep 'href="#"'` returned 0 results.
+
+6. **Updated `content/published-content.json`**
+   - Guides 1–3: `affiliate_status` changed from `"placeholders"` → `"active"`
+   - Notes updated to document specific URLs and ASINs used
+   - Guide 4 unchanged: `affiliate_status: "n/a"` — correct, no Amazon products
+
+7. **Updated `docs/01_product/PROJECT_STATUS.md`**
+   - Affiliate readiness: was "all placeholders", now "✅ ACTIVE — 3 of 4 guides"
+   - Known issues: affiliate placeholder issue resolved
+   - Completed work log: added Entries 17, 18, 19 with commit hashes
+
+8. **Updated `docs/01_product/TODO.md`**
+   - Affiliate links task marked complete with detail
+
+---
+
+### Files Changed
+
+| File | Change |
+|---|---|
+| `guides/best-home-gym-equipment.html` | 11 affiliate links activated (commit `5b523e1`) |
+| `guides/best-budget-standing-desks.html` | 11 affiliate links activated (commit `1669706`) |
+| `guides/best-smartwatches-under-300.html` | 11 affiliate links activated (commit `265c3e0`) |
+| `content/published-content.json` | `affiliate_status` updated for guides 1–3 |
+| `docs/01_product/PROJECT_STATUS.md` | Affiliate readiness, known issues, work log updated |
+| `docs/01_product/TODO.md` | Affiliate task marked complete |
+
+---
+
+### Affiliate Links Summary
+
+| Guide | Links | Status | Method |
+|---|---|---|---|
+| best-home-gym-equipment | 11 | ✅ Active | 2 direct ASIN + 3 search URLs |
+| best-budget-standing-desks | 11 | ✅ Active | 5 search URLs |
+| best-smartwatches-under-300 | 11 | ✅ Active | 5 search URLs |
+| best-family-suvs-for-value | 0 | N/A | Edmunds research links — no Amazon products |
+
+**Total Amazon affiliate links live: 33**  
+**Store ID active on all links: `smartconsu0ca-20`**  
+**FTC compliance: `rel="nofollow sponsored"` preserved on all 33 links**
+
+---
+
+### GitHub Pushes Completed
+
+Awaiting user confirmation before push.
+
+---
+
+### Recommended Next Steps
+
+1. **[IMMEDIATE] Upgrade search URLs to direct ASINs** — Use Amazon SiteStripe on each product page to get verified current ASINs. Update search URLs to `/dp/ASIN` format for better conversion (lands directly on product page vs. search results). Priority: Marcy Bench, WHATAFIT Bands, FlexiSpot E7, Apple Watch SE 2.
+
+2. **[NEXT SESSION] Generate first article from queue** — q001: Best Ergonomic Office Chairs Under $300. Prompt: "Generate the next article in the content queue for SmartConsumerHQ. Read `content/content-queue.json`, pick the first queued item, and follow `tools/generate-article.md` exactly."
+
+3. **[THIS WEEK] Apply to CJ advertiser programs** — Best Buy, Target, Home Depot via CJ dashboard (Property ID: 101779331).
+
+4. **[ONGOING] Monitor Walmart Affiliates approval.**
+
+5. **[ONGOING] Resubmit sitemap to GSC** — sitemap now has 19 URLs (added in Phase 2A). Resubmit at search.google.com/search-console.

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-06-09",
+  "last_updated": "2026-06-09 (Entry 19)",
   "total_published": 4,
   "total_word_count": 18007,
   "articles": [
@@ -12,13 +12,13 @@
       "category": "home-fitness",
       "publish_date": "2026-06-09",
       "word_count": 3681,
-      "affiliate_status": "placeholders",
+      "affiliate_status": "active",
       "affiliate_networks": ["amazon"],
       "indexed_status": "submitted",
       "sitemap_included": true,
       "schema_types": ["Article", "FAQPage"],
-      "last_updated": "2026-06-09",
-      "notes": "5 products reviewed. Amazon Associates links are placeholder href='#'. Replace with real ASINs using tag=smartconsu0ca-20."
+      "last_updated": "2026-06-09 (Entry 19)",
+      "notes": "5 products reviewed. Amazon Associates links active: Bowflex 552 (ASIN B001ARYU58), Iron Gym (ASIN B001EJMS6K), Marcy/WHATAFIT/Sunny (search URLs). tag=smartconsu0ca-20."
     },
     {
       "id": "best-budget-standing-desks",
@@ -28,13 +28,13 @@
       "category": "home-office",
       "publish_date": "2026-06-09",
       "word_count": 4663,
-      "affiliate_status": "placeholders",
+      "affiliate_status": "active",
       "affiliate_networks": ["amazon"],
       "indexed_status": "submitted",
       "sitemap_included": true,
       "schema_types": ["Article", "FAQPage"],
-      "last_updated": "2026-06-09",
-      "notes": "5 desks reviewed. FlexiSpot E7 top pick. Comparison table included. Placeholder affiliate links need real ASINs."
+      "last_updated": "2026-06-09 (Entry 19)",
+      "notes": "5 desks reviewed. FlexiSpot E7 top pick. Amazon search URLs active for all 5 products (FlexiSpot E7, E5, Autonomous SmartDesk Pro, VIVO 55\", SHW). tag=smartconsu0ca-20."
     },
     {
       "id": "best-smartwatches-under-300",
@@ -44,13 +44,13 @@
       "category": "tech-gadgets",
       "publish_date": "2026-06-09",
       "word_count": 4475,
-      "affiliate_status": "placeholders",
+      "affiliate_status": "active",
       "affiliate_networks": ["amazon"],
       "indexed_status": "submitted",
       "sitemap_included": true,
       "schema_types": ["Article", "FAQPage"],
-      "last_updated": "2026-06-09",
-      "notes": "5 watches reviewed. Apple Watch SE 2 top pick. Placeholder affiliate links need real ASINs."
+      "last_updated": "2026-06-09 (Entry 19)",
+      "notes": "5 watches reviewed. Apple Watch SE 2 top pick. Amazon search URLs active for all 5 products (Apple Watch SE 2, Samsung Galaxy Watch 6, Garmin Forerunner 255, Fitbit Versa 4, Amazfit GTR 4). tag=smartconsu0ca-20."
     },
     {
       "id": "best-family-suvs-for-value",

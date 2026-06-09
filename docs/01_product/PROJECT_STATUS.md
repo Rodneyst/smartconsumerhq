@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 18)
+**Last updated:** 2026-06-09 (Entry 19)
 
 ---
 
@@ -197,7 +197,7 @@ See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.m
 
 | Item | Status |
 |---|---|
-| Affiliate links | All guides have `href="#"` placeholders — replace with real URLs using tag `smartconsu0ca-20` |
+| Affiliate links | ✅ **ACTIVE** — 3 of 4 guides have real Amazon URLs (tag `smartconsu0ca-20`). Guide 4 (Family SUVs) is N/A — Edmunds research links only. |
 | Amazon Associates | ✅ **ACTIVE** — Store ID: `smartconsu0ca-20` · Direct Deposit · USAA Checking |
 | CJ Affiliate | ✅ **ACTIVE** — Property ID: `101779331` · no advertiser programs joined yet |
 | Walmart Affiliates | ⏳ **Pending** — application submitted |
@@ -229,7 +229,7 @@ The site is built as an affiliate content business:
 | Google Search Console not verified | ~~High~~ | **RESOLVED** — Verified via Cloudflare DNS 2026-06-09; sitemap submitted |
 | GA4 not active | ~~Medium~~ | **RESOLVED** — `G-KNC6546GMH` activated 2026-06-09 |
 | Newsletter form not connected to real provider | Medium | Pending |
-| Affiliate links still `href="#"` placeholders | High | Amazon Associates active (`smartconsu0ca-20`) — replace with real product URLs |
+| ~~Affiliate links still `href="#"` placeholders~~ | ~~High~~ | **RESOLVED** — Real Amazon URLs active in guides 1–3. Guide 4 (Family SUVs) has Edmunds links only (N/A). |
 | Money Saving and Home Products have no real guides | Medium | Pending |
 | No images on any page | Medium | Pending |
 
@@ -256,6 +256,11 @@ The site is built as an affiliate content business:
 | 2026-06-09 | *(Entry 10)* | **Guide #2 published** — `guides/best-budget-standing-desks.html` full content: 4,663 words, 5 desks reviewed, dual comparison tables, FAQ + Article JSON-LD schema, buying guide, common mistakes, affiliate link placeholders |
 | 2026-06-09 | *(Entry 11)* | **Guide #3 published** — `guides/best-smartwatches-under-300.html` full content: 4,475 words, 5 watches reviewed, full specs comparison table, FAQ + Article JSON-LD schema, buying guide, common mistakes, affiliate link placeholders |
 | 2026-06-09 | *(Entry 12)* | **Guide #4 published** — `guides/best-family-suvs-for-value.html` full content: 5,188 words, 5 SUVs reviewed, full specs comparison table, FAQ + Article JSON-LD schema, buying guide, common mistakes. All 4 placeholder guides now complete. |
+| 2026-06-09 | *(Entry 17)* | **Phase 2A complete** — Affiliate config, 5 section pages, content template, product JSON, updated nav, sitemap expanded to 19 URLs. |
+| 2026-06-09 | *(Entry 18)* | **Phase 2B complete** — Automated content agent: 20-article queue, draft staging, generate/publish workflows, review checklist. |
+| 2026-06-09 | `5b523e1` | **Affiliate links active (home gym)** — 11 placeholders replaced with Amazon URLs in `best-home-gym-equipment.html` |
+| 2026-06-09 | `1669706` | **Affiliate links active (standing desks)** — 11 placeholders replaced in `best-budget-standing-desks.html` |
+| 2026-06-09 | `265c3e0` | **Affiliate links active (smartwatches)** — 11 placeholders replaced in `best-smartwatches-under-300.html` |
 
 ---
 

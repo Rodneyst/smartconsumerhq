@@ -1,6 +1,6 @@
 # TODO — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 18)
+**Last updated:** 2026-06-09 (Entry 19)
 
 ---
 
@@ -44,8 +44,8 @@
 
 ## High Priority
 
-### Affiliate Links (do this first — zero revenue until done)
-- [ ] **Replace `href="#"` affiliate placeholders in all 4 guides** with real Amazon URLs `?tag=smartconsu0ca-20`. Reference `docs/05_research/AFFILIATE_LINK_MAP.md` for all locations.
+### Affiliate Links
+- [x] **Replace `href="#"` affiliate placeholders in guides 1–3** with real Amazon URLs `?tag=smartconsu0ca-20`. 33 links replaced across `best-home-gym-equipment.html`, `best-budget-standing-desks.html`, `best-smartwatches-under-300.html`. Guide 4 (Family SUVs) skipped — Edmunds research links, N/A. ✓ (Entry 19)
 
 ### Content Automation Pipeline (Phase 2B — complete)
 - [x] **Content queue created** — `content/content-queue.json` — 20 articles, priorities 1–20 ✓
