@@ -1,6 +1,6 @@
 # TODO — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 19 — post-deployment verified)
+**Last updated:** 2026-06-09 (Entry 20)
 
 ---
 
@@ -55,9 +55,9 @@
 - [x] **Publish article workflow** — `tools/publish-article.md` — review-gated publish process ✓
 - [x] **AUTOMATED_CONTENT_AGENT.md** — full agent handoff documentation ✓
 - [x] **ARTICLE_REVIEW_CHECKLIST.md** — human review checklist before publishing ✓
-- [ ] **Generate next article** — run generate workflow for queue item `q001` (Best Ergonomic Office Chairs Under $300)
-- [ ] **Review and approve draft** — use `ARTICLE_REVIEW_CHECKLIST.md`
-- [ ] **Publish approved draft** — run publish workflow for approved item
+- [x] **Generate next 10 articles** — q001–q010 drafted in `content/drafts/`, status: review_needed (Entry 20) ✓
+- [ ] **Review and approve drafts** — use `docs/02_development/ARTICLE_REVIEW_CHECKLIST.md`. Start with q001 (ergonomic chairs) — highest commercial intent
+- [ ] **Publish approved drafts** — run publish workflow for each approved item; commit each guide separately
 
 ### Content (Phase 2 — published guides)
 - [x] **Write full content: `guides/best-home-gym-equipment.html`** — 3,681 words. Audited 2026-06-09 ✓

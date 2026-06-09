@@ -1957,3 +1957,83 @@ None. Zero broken pages, zero missing assets, zero affiliate link errors. All 33
 4. **[ONGOING] Monitor Walmart Affiliates approval.**
 
 5. **[ONGOING] Resubmit sitemap to GSC** — sitemap now has 19 URLs (added in Phase 2A). Resubmit at search.google.com/search-console.
+
+---
+
+## Entry 20
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Generate the next 10 highest-priority buying guide articles from the content queue and stage them for review.
+
+**Prompt Summary:**
+Review content/content-queue.json. Generate the next 10 highest-priority articles. Follow existing article templates, SEO optimized, affiliate opportunities where appropriate. Save to content/drafts. Mark status as review_needed. Update content queue, PROJECT_STATUS.md, TODO.md, session log. Do not publish.
+
+---
+
+### Work Completed
+
+1. **Read content/content-queue.json** — Identified q001–q010 as the next 10 highest-priority drafts (priorities 1–10) spanning Home Office, Kitchen Tools, Tech & Gadgets, Home Fitness, and Family & Parenting categories.
+
+2. **Generated 10 buying guide HTML articles** — Each article follows the exact structural template of published guides: full SEO head, Article + FAQPage JSON-LD, breadcrumb, page-hero, disclosure box, 3-paragraph intro, quick-picks table, 5 product cards with pros/cons, comparison table, buying guide section, common mistakes section, FAQ accordion (6 questions), verdict box, related guides, article sidebar.
+
+3. **Post-generation structural fixes applied to all 10 files:**
+   - **Paths corrected**: `../../` → `../` for styles.css, components.js, script.js, and all internal links (files are in `content/drafts/` but authored for publication in `guides/`)
+   - **FAQ markup corrected**: `<details>/<summary>` replaced with correct `<div class="faq-item"><button class="faq-question" aria-expanded="false">...<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">` pattern matching all published guides
+   - **Cross-draft links**: Links to other drafted articles point to `../guides/` (their future published location)
+
+4. **Affiliate link verification** — All 10 drafts: 11 affiliate links each (110 total), 0 `href="#"` placeholders, 11 `rel="nofollow sponsored"` per file. All links use `tag=smartconsu0ca-20`.
+
+5. **Updated content/content-queue.json** — q001–q010 status changed from `queued` → `review_needed`.
+
+6. **Updated PROJECT_STATUS.md, TODO.md** — Content system status updated to reflect 10 drafts awaiting review.
+
+---
+
+### Draft Files Created
+
+| Priority | File | Lines | Top Pick | Category |
+|---|---|---|---|---|
+| 1 | `content/drafts/best-ergonomic-office-chairs-under-300.html` | 630 | Flexispot BS9 | Home Office |
+| 2 | `content/drafts/best-air-fryers-under-150.html` | 626 | Cosori Pro II | Kitchen Tools |
+| 3 | `content/drafts/best-wireless-earbuds-under-100.html` | 627 | Sony WF-C700N | Tech & Gadgets |
+| 4 | `content/drafts/best-resistance-bands-home-workouts.html` | 626 | Fit Simplify 5-Pack | Home Fitness |
+| 5 | `content/drafts/best-instant-pots-pressure-cookers.html` | 625 | Instant Pot Duo 7-in-1 | Kitchen Tools |
+| 6 | `content/drafts/best-yoga-mats-under-100.html` | 627 | Manduka PRO Lite | Home Fitness |
+| 7 | `content/drafts/best-coffee-makers-under-100.html` | 625 | Cuisinart DCC-3200P1 | Kitchen Tools |
+| 8 | `content/drafts/best-laptop-stands-work-from-home.html` | 627 | Nexstand K2 | Home Office |
+| 9 | `content/drafts/best-baby-monitors-2026.html` | 625 | Infant Optics DXR-8 Pro | Family & Parenting |
+| 10 | `content/drafts/best-portable-chargers-power-banks.html` | 627 | Anker 737 24000mAh | Tech & Gadgets |
+
+**Total:** 6,265 lines · 10 files · ~490 KB of HTML · 110 affiliate links ready
+
+---
+
+### Content Queue Status After Entry 20
+
+| Status | Count | Articles |
+|---|---|---|
+| review_needed | 10 | q001–q010 |
+| queued | 10 | q011–q020 |
+| published | 4 | (in published-content.json) |
+
+---
+
+### GitHub Pushes Completed
+
+Awaiting commit and push.
+
+---
+
+### Recommended Next Steps
+
+1. **[IMMEDIATE] Review and approve drafts** — Use `docs/02_development/ARTICLE_REVIEW_CHECKLIST.md`. Start with q001 (`best-ergonomic-office-chairs-under-300`) — highest commercial intent, best internal linking opportunity to standing desks guide.
+
+2. **[IMMEDIATE] Publish approved articles** — Run publish workflow for each approved draft: copy to `guides/`, update `sitemap.xml`, update category page, update `content/published-content.json`, commit each separately.
+
+3. **[HIGH] Generate next 10 articles** — Once q001–q010 are in review, generate q011–q020 to maintain the pipeline.
+
+4. **[MEDIUM] Upgrade Amazon search URLs to direct ASINs** — Use SiteStripe on published guides to get verified ASINs.
+
+5. **[MEDIUM] Apply to CJ advertiser programs** — Best Buy, Target, Home Depot (Property ID: 101779331).

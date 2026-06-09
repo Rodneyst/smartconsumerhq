@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "last_updated": "2026-06-09",
+  "last_updated": "2026-06-09 (Entry 20)",
   "queue": [
     {
       "id": "q001",
@@ -14,9 +14,12 @@
         "ergonomic chair review",
         "best budget office chair"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 1,
       "estimated_word_count": 4500,
       "internal_links": [
@@ -24,7 +27,7 @@
         "/guides/best-budget-standing-desks",
         "/buying-guides"
       ],
-      "notes": "Top picks: Flexispot BS9, Autonomous ErgoChair Pro, Nouhaus Ergo3D, Hbada Ergonomic, Sihoo M57. Budget $150–$300. High commercial intent — strong Amazon conversion category."
+      "notes": "Top picks: Flexispot BS9, Autonomous ErgoChair Pro, Nouhaus Ergo3D, Hbada Ergonomic, Sihoo M57. Budget $150\u2013$300. High commercial intent \u2014 strong Amazon conversion category."
     },
     {
       "id": "q002",
@@ -38,16 +41,20 @@
         "best budget air fryer",
         "air fryer review"
       ],
-      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart",
+        "cj"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 2,
       "estimated_word_count": 4000,
       "internal_links": [
         "/buying-guides",
         "/blog"
       ],
-      "notes": "Top picks: Cosori Pro II, Ninja AF101, Instant Vortex Plus, Philips Essential, COSORI Dual Blaze. Massive search volume. Walmart carries most of these — good dual-network opportunity."
+      "notes": "Top picks: Cosori Pro II, Ninja AF101, Instant Vortex Plus, Philips Essential, COSORI Dual Blaze. Massive search volume. Walmart carries most of these \u2014 good dual-network opportunity."
     },
     {
       "id": "q003",
@@ -61,9 +68,12 @@
         "best earbuds for the money",
         "ANC earbuds under 100"
       ],
-      "affiliate_network_priority": ["amazon", "cj"],
+      "affiliate_network_priority": [
+        "amazon",
+        "cj"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 3,
       "estimated_word_count": 4000,
       "internal_links": [
@@ -71,7 +81,7 @@
         "/guides/best-smartwatches-under-300",
         "/buying-guides"
       ],
-      "notes": "Top picks: Sony WF-C700N, Jabra Elite 4, Anker Soundcore Liberty 4 NC, Samsung Galaxy Buds FE, JLab GO Air ANC. CJ affiliate — Best Buy carries most of these."
+      "notes": "Top picks: Sony WF-C700N, Jabra Elite 4, Anker Soundcore Liberty 4 NC, Samsung Galaxy Buds FE, JLab GO Air ANC. CJ affiliate \u2014 Best Buy carries most of these."
     },
     {
       "id": "q004",
@@ -85,9 +95,12 @@
         "workout resistance bands",
         "loop resistance bands vs tube bands"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 4,
       "estimated_word_count": 3500,
       "internal_links": [
@@ -109,9 +122,13 @@
         "instant pot vs ninja foodi",
         "best multi cooker"
       ],
-      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart",
+        "cj"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 5,
       "estimated_word_count": 4000,
       "internal_links": [
@@ -133,9 +150,12 @@
         "non slip yoga mat",
         "best beginner yoga mat"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 6,
       "estimated_word_count": 3500,
       "internal_links": [
@@ -157,9 +177,13 @@
         "coffee maker buying guide",
         "programmable coffee maker"
       ],
-      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart",
+        "cj"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 7,
       "estimated_word_count": 4000,
       "internal_links": [
@@ -180,9 +204,12 @@
         "laptop stand for desk ergonomics",
         "portable laptop stand"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 8,
       "estimated_word_count": 3500,
       "internal_links": [
@@ -204,9 +231,12 @@
         "baby monitor with wifi",
         "best baby monitor under 200"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 9,
       "estimated_word_count": 4500,
       "internal_links": [
@@ -227,9 +257,13 @@
         "best fast charging power bank",
         "high capacity power bank"
       ],
-      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart",
+        "cj"
+      ],
       "article_type": "buying-guide",
-      "status": "queued",
+      "status": "review_needed",
       "priority": 10,
       "estimated_word_count": 3500,
       "internal_links": [
@@ -237,7 +271,7 @@
         "/guides/best-smartwatches-under-300",
         "/buying-guides"
       ],
-      "notes": "Top picks: Anker 737, Anker 622 MagSafe, Mophie Powerstation, INIU 25600mAh, Baseus 20000mAh. Amazon dominant. Budget range $20–$60. Volume play with decent commissions."
+      "notes": "Top picks: Anker 737, Anker 622 MagSafe, Mophie Powerstation, INIU 25600mAh, Baseus 20000mAh. Amazon dominant. Budget range $20\u2013$60. Volume play with decent commissions."
     },
     {
       "id": "q011",
@@ -251,7 +285,10 @@
         "monitor arm vs stand",
         "best vesa mount arm"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 11,
@@ -275,7 +312,10 @@
         "ceiling mounted pull up bar",
         "pull up bar buying guide"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 12,
@@ -300,7 +340,11 @@
         "knife set buying guide",
         "best chef knife set under 100"
       ],
-      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart",
+        "cj"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 13,
@@ -323,7 +367,10 @@
         "foam roller buying guide",
         "muscle recovery foam roller"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 14,
@@ -348,7 +395,10 @@
         "ergonomic mat for standing",
         "best anti fatigue mat under 100"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 15,
@@ -373,7 +423,10 @@
         "Amazon Fire HD kids review",
         "best kids tablet under 100"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 16,
@@ -397,7 +450,10 @@
         "best budget webcam",
         "webcam for streaming"
       ],
-      "affiliate_network_priority": ["amazon", "cj"],
+      "affiliate_network_priority": [
+        "amazon",
+        "cj"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 17,
@@ -408,7 +464,7 @@
         "/guides/best-laptop-stands-work-from-home",
         "/buying-guides"
       ],
-      "notes": "Top picks: Logitech C920, Logitech Brio 4K, Microsoft LifeCam HD-3000, Razer Kiyo Pro, Anker PowerConf C300. Best Buy carries all — good CJ opportunity."
+      "notes": "Top picks: Logitech C920, Logitech Brio 4K, Microsoft LifeCam HD-3000, Razer Kiyo Pro, Anker PowerConf C300. Best Buy carries all \u2014 good CJ opportunity."
     },
     {
       "id": "q018",
@@ -422,7 +478,11 @@
         "Alexa vs Google Home",
         "best smart plug and bulb set"
       ],
-      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart",
+        "cj"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 18,
@@ -446,7 +506,10 @@
         "tandem stroller vs side by side",
         "best double stroller under 500"
       ],
-      "affiliate_network_priority": ["amazon", "walmart"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 19,
@@ -470,7 +533,11 @@
         "robot vacuum buying guide",
         "Roomba alternatives"
       ],
-      "affiliate_network_priority": ["amazon", "walmart", "cj"],
+      "affiliate_network_priority": [
+        "amazon",
+        "walmart",
+        "cj"
+      ],
       "article_type": "buying-guide",
       "status": "queued",
       "priority": 20,
