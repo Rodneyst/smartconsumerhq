@@ -14,12 +14,37 @@ smartconsumerhq/
 ├── styles.css              # Single global stylesheet for all pages (~37KB)
 ├── script.js               # Shared vanilla JS (header, menu, scroll, forms)
 ├── components.js           # Header/footer injection for category pages
-├── home-fitness.html       # Category page: Home Fitness
-├── home-office.html        # Category page: Home Office
-├── tech-gadgets.html       # Category page: Tech & Gadgets
-├── family-parenting.html   # Category page: Family & Parenting
-├── DEPLOYMENT.md           # Deployment documentation
-└── CLAUDE.md               # This file
+├── sitemap.xml             # XML sitemap (all live URLs)
+├── robots.txt              # Crawler directives
+├── CLAUDE.md               # This file — project guide for AI agents
+│
+├── categories/             # Category landing pages
+│   ├── home-fitness.html
+│   ├── home-office.html
+│   ├── tech-gadgets.html
+│   ├── family-parenting.html
+│   ├── money-saving.html
+│   └── home-products.html
+│
+├── guides/                 # Buying guide articles
+│   ├── best-home-gym-equipment.html
+│   ├── best-budget-standing-desks.html
+│   ├── best-smartwatches-under-300.html
+│   └── best-family-suvs-for-value.html
+│
+├── legal/                  # Legal pages
+│   ├── affiliate-disclosure.html
+│   ├── privacy-policy.html
+│   └── terms-of-use.html
+│
+└── docs/                   # Project documentation
+    ├── 00_founder/         # Vision, goals, success metrics
+    ├── 01_product/         # PROJECT_STATUS.md, ROADMAP.md, TODO.md
+    ├── 02_development/     # DEPLOYMENT.md, AI_HANDOFF.md
+    ├── 03_story/           # Brand narrative, editorial standards
+    ├── 04_design/          # Style references, UI components
+    ├── 05_research/        # SEO_SETUP.md, keyword research
+    └── 99_session_logs/    # Chronological session logs
 ```
 
 ---
@@ -119,7 +144,7 @@ Each guide card in a `.guides-grid`:
 5. Cloudflare Workers & Pages GitHub App deploys automatically (~1–2 min)
 6. Verify at `https://smartconsumerhq.com`
 
-See `DEPLOYMENT.md` for full architecture details.
+See `docs/02_development/DEPLOYMENT.md` for full architecture details.
 
 ---
 

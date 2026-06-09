@@ -144,7 +144,7 @@ Beyond buying guides, add informational content that captures earlier-funnel sea
 - [ ] Confirm Cloudflare caching headers are correct
 
 ### 3.5 Keyword Strategy
-See `SEO_SETUP.md` for detailed keyword research approach.
+See `docs/05_research/SEO_SETUP.md` for detailed keyword research approach.
 
 - [ ] Build master keyword list for all 6 categories
 - [ ] Map one primary keyword per guide page
