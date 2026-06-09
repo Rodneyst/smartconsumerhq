@@ -1209,3 +1209,66 @@ Publish Guide #2: `guides/best-budget-standing-desks.html` — full 3,000+ word 
 ### GitHub Pushes Completed
 
 1 push to `origin main` — Cloudflare auto-deploy triggered.
+
+---
+
+## Entry 11
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Publish Guide #3: `guides/best-smartwatches-under-300.html` — full 3,500+ word article targeting "best smartwatches under $300".
+
+---
+
+### Work Completed
+
+1. **Wrote and published `guides/best-smartwatches-under-300.html`** — Full rewrite of placeholder file. 4,475 words.
+
+2. **Article structure:**
+   - SEO title targeting "best smartwatches under $300"
+   - Canonical URL: `https://smartconsumerhq.com/guides/best-smartwatches-under-300`
+   - Affiliate disclosure above fold
+   - Introduction (3 paragraphs on ecosystem selection)
+   - Quick picks table (5 watches)
+   - 5 full product reviews with pros/cons: Apple Watch SE 2, Samsung Galaxy Watch 6, Garmin Forerunner 255, Fitbit Versa 4, Amazfit GTR 4
+   - Full specs comparison table (7 columns)
+   - Buying guide (5 factors: compatibility, battery, GPS, health sensors, app ecosystem)
+   - Common mistakes (5 items)
+   - 6-question FAQ accordion
+   - Verdict box with final recommendations by use case
+   - Internal links to all 3 existing guides + tech-gadgets category
+
+3. **Schema.org JSON-LD:** Article + FAQPage schemas
+
+4. **Affiliate links:** 10 `href="#" rel="nofollow sponsored" target="_blank"` placeholders
+
+5. **Updated documentation:**
+   - PROJECT_STATUS.md — status updated to "Live — 4,475 words", count 3 of 4 guides
+   - TODO.md — smartwatches marked complete
+   - CONTENT_ROADMAP.md — Guide #2 status: Placeholder → Complete
+   - AI_HANDOFF.md — phase 2 updated (3 of 4 complete), next = family SUVs
+
+---
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `guides/best-smartwatches-under-300.html` | Full rewrite — 4,475 words |
+| `docs/01_product/PROJECT_STATUS.md` | Guide status + count updated |
+| `docs/01_product/TODO.md` | Smartwatches marked complete |
+| `docs/01_product/CONTENT_ROADMAP.md` | Guide #2 status: Placeholder → Complete |
+| `docs/02_development/AI_HANDOFF.md` | Phase 2 progress updated |
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push)* | `feat: publish best-smartwatches-under-300 guide (4475 words, 5 products, full SEO)` |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — Cloudflare auto-deploy triggered.
