@@ -20,6 +20,12 @@
 - [x] Create `robots.txt` — allow all crawlers, reference sitemap, live at `/robots.txt`
 - [x] Create docs/ documentation framework (CLAUDE.md, DEPLOYMENT.md, PROJECT_STATUS.md, ROADMAP.md, SEO_SETUP.md, AI_HANDOFF.md)
 - [x] Establish session log standard and startup/shutdown procedures
+- [x] Analytics foundation:
+  - [x] GA4 tracking code installed in `script.js` (IIFE #10) — placeholder ID, ready to activate
+  - [x] GSC verification meta tag in `index.html` — placeholder code, ready to activate
+  - [x] `docs/05_research/GA4_SETUP.md` — step-by-step activation guide
+  - [x] `docs/05_research/SEARCH_CONSOLE_SETUP.md` — step-by-step verification guide
+  - [x] `docs/05_research/AFFILIATE_LINK_MAP.md` — all 11 affiliate link placeholders mapped
 - [x] Create content engine foundation:
   - [x] `content/templates/buying-guide-template.md`
   - [x] `content/article_ideas/master-article-backlog.csv` (100 ideas)
@@ -41,9 +47,9 @@
 - [ ] **Write first Home Products guide** — pick from backlog (recommend: Best Robot Vacuums for Every Budget)
 
 ### SEO and Analytics
-- [ ] **Set up Google Search Console** — verify domain via Cloudflare DNS TXT record, submit sitemap
-- [ ] **Install Google Analytics (GA4)** — add measurement script to `script.js`
-- [ ] **Apply for Amazon Associates** — required before affiliate links can go live
+- [ ] **Activate Google Search Console** — placeholder meta tag in `index.html`; get verification code from GSC → update `index.html` → push → click Verify → submit sitemap. See `docs/05_research/SEARCH_CONSOLE_SETUP.md`
+- [ ] **Activate GA4** — code installed in `script.js` IIFE #10; create property at analytics.google.com → get Measurement ID → replace `G-XXXXXXXXXX` in `script.js`. See `docs/05_research/GA4_SETUP.md`
+- [ ] **Apply for Amazon Associates** — see application checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`; write 2 more full guides before applying
 
 ### Monetization
 - [ ] **Add real affiliate links to guides** — after Amazon Associates approval

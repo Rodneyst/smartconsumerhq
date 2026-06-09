@@ -2,7 +2,7 @@
 
 This document is the primary entry point for any AI agent beginning work on this project. Read this first, then read the files listed in "Required Reading."
 
-**Last updated:** 2026-06-09 (Entry 3)
+**Last updated:** 2026-06-09 (Entry 5)
 
 ---
 
@@ -53,6 +53,15 @@ Smart Consumer HQ (`smartconsumerhq.com`) is a static affiliate/review website p
 | `content/articles/` | Article drafts in markdown (empty — ready for use) |
 | `docs/02_development/CONTENT_SYSTEM.md` | Content architecture, SEO standards, affiliate rules |
 | `tools/content-workflow.md` | End-to-end workflow from idea to live page |
+
+### Analytics & Research Files
+
+| File | Purpose |
+|---|---|
+| `docs/05_research/GA4_SETUP.md` | Step-by-step GA4 activation guide (code installed, needs Measurement ID) |
+| `docs/05_research/SEARCH_CONSOLE_SETUP.md` | Step-by-step GSC verification guide (meta tag installed, needs verification code) |
+| `docs/05_research/AFFILIATE_LINK_MAP.md` | Map of all 11 affiliate link placeholders — use when Amazon Associates approved |
+| `docs/05_research/SEO_SETUP.md` | Keyword research and SEO strategy |
 
 ### Page Architecture
 
@@ -116,19 +125,21 @@ The full workflow is documented in `tools/content-workflow.md`. The short versio
 |---|---|
 | sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — 14 URLs |
 | robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
-| Google Search Console | Not yet configured |
-| GA4 | Not yet installed |
+| Google Search Console | Meta tag placeholder in `index.html` — **user must complete verification** (see `docs/05_research/SEARCH_CONSOLE_SETUP.md`) |
+| GA4 | Tracking code in `script.js` IIFE #10 — **user must add Measurement ID** (see `docs/05_research/GA4_SETUP.md`) |
 | Schema.org JSON-LD | Present on all pages |
 | Canonical URLs | Present on all pages |
 | OG / Twitter Card tags | Present on all pages |
+| Affiliate link map | `docs/05_research/AFFILIATE_LINK_MAP.md` — 11 placeholders mapped in `best-home-gym-equipment.html` |
 
 ---
 
 ## Current Roadmap Status
 
-- **Phase 1 (Foundation):** 95% complete. sitemap.xml and robots.txt are live. Remaining: GSC setup.
-- **Phase 2 (Content):** Content system foundation built (2026-06-09). No articles written yet — all 4 guide pages are placeholders. Next: write guide content.
-- **Phases 3–5:** Not started.
+- **Phase 1 (Foundation):** 97% complete. sitemap.xml, robots.txt live. GSC verification placeholder installed — user must complete.
+- **Phase 2 (Content):** 1 of 4 placeholder guides complete (best-home-gym-equipment). Next: best-budget-standing-desks.
+- **Phase 3 (SEO):** Partially started. GA4 and GSC code installed; user activation required.
+- **Phases 4–5:** Not started.
 
 See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 
@@ -136,13 +147,15 @@ See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 
 ## Current TODO Status
 
-**Immediate priority:**
-1. ~~Write full content for `guides/best-home-gym-equipment.html`~~ — **Done 2026-06-09** ✓
-2. Write full content for `guides/best-budget-standing-desks.html` (next)
-3. Write full content for remaining 2 placeholder guides (smartwatches, family SUVs)
-4. Set up Google Search Console and submit sitemap
-5. Install GA4
-6. Apply for Amazon Associates
+**Immediate priority (user action required — cannot be done by AI):**
+1. Complete GSC verification: [search.google.com/search-console](https://search.google.com/search-console) → get HTML tag code → update `index.html` line ~13 → push → Verify → submit sitemap. Guide: `docs/05_research/SEARCH_CONSOLE_SETUP.md`
+2. Activate GA4: [analytics.google.com](https://analytics.google.com) → create property → copy Measurement ID → replace `G-XXXXXXXXXX` in `script.js` IIFE #10 → push. Guide: `docs/05_research/GA4_SETUP.md`
+
+**AI can do next:**
+3. ~~Write full content for `guides/best-home-gym-equipment.html`~~ — **Done 2026-06-09** ✓
+4. Write full content for `guides/best-budget-standing-desks.html` (next)
+5. Write full content for remaining 2 placeholder guides (smartwatches, family SUVs)
+6. Apply for Amazon Associates — checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`
 7. Write first guides for Money Saving and Home Products categories
 
 See `docs/01_product/TODO.md` for the complete task list.
@@ -165,9 +178,9 @@ See `docs/01_product/TODO.md` for the complete task list.
 
 ## Recommended Next Milestone
 
-**Immediate:** Write the second complete buying guide for `guides/best-budget-standing-desks.html`. Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md` step by step.
+**User action (15 min):** Complete GSC verification and activate GA4 — both have placeholders installed and step-by-step guides in `docs/05_research/`. Requires browser login to Google, not code work.
 
-**After that:** Set up Google Search Console (15-minute task, no code changes required).
+**AI next task:** Write `guides/best-budget-standing-desks.html` full content. Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md`.
 
 ---
 

@@ -286,3 +286,26 @@
   });
 })();
 
+
+/* ================================================
+   10. GOOGLE ANALYTICS 4
+   Replace GA4_ID value with your Measurement ID from
+   analytics.google.com to activate tracking.
+   See docs/05_research/GA4_SETUP.md for full instructions.
+   ================================================ */
+(function initGA4() {
+  var GA4_ID = 'G-XXXXXXXXXX'; // REPLACE WITH YOUR MEASUREMENT ID
+  if (!GA4_ID || GA4_ID === 'G-XXXXXXXXXX') return;
+
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', GA4_ID);
+})();
+

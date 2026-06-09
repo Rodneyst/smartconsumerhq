@@ -499,3 +499,156 @@ After: validate internal links, update PROJECT_STATUS.md, TODO.md,
 AI_HANDOFF.md, write session log, copy to local Mac,
 commit specific files, push.
 ```
+
+---
+
+## Entry 4
+
+**Timestamp:** 2026-06-09
+
+**Prompt:** User feedback — session log not updated locally since 9:34am.
+
+**Action taken:** Saved feedback memory `feedback-session-log-frequency.md` — session log must be updated AND copied to `~/Documents/SmartConsumerHQ/session-logs/` after every prompt exchange, not just at task completion. Updated MEMORY.md index. Copying session log to local Mac now.
+
+**No code or content changes.**
+
+---
+
+## Entry 5
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Analytics foundation setup — Google Search Console verification prep, GA4 tracking implementation, Amazon Associates affiliate link audit. No new content.
+
+**Prompt Summary:**
+Before creating additional content: read 4 context files, verify deployment status, set up GSC (verify ownership, document method, submit sitemap, create SEARCH_CONSOLE_SETUP.md), set up GA4 (add tracking to site, verify pageviews, create GA4_SETUP.md), audit all published guides for affiliate placeholder links and create AFFILIATE_LINK_MAP.md, update project docs, copy session log, commit and push all changes.
+
+**IMPORTANT note in prompt:** Create/update local markdown log file before making changes and append all actions throughout the task.
+
+---
+
+### Pre-task State
+
+| Item | Status at task start |
+|---|---|
+| Deployment | Commit `5af4106` built but NOT yet pushed (1 ahead of origin) |
+| Google Search Console | Not configured |
+| GA4 | Not installed |
+| Affiliate links | All `href="#"` placeholders — Amazon Associates not applied |
+| Session log | Entry 4 last entry |
+
+---
+
+### Actions Log (appended throughout task)
+
+- [x] **10:14** — Task started. Session log Entry 5 created first (before any changes). Local copy synced.
+- [x] Read all 4 required context files ✓
+- [x] Verified deployment: commit 5af4106 pending push ✓
+- [x] Audited all HTML files for affiliate links — found 11 placeholders in best-home-gym-equipment.html; 0 in other guides or homepage
+- [x] Created `docs/05_research/AFFILIATE_LINK_MAP.md` — 11 links mapped across 3 placement types (product cards, verdict box, sidebar); includes Amazon Associates application checklist
+- [x] Added GA4 IIFE #10 to `script.js` — dynamic loader with `G-XXXXXXXXXX` placeholder; exits silently until real ID is set; runs on all pages
+- [x] Created `docs/05_research/GA4_SETUP.md` — step-by-step guide: create GA4 property → get Measurement ID → replace placeholder in script.js → push → verify in Realtime
+- [x] Added GSC meta tag placeholder to `index.html` — `<meta name="google-site-verification" content="REPLACE_WITH_GSC_VERIFICATION_CODE" />`
+- [x] Created `docs/05_research/SEARCH_CONSOLE_SETUP.md` — step-by-step guide: add property in GSC → get HTML tag code → update index.html → push → Verify → submit sitemap
+- [x] Updated `docs/01_product/PROJECT_STATUS.md` — analytics status, affiliate readiness, known issues, work log, next actions
+- [x] Updated `docs/01_product/TODO.md` — marked analytics foundation complete; updated GSC/GA4/Associates tasks with specific instructions
+- [x] Updated `docs/02_development/AI_HANDOFF.md` — SEO status, roadmap status, TODO priority, recommended milestone, key files table
+- [x] Session log Entry 5 completed
+- [x] Copy session log to local Mac
+- [x] Stage specific files
+- [x] Commit
+- [x] Push
+
+---
+
+### Files Created
+
+| File | Purpose |
+|---|---|
+| `docs/05_research/AFFILIATE_LINK_MAP.md` | Master map of all 11 affiliate link placeholders; Amazon Associates checklist |
+| `docs/05_research/GA4_SETUP.md` | Step-by-step guide to create GA4 property and activate tracking in script.js |
+| `docs/05_research/SEARCH_CONSOLE_SETUP.md` | Step-by-step guide to verify GSC ownership and submit sitemap |
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `script.js` | Added IIFE #10 — GA4 dynamic loader with placeholder Measurement ID |
+| `index.html` | Added GSC verification meta tag placeholder |
+| `docs/01_product/PROJECT_STATUS.md` | Updated analytics status, affiliate readiness, known issues, work log |
+| `docs/01_product/TODO.md` | Marked analytics foundation complete; updated GSC/GA4/Associates items |
+| `docs/02_development/AI_HANDOFF.md` | Updated SEO status, roadmap, priorities, key files table |
+| `docs/99_session_logs/2026-06-09-session-log.md` | Appended Entry 5 (this entry) |
+
+### Files Moved / Deleted
+
+None.
+
+---
+
+### Analytics Status After This Session
+
+| Platform | Code State | User Action Required |
+|---|---|---|
+| GA4 | IIFE #10 in script.js — exits if ID is placeholder | Create property at analytics.google.com → get G-XXXXXXXXXX → replace in script.js |
+| Google Search Console | Meta tag in index.html head — shows invalid until real code | Log into GSC → add property → get HTML tag content value → update index.html → push → Verify → submit sitemap |
+
+### Affiliate Readiness
+
+| Item | Status |
+|---|---|
+| Affiliate links | 11 `href="#"` placeholders in `best-home-gym-equipment.html` |
+| Amazon Associates | Not yet applied — wait until 2+ more full guides are published |
+| Affiliate link map | Complete — `docs/05_research/AFFILIATE_LINK_MAP.md` |
+
+---
+
+### Git Status Summary
+
+Staging: 5af4106 (guide commit) + this session's changes committed together.
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| `5af4106` | content: publish first complete buying guide (best-home-gym-equipment) |
+| *(this session)* | analytics: install GA4 and GSC foundation; create affiliate link map |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — pushed in this session (includes both commits).
+
+### Cloudflare Deployments Completed
+
+1 auto-deployment triggered.
+
+---
+
+### Known Issues (post-session)
+
+| Issue | Severity | Who Resolves |
+|---|---|---|
+| GSC not yet verified — needs user login to Google | High | User — see SEARCH_CONSOLE_SETUP.md |
+| GA4 not yet active — needs Measurement ID from user | Medium | User — see GA4_SETUP.md |
+| 3 guide pages still placeholder content | High | AI — next content session |
+| Amazon Associates not yet applied | High | User — after 2 more guides published |
+
+### Recommended Next Prompt
+
+```
+Read docs/99_session_logs/2026-06-09-session-log.md (Entry 5),
+docs/02_development/AI_HANDOFF.md, docs/01_product/TODO.md.
+
+Next task: Write the second complete buying guide.
+Target: guides/best-budget-standing-desks.html
+Requirements: SEO title, meta description, affiliate disclosure,
+introduction, quick picks table, top 5 standing desk picks with
+pros/cons, comparison table, buying guide section (what to look for:
+height range, weight capacity, stability, motor/electric vs manual),
+common mistakes section, FAQ (5+ questions), final recommendation,
+internal links, JSON-LD FAQ schema.
+
+After: validate internal links, update PROJECT_STATUS.md, TODO.md,
+AI_HANDOFF.md, session log, copy to local Mac, commit, push.
+```
