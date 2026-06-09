@@ -1568,3 +1568,121 @@ Record master account details, remove Impact Radius verification tags, and updat
 ### GitHub Pushes Completed
 
 1 push to `origin main` — Cloudflare auto-deploy triggered.
+
+---
+
+## Entry 17
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Phase 2A — Build the affiliate foundation and content engine: centralized affiliate config, link utility functions, 5 new content section pages, updated nav, article template, product JSON schema, and documentation.
+
+---
+
+### Work Completed
+
+**Affiliate Foundation:**
+
+1. **Created `docs/00_founder/affiliate-accounts.md`** — Master record of all affiliate accounts with exact user-specified content: Amazon Associates (smartconsu0ca-20, Active), CJ Affiliate (101779331, Active), Walmart (Pending), Impact Radius (Skipped).
+
+2. **Created `config/affiliate-config.js`** — Centralized affiliate network configuration. All network IDs and status flags in one file. No affiliate IDs hardcoded in HTML components. Note: user requested `.ts` (TypeScript) but this is a vanilla HTML/CSS/JS site with no build system — created `.js` equivalent with identical functionality.
+
+3. **Created `lib/affiliate.js`** — Utility functions: `generateAmazonAffiliateLink()`, `generateAffiliateButton()`, `generateMerchantLink()`, `getAffiliateNetwork()`, `generateProductCard()`.
+
+4. **Created `docs/02_development/affiliate-system.md`** — Full documentation: architecture, config reference, function signatures with examples, affiliate link rules, FTC compliance, adding new networks.
+
+**Content Website — 5 New Section Pages:**
+
+5. **Created `buying-guides.html`** — Buying Guides index. All 4 existing guides by category. Canonical: `/buying-guides`.
+
+6. **Created `reviews.html`** — Reviews index. Top-rated products from existing guides. Canonical: `/reviews`.
+
+7. **Created `comparisons.html`** — Comparisons index. Links to comparison tables within existing guides. Canonical: `/comparisons`.
+
+8. **Created `deals.html`** — Best Deals page. 6 products with Amazon affiliate links and price ranges. Canonical: `/deals`.
+
+9. **Created `blog.html`** — Blog index. All 4 guides as blog posts with dates. Canonical: `/blog`.
+
+All 5 pages: full SEO metadata, canonical, OG/Twitter Card, JSON-LD, breadcrumb, FTC in-page disclosure, newsletter CTA, components.js header/footer.
+
+**Navigation:**
+
+10. **Updated `components.js`** — Replaced `Guides` nav link with 5 new section links: Buying Guides, Reviews, Comparisons, Deals, Blog.
+
+**SEO:**
+
+11. **Updated `sitemap.xml`** — 5 new section URLs added. Total: 19 URLs.
+
+**Content System:**
+
+12. **Created `content/templates/article-template.html`** — Complete HTML template with all PLACEHOLDER markers. Includes SEO head, FTC disclosure, ToC, featured image slot, summary table, product review blocks (pros/cons), comparison table, buying guide, FAQ, conclusion, bottom disclosure.
+
+13. **Created `content/products/flexispot-e7.json`** — Product data JSON schema with all fields: id, name, category, rating, price, affiliateUrl, asin, badge, pros[], cons[], specs{}, guideUrl.
+
+14. **Created `content/products/apple-watch-se-2.json`** — Same schema, Apple Watch SE 2nd Gen.
+
+**FTC Compliance:**
+
+15. Global footer FTC disclosure already in `components.js` line 94 — verified, no change needed. In-page disclosures added to all 5 new section pages.
+
+**Documentation:**
+
+16. **Updated `README.md`** — Added affiliate system section, content system section, updated structure diagram, updated SEO section (19 URLs), updated roadmap status.
+
+---
+
+### Files Created
+
+| File | Description |
+|---|---|
+| `docs/00_founder/affiliate-accounts.md` | Master affiliate account record |
+| `config/affiliate-config.js` | Centralized affiliate network config |
+| `lib/affiliate.js` | Affiliate link utility functions |
+| `docs/02_development/affiliate-system.md` | Affiliate system documentation |
+| `buying-guides.html` | Buying Guides section landing page |
+| `reviews.html` | Reviews section landing page |
+| `comparisons.html` | Comparisons section landing page |
+| `deals.html` | Deals section landing page |
+| `blog.html` | Blog section landing page |
+| `content/templates/article-template.html` | Reusable HTML article template |
+| `content/products/flexispot-e7.json` | FlexiSpot E7 product data |
+| `content/products/apple-watch-se-2.json` | Apple Watch SE 2 product data |
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `components.js` | Nav updated — 5 new section links |
+| `sitemap.xml` | 5 new section URLs (total: 19) |
+| `lib/affiliate.js` | Added `generateProductCard()` |
+| `README.md` | Major update — affiliate system, content system, SEO |
+
+---
+
+### Architecture Notes
+
+- **TypeScript not applicable:** `.ts` files requested. This is vanilla HTML/CSS/JS — no build system. `.js` equivalents created with identical functionality.
+- **ProductCard / AffiliateButton as JS functions:** Static site equivalent of React components — `generateProductCard()` and `generateAffiliateButton()` return HTML strings.
+- **New section pages at root level:** Serve at clean URLs `/reviews`, `/comparisons`, etc.
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push)* | `feat: Phase 2A affiliate foundation + content engine` |
+
+### GitHub Pushes Completed (Entry 17)
+
+1 push to `origin main` — Cloudflare auto-deploy triggered.
+
+---
+
+### Recommended Next Steps
+
+1. **Replace affiliate link placeholders** — Replace all `href="#"` in the 4 published guides with real Amazon URLs `?tag=smartconsu0ca-20`. Reference `docs/05_research/AFFILIATE_LINK_MAP.md`.
+2. **Apply to CJ advertiser programs** — Best Buy, Target, Home Depot via CJ dashboard.
+3. **Monitor Walmart approval** — Activate links when approved.
+4. **Write next guide** — Money Saving or Home Products categories have no real content.

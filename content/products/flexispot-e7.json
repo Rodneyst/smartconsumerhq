@@ -1,0 +1,39 @@
+{
+  "id": "flexispot-e7",
+  "name": "FlexiSpot E7 Electric Standing Desk",
+  "category": "home-office",
+  "subcategory": "standing-desks",
+  "rating": 4.8,
+  "ratingCount": 2847,
+  "price": "$399",
+  "priceRange": "$340–$550",
+  "image": "/images/flexispot-e7.jpg",
+  "affiliateUrl": "https://www.amazon.com/dp/B08QZC9QZC?tag=smartconsu0ca-20",
+  "network": "amazon",
+  "asin": "B08QZC9QZC",
+  "badge": "Best Overall",
+  "pros": [
+    "Dual-motor lift with 355 lb weight capacity",
+    "Programmable height presets",
+    "5-year warranty",
+    "Anti-collision detection",
+    "Wide range of desktop size options"
+  ],
+  "cons": [
+    "Assembly takes 90+ minutes",
+    "Desktop sold separately",
+    "Slightly louder than premium models"
+  ],
+  "specs": {
+    "heightRange": "22.8\"–48.4\"",
+    "liftSpeed": "1.5 in/sec",
+    "motors": 2,
+    "weightCapacity": "355 lbs",
+    "warranty": "5 years",
+    "desktopSizes": ["48x24\", 55x28\", 60x24\", 72x30\""]
+  },
+  "description": "The FlexiSpot E7 is the best standing desk under $500 for most buyers. Its dual-motor system provides smooth, quiet lifting to 355 lbs — more than enough for a full monitor setup, PC, and accessories.",
+  "guideUrl": "/guides/best-budget-standing-desks",
+  "publishDate": "2026-06-09",
+  "lastUpdated": "2026-06-09"
+}

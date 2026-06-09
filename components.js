@@ -34,7 +34,11 @@
             <li><a href="${root}categories/home-products.html">🏠 Home Products</a></li>
           </ul>
         </li>
-        <li><a href="${root}index.html#guides">Guides</a></li>
+        <li><a href="${root}buying-guides.html">Buying Guides</a></li>
+        <li><a href="${root}reviews.html">Reviews</a></li>
+        <li><a href="${root}comparisons.html">Comparisons</a></li>
+        <li><a href="${root}deals.html">Deals</a></li>
+        <li><a href="${root}blog.html">Blog</a></li>
         <li><a href="${root}index.html#about">About</a></li>
       </ul>
     </nav>

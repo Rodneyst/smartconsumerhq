@@ -1,0 +1,40 @@
+{
+  "id": "apple-watch-se-2",
+  "name": "Apple Watch SE (2nd Generation)",
+  "category": "tech-gadgets",
+  "subcategory": "smartwatches",
+  "rating": 4.7,
+  "ratingCount": 14293,
+  "price": "$249",
+  "priceRange": "$249–$279",
+  "image": "/images/apple-watch-se-2.jpg",
+  "affiliateUrl": "https://www.amazon.com/dp/B0BDJH9K6L?tag=smartconsu0ca-20",
+  "network": "amazon",
+  "asin": "B0BDJH9K6L",
+  "badge": "Best for iPhone Users",
+  "pros": [
+    "Crash Detection and Emergency SOS",
+    "Heart rate and sleep tracking",
+    "Full Apple Watch ecosystem",
+    "S8 chip — fast and future-proof",
+    "Water resistant to 50m"
+  ],
+  "cons": [
+    "Requires iPhone",
+    "No always-on display",
+    "18-hour battery life"
+  ],
+  "specs": {
+    "display": "LTPO OLED Retina",
+    "batteryLife": "18 hours",
+    "waterResistance": "50m",
+    "compatibility": "iPhone 8 or later",
+    "chip": "Apple S8",
+    "sizes": ["40mm", "44mm"],
+    "connectivity": ["GPS+Cellular", "GPS only"]
+  },
+  "description": "The best value smartwatch for iPhone users. The SE delivers everything that actually matters — health tracking, safety features, and ecosystem integration — without paying for the luxury features of the Series 9.",
+  "guideUrl": "/guides/best-smartwatches-under-300",
+  "publishDate": "2026-06-09",
+  "lastUpdated": "2026-06-09"
+}
