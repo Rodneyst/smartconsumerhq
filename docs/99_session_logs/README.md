@@ -131,9 +131,13 @@ Before completing any work session, an AI agent must:
 3. Update `docs/01_product/TODO.md` if tasks changed
 4. Update `docs/01_product/ROADMAP.md` if the roadmap changed
 5. Update `docs/02_development/AI_HANDOFF.md` if architecture or workflow changed
-6. Commit all documentation updates
-7. Push to GitHub
-8. Provide a complete session summary in the conversation
+6. **Copy the session log to local Mac backup:** `~/Documents/SmartConsumerHQ/session-logs/`
+   ```bash
+   cp docs/99_session_logs/YYYY-MM-DD-session-log.md ~/Documents/SmartConsumerHQ/session-logs/
+   ```
+7. Commit all documentation updates
+8. Push to GitHub
+9. Provide a complete session summary in the conversation
 
 ---
 
