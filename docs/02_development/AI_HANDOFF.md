@@ -38,11 +38,21 @@ Smart Consumer HQ (`smartconsumerhq.com`) is a static affiliate/review website p
 | `script.js` | Shared vanilla JS (header, menu, scroll, forms, FAQ accordion) |
 | `components.js` | Header/footer injection for all inner pages |
 | `categories/*.html` | 6 category landing pages |
-| `guides/*.html` | Buying guide pages (currently 4, all placeholder content) |
+| `guides/*.html` | Buying guide pages (4 live, all placeholder content) |
 | `legal/*.html` | Affiliate disclosure, privacy policy, terms of use |
-| `sitemap.xml` | XML sitemap (14 URLs) |
-| `robots.txt` | Crawler directives |
-| `CLAUDE.md` | Project rules for AI agents — read this before writing any code |
+| `sitemap.xml` | XML sitemap (14 URLs) — live at `/sitemap.xml` |
+| `robots.txt` | Crawler directives — live at `/robots.txt` |
+| `CLAUDE.md` | Project rules for AI agents — read before writing any code |
+
+### Content System Files
+
+| File | Purpose |
+|---|---|
+| `content/templates/buying-guide-template.md` | Master template for all buying guides |
+| `content/article_ideas/master-article-backlog.csv` | 100 article ideas with priority metadata |
+| `content/articles/` | Article drafts in markdown (empty — ready for use) |
+| `docs/02_development/CONTENT_SYSTEM.md` | Content architecture, SEO standards, affiliate rules |
+| `tools/content-workflow.md` | End-to-end workflow from idea to live page |
 
 ### Page Architecture
 
@@ -70,6 +80,26 @@ Full details: `docs/02_development/DEPLOYMENT.md`
 
 ---
 
+## Content Workflow Summary
+
+The full workflow is documented in `tools/content-workflow.md`. The short version:
+
+1. Pick article from `content/article_ideas/master-article-backlog.csv` (Priority: High first)
+2. Research keyword and products
+3. Draft article as markdown in `content/articles/{slug}.md` using the buying guide template
+4. Run pre-publish checklist
+5. Convert to HTML → `guides/{slug}.html`
+6. Update `sitemap.xml` and the relevant `categories/{slug}.html`
+7. Commit specific files, push, verify live
+8. Update PROJECT_STATUS.md, TODO.md, session log
+
+**Priority order for next articles:**
+1. Fill the 4 existing placeholder guides (they're indexed but empty)
+2. Write first Money Saving guide (category has zero content)
+3. Write first Home Products guide (category has zero content)
+
+---
+
 ## Git Workflow
 
 - `main` branch = production
@@ -84,8 +114,8 @@ Full details: `docs/02_development/DEPLOYMENT.md`
 
 | Item | Status |
 |---|---|
-| sitemap.xml | Live at `https://smartconsumerhq.com/sitemap.xml` — 14 URLs |
-| robots.txt | Live at `https://smartconsumerhq.com/robots.txt` |
+| sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — 14 URLs |
+| robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
 | Google Search Console | Not yet configured |
 | GA4 | Not yet installed |
 | Schema.org JSON-LD | Present on all pages |
@@ -96,7 +126,9 @@ Full details: `docs/02_development/DEPLOYMENT.md`
 
 ## Current Roadmap Status
 
-The project is at the end of Phase 1 (Foundation) with one item remaining: Google Search Console setup. Phase 2 (Content) is the immediate priority — writing full guide copy for the 4 placeholder guide pages.
+- **Phase 1 (Foundation):** 95% complete. sitemap.xml and robots.txt are live. Remaining: GSC setup.
+- **Phase 2 (Content):** Content system foundation built (2026-06-09). No articles written yet — all 4 guide pages are placeholders. Next: write guide content.
+- **Phases 3–5:** Not started.
 
 See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 
@@ -104,13 +136,13 @@ See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 
 ## Current TODO Status
 
-**High priority remaining:**
-1. Set up Google Search Console and submit sitemap
-2. Install Google Analytics (GA4)
-3. Apply for Amazon Associates
-4. Connect newsletter form to Mailchimp or ConvertKit
-5. Write full content for 4 guide pages (currently all placeholders)
-6. Add real affiliate links to guides (requires Amazon Associates approval)
+**Immediate priority:**
+1. Write full content for `guides/best-home-gym-equipment.html`
+2. Write full content for remaining 3 placeholder guides
+3. Set up Google Search Console and submit sitemap
+4. Install GA4
+5. Apply for Amazon Associates
+6. Write first guides for Money Saving and Home Products categories
 
 See `docs/01_product/TODO.md` for the complete task list.
 
@@ -121,20 +153,20 @@ See `docs/01_product/TODO.md` for the complete task list.
 | Issue | Severity |
 |---|---|
 | All 4 guide pages contain placeholder content — not SEO-ready | High |
-| Google Search Console not configured — site is not being monitored for indexing | High |
-| No affiliate links on any page — zero revenue potential until resolved | High |
-| GA4 not installed — no traffic data being collected | Medium |
+| Google Search Console not configured | High |
+| No affiliate links on any page — zero revenue potential | High |
+| GA4 not installed — no traffic data | Medium |
 | Newsletter form not connected to real provider | Medium |
+| Money Saving and Home Products have zero real guides | Medium |
 | No images on any page | Medium |
-| Money Saving and Home Products categories have no real guides | Medium |
 
 ---
 
 ## Recommended Next Milestone
 
-**Phase 1 completion:** Set up Google Search Console and submit the sitemap. This is a 15-minute task that does not require code changes.
+**Immediate:** Write the first complete buying guide for `guides/best-home-gym-equipment.html`. Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md` step by step.
 
-**Phase 2 start:** Write full content for the first guide page (`guides/best-home-gym-equipment.html`). Replace all placeholder content with a real 1,800+ word buying guide. Add affiliate disclosure notice above the fold. Prepare for affiliate links once Amazon Associates is approved.
+**After first guide:** Set up Google Search Console (15-minute task, no code changes required).
 
 ---
 
@@ -148,6 +180,8 @@ In this order:
 4. `docs/01_product/ROADMAP.md` — phased development plan
 5. `docs/01_product/TODO.md` — task list
 6. `CLAUDE.md` (repo root) — project rules and code conventions
+7. `docs/02_development/CONTENT_SYSTEM.md` — if writing content
+8. `tools/content-workflow.md` — if writing content
 
 ---
 
@@ -161,3 +195,5 @@ In this order:
 - Always include full SEO metadata on every new page
 - Always follow the category page template in `CLAUDE.md`
 - Always update session logs, PROJECT_STATUS.md, and TODO.md at session end
+- Always copy session log to `~/Documents/SmartConsumerHQ/session-logs/`
+- Do not add affiliate links until Amazon Associates is approved

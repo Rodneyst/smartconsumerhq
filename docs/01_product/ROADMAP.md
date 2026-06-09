@@ -1,6 +1,6 @@
 # Roadmap — Smart Consumer HQ
 
-**Last updated:** June 8, 2026
+**Last updated:** 2026-06-09
 
 This roadmap is organised into five phases. Each phase builds on the previous. Phases 1 and 2 must be substantially complete before SEO and monetisation efforts will produce meaningful results.
 
@@ -18,8 +18,8 @@ This roadmap is organised into five phases. Each phase builds on the previous. P
 - [x] Verify all internal links return 200
 
 ### 1.2 Crawlability
-- [ ] Create `sitemap.xml` listing all live URLs
-- [ ] Create `robots.txt` allowing all crawlers, pointing to sitemap
+- [x] Create `sitemap.xml` listing all live URLs — done 2026-06-08
+- [x] Create `robots.txt` allowing all crawlers, pointing to sitemap — done 2026-06-08
 - [ ] Submit sitemap to Google Search Console
 - [ ] Submit sitemap to Bing Webmaster Tools
 
@@ -43,6 +43,13 @@ This roadmap is organised into five phases. Each phase builds on the previous. P
 
 ## Phase 2: Content
 **Goal:** Enough published guides to attract meaningful organic traffic and support affiliate revenue.
+
+### 2.0 Content System (completed 2026-06-09)
+- [x] Create `content/templates/buying-guide-template.md`
+- [x] Create `content/article_ideas/master-article-backlog.csv` (100 ideas)
+- [x] Create `content/articles/` directory for drafts
+- [x] Create `docs/02_development/CONTENT_SYSTEM.md`
+- [x] Create `tools/content-workflow.md`
 
 ### 2.1 Complete Existing Guide Pages (4 guides)
 Replace placeholder content with full buying guides:

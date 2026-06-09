@@ -165,13 +165,177 @@ Read the most recent session log at docs/99_session_logs/2026-06-09-session-log.
 then docs/02_development/AI_HANDOFF.md, docs/01_product/PROJECT_STATUS.md,
 docs/01_product/TODO.md.
 
-Next task: Write the first full buying guide. Replace all placeholder content in
-guides/best-home-gym-equipment.html with a complete 1,800+ word buying guide.
-Include: intro with clear value proposition, top 5 product picks with pros/cons,
-a comparison table, a buying guide section (what to look for), FAQ (5 questions),
-and an affiliate disclosure notice above the fold.
+Next task: Write the first full buying guide. Follow tools/content-workflow.md.
+Use content/templates/buying-guide-template.md as the template.
+Target: guides/best-home-gym-equipment.html — replace all placeholder content
+with a complete 1,800+ word buying guide including: intro, 5 product picks with
+pros/cons, comparison table, buying guide section, FAQ (5 questions), final
+recommendation, and affiliate disclosure notice above the fold.
 
-After writing the guide: update docs/01_product/TODO.md to mark the task complete,
-update docs/01_product/PROJECT_STATUS.md, write a session log entry, commit specific
-files, and push to GitHub.
+After writing: update sitemap.xml, update categories/home-fitness.html guide card,
+update docs/01_product/TODO.md, update docs/01_product/PROJECT_STATUS.md,
+write session log entry, copy to ~/Documents/SmartConsumerHQ/session-logs/,
+commit specific files, push to GitHub.
+```
+
+---
+
+## Entry 2
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Build the Smart Consumer HQ Content Engine Foundation — content directory structure, writing template, 100-article backlog, content system documentation, and workflow documentation. No new HTML pages published.
+
+**Prompt Summary:**
+After reading all project context files, establish the content system foundation: create content/ and tools/ directories, buying guide template, master article backlog (100 ideas), CONTENT_SYSTEM.md documentation, and content-workflow.md. Update PROJECT_STATUS.md, TODO.md, ROADMAP.md, and AI_HANDOFF.md to reflect the new system. Write session log. Commit and push.
+
+---
+
+### Work Completed
+
+1. **Created content/ directory structure** — `content/articles/`, `content/article_ideas/`, `content/templates/`, plus `content/README.md`
+
+2. **Created tools/ directory** — `tools/content-workflow.md`
+
+3. **Buying guide template** — `content/templates/buying-guide-template.md` — complete template with all sections: SEO front matter, affiliate disclosure, intro, quick picks table, top picks (with pros/cons and specs), comparison table, buying guide, FAQ, final recommendation, schema markup, and pre-publish checklist
+
+4. **Master article backlog** — `content/article_ideas/master-article-backlog.csv` — 100 article ideas across all 6 categories with Category, Title, Primary Keyword, Search Intent, Priority, Difficulty, Monetization Potential, Status, and Notes columns
+
+5. **Content system documentation** — `docs/02_development/CONTENT_SYSTEM.md` — covers content architecture, article types, category-guide relationship, internal linking strategy, SEO standards per element, affiliate disclosure standards, content quality standards, and sitemap update procedure
+
+6. **Content workflow** — `tools/content-workflow.md` — 12-step end-to-end workflow from idea selection through post-publish documentation, including research standards, draft requirements, HTML conversion rules, commit procedure, and future automation hooks
+
+7. **Updated PROJECT_STATUS.md** — added content system section, updated site structure diagram, updated SEO status (sitemap/robots now live), updated known issues, added content system to completed work log
+
+8. **Updated TODO.md** — marked sitemap/robots/docs framework as complete, added content writing tasks to High Priority, added content backlog table with top 10 recommended articles
+
+9. **Updated ROADMAP.md** — marked sitemap/robots as done, added Phase 2.0 Content System as complete, updated last-updated date
+
+10. **Updated AI_HANDOFF.md** — added content system files to key files table, added content workflow summary, updated SEO status, updated roadmap and TODO status, added content-related reading to required files list, added affiliate link rule to important rules
+
+---
+
+### Files Created
+
+| File | Purpose |
+|---|---|
+| `content/README.md` | Content workspace index and usage guide |
+| `content/templates/buying-guide-template.md` | Master writing template for all buying guides |
+| `content/article_ideas/master-article-backlog.csv` | 100 article ideas with full metadata |
+| `content/articles/` | Empty directory for article drafts |
+| `docs/02_development/CONTENT_SYSTEM.md` | Content architecture and standards documentation |
+| `tools/content-workflow.md` | 12-step end-to-end content workflow |
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `docs/01_product/PROJECT_STATUS.md` | Full update — content system section, corrected SEO status, updated work log |
+| `docs/01_product/TODO.md` | Marked completed items, added content tasks, added backlog table |
+| `docs/01_product/ROADMAP.md` | Marked sitemap/robots done, added Phase 2.0 content system as complete |
+| `docs/02_development/AI_HANDOFF.md` | Added content system files, workflow summary, updated all status sections |
+| `docs/99_session_logs/2026-06-09-session-log.md` | Appended Entry 2 (this entry) |
+
+### Files Moved
+
+None.
+
+### Files Deleted
+
+None.
+
+---
+
+### Commands Executed
+
+```bash
+mkdir -p content/articles content/article_ideas content/templates tools
+```
+
+---
+
+### Git Status Summary
+
+All new files staged. Commit pending (user confirmation required before push).
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(this session)* | content: build content engine foundation |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — pending user confirmation.
+
+### Cloudflare Deployments Completed
+
+1 auto-deployment — pending push.
+
+---
+
+### SEO Changes
+
+None. No HTML pages modified. Content system files are markdown only.
+
+### Content Changes
+
+- Created buying guide template covering all required article sections
+- Created 100-article backlog with search intent, priority, difficulty, and monetization metadata
+
+### Architecture Decisions
+
+- `content/` directory is workspace only — not served as web pages
+- Article drafts live as markdown in `content/articles/{slug}.md` before HTML conversion
+- `tools/` directory holds workflow and tooling documentation
+- Automation of the content pipeline is explicitly deferred to a future session
+- Article priority order: fill existing placeholder guides first, then fill empty categories, then expand
+
+### UI Changes
+
+None.
+
+### Infrastructure Changes
+
+None.
+
+---
+
+### Known Issues
+
+| Issue | Severity |
+|---|---|
+| All 4 guide pages still contain placeholder content | High |
+| Google Search Console not configured | High |
+| No affiliate links on any page | High |
+| GA4 not installed | Medium |
+| Newsletter form not connected | Medium |
+
+### Outstanding Tasks
+
+1. Write full content for `guides/best-home-gym-equipment.html` (highest priority)
+2. Write full content for remaining 3 placeholder guides
+3. Set up Google Search Console
+4. Install GA4
+5. Apply for Amazon Associates
+6. Write first Money Saving guide
+7. Write first Home Products guide
+
+### Recommended Next Prompt
+
+```
+Read docs/99_session_logs/2026-06-09-session-log.md (Entry 2),
+docs/02_development/AI_HANDOFF.md, docs/01_product/TODO.md.
+
+Next task: Write the first complete buying guide.
+Follow tools/content-workflow.md steps 1–12.
+Use content/templates/buying-guide-template.md.
+Target: guides/best-home-gym-equipment.html — replace all placeholder
+content with a 1,800+ word buying guide (5 products, comparison table,
+buying guide section, FAQ, final recommendation, affiliate disclosure).
+
+After publishing: update sitemap.xml, categories/home-fitness.html,
+PROJECT_STATUS.md, TODO.md, write session log entry, copy to local Mac,
+commit specific files, push.
 ```
