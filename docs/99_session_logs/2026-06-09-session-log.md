@@ -1503,3 +1503,68 @@ Add Impact Radius site verification meta tag directly into `index.html` `<head>`
 ### GitHub Pushes Completed
 
 1 push to `origin main` — Cloudflare auto-deploy triggered.
+
+---
+
+## Entry 16
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Record master account details, remove Impact Radius verification tags, and update all project documentation to reflect accurate affiliate program status.
+
+---
+
+### Work Completed
+
+1. **Recorded master account state:**
+   - Amazon Associates: ACTIVE — Store ID `smartconsu0ca-20`, Direct Deposit to USAA Checking, $10 min payout
+   - CJ Affiliate: ACTIVE — Property SmartConsumerHQ, ID `101779331`
+   - Walmart Affiliates: Application submitted, pending approval
+   - Impact Radius: Skipped — verification failed, revisit later
+
+2. **Removed Impact Radius verification tags from `index.html`:**
+   - Removed `<meta name="impact-site-verification" ...>` from `<head>`
+   - Removed hidden `<p>Impact-Site-Verification: ...</p>` from body
+   - index.html is now clean of all Impact tags
+
+3. **Updated documentation:**
+   - `MONETIZATION_STATUS.md` — full rewrite reflecting accurate account status; affiliate link replacement identified as next immediate action
+   - `PROJECT_STATUS.md` — affiliate section updated; known issues updated
+   - `AI_HANDOFF.md` — Amazon Associates marked complete; next task updated to affiliate link replacement
+
+4. **Saved to memory:** `project_smartconsumerhq_accounts.md` — stores all account credentials and affiliate program details for future sessions
+
+---
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `index.html` | Removed Impact Radius meta tag and hidden verification paragraph |
+| `docs/01_product/MONETIZATION_STATUS.md` | Full rewrite with accurate account status |
+| `docs/01_product/PROJECT_STATUS.md` | Affiliate section and known issues updated |
+| `docs/02_development/AI_HANDOFF.md` | Amazon Associates marked active; next task updated |
+
+---
+
+### Affiliate Network Summary (as of Entry 16)
+
+| Program | Status | ID |
+|---|---|---|
+| Amazon Associates | ✅ Active | `smartconsu0ca-20` |
+| CJ Affiliate | ✅ Active | Property ID `101779331` |
+| Walmart Affiliates | ⏳ Pending | Application submitted |
+| Impact Radius | ⏸ Skipped | Revisit later |
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push)* | `chore: update affiliate status, remove Impact tags, record account details` |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — Cloudflare auto-deploy triggered.

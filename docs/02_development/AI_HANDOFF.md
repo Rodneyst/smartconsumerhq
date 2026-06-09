@@ -2,7 +2,7 @@
 
 This document is the primary entry point for any AI agent beginning work on this project. Read this first, then read the files listed in "Required Reading."
 
-**Last updated:** 2026-06-09 (Entry 10)
+**Last updated:** 2026-06-09 (Entry 16)
 
 ---
 
@@ -159,8 +159,10 @@ See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 4. ~~Write `guides/best-budget-standing-desks.html`~~ — **Done 2026-06-09** ✓ (4,663 words)
 5. ~~Write `guides/best-smartwatches-under-300.html`~~ — **Done 2026-06-09** ✓ (4,475 words)
 6. ~~Write `guides/best-family-suvs-for-value.html`~~ — **Done 2026-06-09** ✓ (5,188 words)
-7. **Apply for Amazon Associates** — 4 complete guides qualify. Checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`
-8. Write first Money Saving guide + first Home Products guide (fills empty categories)
+7. ~~Apply for Amazon Associates~~ — **ACTIVE** ✓ Store ID: `smartconsu0ca-20`
+8. **Replace `href="#"` placeholders** with real Amazon product URLs (`?tag=smartconsu0ca-20`) in all 4 guides
+9. Write first Money Saving guide + first Home Products guide (fills empty categories)
+10. Apply to CJ Affiliate advertiser programs (Best Buy, Target, Home Depot)
 7. Apply for Amazon Associates (after 3 complete guides) — checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`
 8. Write first Money Saving guide + first Home Products guide
 
@@ -188,7 +190,7 @@ See `docs/01_product/TODO.md` for the complete task list.
 
 **Infrastructure complete.** All Phase 1 setup tasks are done.
 
-**AI next task:** Apply for Amazon Associates (4 complete guides now qualify — checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`). Then write first Money Saving guide and first Home Products guide to fill the two empty categories.
+**AI next task:** Replace all `href="#"` affiliate link placeholders in the 4 published guides with real Amazon product URLs using tag `smartconsu0ca-20`. Then write first Money Saving guide and first Home Products guide to fill the two empty categories.
 
 **User action after 3 complete guides:** Apply for Amazon Associates — checklist at `docs/05_research/AFFILIATE_LINK_MAP.md`.
 

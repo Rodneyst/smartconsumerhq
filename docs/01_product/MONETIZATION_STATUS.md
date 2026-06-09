@@ -1,145 +1,118 @@
 # Monetization Status — Smart Consumer HQ
 
 **Created:** 2026-06-09  
-**Last updated:** 2026-06-09 (Entry 14)
-
-This document tracks the current state of all monetization channels for SmartConsumerHQ, readiness scores, and required actions to unlock each revenue stream.
+**Last updated:** 2026-06-09 (Entry 16)
 
 ---
 
 ## Overall Monetization Readiness Score
 
-**Score: 4 / 10**
+**Score: 6 / 10**
 
-The site has completed all content prerequisites for affiliate monetization and is structurally ready for revenue. The score is limited by the absence of approved affiliate program accounts — all affiliate links are currently `href="#"` placeholders. No revenue has been generated yet.
+Amazon Associates is active and CJ Affiliate is active. The primary revenue infrastructure is in place. Score is limited by affiliate links still being `href="#"` placeholders — real Amazon URLs with the Store ID need to be added to each guide to begin generating clicks and commissions.
 
-| Category | Score | Blocker |
+---
+
+## Affiliate Program Status
+
+| Program | Status | Account Detail |
 |---|---|---|
-| Content foundation | 10/10 | None — 4 complete guides published |
-| Affiliate link structure | 8/10 | Links placeholder — awaiting program approval |
-| Amazon Associates | 0/10 | Not yet applied |
-| Impact Radius | 2/10 | Verified 2026-06-09 — no programs joined yet |
-| Display advertising | 0/10 | Requires 10,000+ sessions/month (Ezoic) |
-| Email list | 1/10 | Form present, no real provider connected |
+| Amazon Associates | ✅ **ACTIVE** | Store ID: `smartconsu0ca-20` · Direct Deposit · USAA Checking · Min payout $10 |
+| CJ Affiliate | ✅ **ACTIVE** | Property: SmartConsumerHQ · Property ID: `101779331` |
+| Walmart Affiliates | ⏳ **Pending approval** | Application submitted |
+| Impact Radius | ⏸ **Skipped** | Verification failed — revisit later |
 
 ---
 
-## Revenue Channels
+## Amazon Associates
 
-### 1. Amazon Associates — PRIMARY CHANNEL
-
-| Field | Status |
+| Field | Detail |
 |---|---|
-| Account status | **Not applied** |
-| Prerequisites met | **YES** — 4 complete guides, affiliate disclosure live, privacy policy live |
-| Minimum required guides | 3 (met: 4 complete) |
-| Estimated commission rate | 1–4% (electronics/gadgets), 4–8% (home, fitness, office) |
-| Avg. order value targets | Smartwatches ~$230, Standing desks ~$370, Home gym ~$180, SUVs: N/A |
-| Application checklist | See `docs/05_research/AFFILIATE_LINK_MAP.md` |
-| Priority | **IMMEDIATE — apply now** |
+| Store ID | `smartconsu0ca-20` |
+| Status | Active |
+| Payment method | Direct Deposit — USAA Checking |
+| Minimum payout | $10 |
+| Affiliate link format | `https://www.amazon.com/dp/[ASIN]?tag=smartconsu0ca-20` |
+| Current links in guides | All `href="#"` placeholders — **needs updating** |
+| Commission rates | Home & Garden 8%, Sports 5%, Electronics 4%, Apparel 4%, General 1–3% |
 
-**Action required:** Submit Amazon Associates application at [affiliate-program.amazon.com](https://affiliate-program.amazon.com). Application requires a live website with original content and a valid US payment method. Approval typically takes 1–3 business days. Amazon requires 3 qualifying sales within 180 days of approval — plan first content promotion immediately after approval.
+**Immediate action:** Replace all `href="#"` affiliate placeholders in the 4 published guides with real Amazon product URLs using tag `smartconsu0ca-20`. Reference `docs/05_research/AFFILIATE_LINK_MAP.md` for placeholder locations.
 
-**Estimated monthly revenue at 500 monthly visits per guide:**
-- Smartwatches: 500 visits × 3% CTR × $230 avg order × 3% commission = ~$10/month
-- Standing desks: 500 visits × 3% CTR × $370 avg order × 6% commission = ~$33/month
-- Home gym: 500 visits × 3% CTR × $180 avg order × 5% commission = ~$14/month
-- **Total at initial traffic (4 guides, ~2,000 monthly visits): ~$60–$80/month**
-
-Revenue scales linearly with traffic — at 10,000 monthly visits: $300–$400/month. At 50,000 monthly visits: $1,500–$2,000/month.
+**Estimated revenue at current traffic (early organic):**
+- 500 monthly visits × 3% click rate × $220 avg order × 4% commission ≈ **$13/month per guide**
+- 4 guides × $13 = **~$50/month** at initial traffic
+- Scales to $300–$500/month at 10,000 monthly visits
 
 ---
 
-### 2. Impact Radius — SECONDARY CHANNEL
+## CJ Affiliate
 
-| Field | Status |
+| Field | Detail |
 |---|---|
-| Account status | **Site verified 2026-06-09** — not yet joined programs |
-| Verification meta tag | `<meta name="impact-site-verification" value="8cd897e2-197c-4834-b4e7-0b269ff012cf">` installed via script.js IIFE #12 |
-| Relevant programs | Car shopping (Edmunds, Cars.com, TrueCar), Home (Home Depot, Wayfair), Electronics (Best Buy, Newegg) |
-| Commission model | Lead generation ($5–$20 per referral for car research), retail commissions (4–8%) |
-| Priority | Medium — apply to Edmunds and Cars.com programs post-Amazon Associates |
+| Property Name | SmartConsumerHQ |
+| Property ID | `101779331` |
+| Account Email | lv100roxas@gmail.com |
+| Primary Model | Product Comparison, Reviews, or Discovery |
+| Secondary Model | Content / Blog / Media |
+| Status | Active — no active advertiser relationships yet |
 
-**Action required:** After Amazon Associates is approved, log in to Impact Radius and apply to: Edmunds (car research leads), Cars.com, TrueCar. These monetize the family SUVs guide independently of Amazon, since Amazon does not sell vehicles.
+**Next action:** Log in to CJ and apply to relevant advertiser programs:
+- Best Buy (electronics — pairs with smartwatches guide)
+- Target (home goods, fitness — pairs with home gym guide)
+- Home Depot / Lowe's (home office, products)
+- Walmart (already applied via direct — check if CJ version available)
 
 ---
 
-### 3. Display Advertising — FUTURE CHANNEL
+## Walmart Affiliates
 
-| Field | Status |
+| Field | Detail |
 |---|---|
-| Current monthly sessions | Unknown — site launched June 2026, no organic traffic data yet |
-| Ezoic minimum | 10,000 sessions/month |
-| Mediavine minimum | 50,000 sessions/month |
-| AdThrive minimum | 100,000 pageviews/month |
-| Estimated timeline | 6–18 months from launch to Ezoic eligibility (organic traffic ramp-up) |
-| Priority | Low — not actionable until traffic milestone reached |
+| Status | Application submitted — pending approval |
+| Expected timeline | 5–10 business days typical |
+| When approved | Add Walmart product links as secondary source on all guides |
 
 ---
 
-### 4. Email List — SUPPORTING CHANNEL
+## Impact Radius
 
-| Field | Status |
+| Field | Detail |
 |---|---|
-| Newsletter form | Present on homepage and all guide sidebars |
-| Real provider connected | **No — form returns fake success message** |
-| Recommended provider | Mailchimp (free to 500 subscribers) or ConvertKit (free to 1,000) |
-| Monetization value | Repeat traffic driver; future product/course revenue potential |
-| Priority | Medium — connect before first traffic milestone |
-
-**Action required:** Sign up for Mailchimp (free tier). Replace the fake newsletter form submission handler in `script.js` IIFE #4 with a real Mailchimp API call or embed their hosted form. See `tools/content-workflow.md` for context.
+| Status | Account created — website verification failed |
+| Decision | Skip for now — revisit when site has more traffic |
+| Verification tags | Removed from index.html to keep codebase clean |
 
 ---
 
-### 5. Alternative Affiliate Programs
+## Future Networks (Not Yet Applied)
 
-| Program | Network | Relevant Guides | Commission |
-|---|---|---|---|
-| Garmin | Direct / ShareASale | Smartwatches | 5–8% |
-| Fitbit | Impact Radius | Smartwatches | 4–6% |
-| FlexiSpot | Direct | Standing Desks | 5–10% |
-| Autonomous | Direct | Standing Desks | 5–10% |
-| Bowflex / Nautilus | ShareASale | Home Gym | 4–8% |
-| Edmunds | Impact Radius | Family SUVs | $5–$15/lead |
-| TrueCar | CJ Affiliate | Family SUVs | $8–$20/lead |
-
-Apply to brand-direct programs only after Amazon Associates is generating initial commissions, as they require ongoing management and may have minimum traffic requirements.
-
----
-
-## Monetization Timeline
-
-| Milestone | Target | Action |
+| Network | Relevant Guides | Priority |
 |---|---|---|
-| Amazon Associates approval | Immediate | Submit application |
-| First affiliate commission | 30–60 days post-approval | Requires 3 qualifying sales within 180 days |
-| Impact Radius — car programs | 2–4 weeks | Apply post-Amazon Associates |
-| Newsletter connected | 2 weeks | Mailchimp free tier setup |
-| Ezoic display ads | 6–18 months | Requires 10K sessions/month |
-| Amazon Associates full revenue | 3–6 months | Traffic builds through organic rankings |
+| Best Buy (via CJ) | Smartwatches, Tech | High |
+| Target (via Impact or direct) | Home Fitness, Home Products | Medium |
+| Home Depot (via CJ or direct) | Home Office, Home Products | Medium |
+| Lowe's (via CJ) | Home Products | Low |
+| Impact Radius | All categories | Low — revisit later |
 
 ---
 
-## Revenue Projections (Conservative)
+## Revenue Timeline
 
-| Timeline | Monthly Sessions | Est. Monthly Revenue |
+| Milestone | Action | Timeline |
 |---|---|---|
-| Month 1–3 (ramp-up) | 200–500 | $10–$40 |
-| Month 4–6 | 500–2,000 | $40–$150 |
-| Month 7–12 | 2,000–8,000 | $150–$600 |
-| Year 2 | 8,000–25,000 | $600–$2,000 |
-| Year 3 | 25,000–75,000 | $2,000–$6,000 |
-
-*Projections assume: affiliate CTR of 2–4%, Amazon conversion rate of 8–10%, commission rates of 3–6% average across product mix. Traffic growth assumes consistent content publishing (2–3 guides/month) and organic search ranking development over 12–24 months.*
+| **First affiliate clicks** | Replace `href="#"` placeholders with real Amazon URLs | **This week** |
+| **First commission** | Requires 3 qualifying Amazon sales within 180 days | 30–90 days post-link update |
+| **CJ advertiser programs** | Apply to Best Buy, Target, Home Depot via CJ dashboard | This month |
+| **Walmart live** | Replace Walmart placeholders once approved | After approval |
+| **Display ads (Ezoic)** | Requires 10,000 sessions/month | 6–18 months |
 
 ---
 
-## Next Recommended Actions (Priority Order)
+## Next Recommended Actions
 
-1. **[IMMEDIATE]** Submit Amazon Associates application
-2. **[2 WEEKS]** Connect newsletter form to Mailchimp
-3. **[1 MONTH]** Apply to Impact Radius car programs (Edmunds, TrueCar) for SUV guide monetization
-4. **[ONGOING]** Publish 2–3 guides per month to grow organic traffic
-5. **[6 MONTHS]** Evaluate Ezoic when approaching 10K sessions/month
+1. **[IMMEDIATE]** Update all `href="#"` affiliate links in 4 guides with real Amazon URLs (`?tag=smartconsu0ca-20`)
+2. **[THIS WEEK]** Log in to CJ Affiliate and apply to Best Buy, Target, Home Depot advertiser programs
+3. **[ONGOING]** Monitor Walmart application — add Walmart links on approval
+4. **[ONGOING]** Publish 2–3 guides/month to grow traffic toward display ad thresholds
 
-See `docs/01_product/MONETIZATION_PLAN.md` for the full strategic monetization plan.
+See `docs/05_research/AFFILIATE_LINK_MAP.md` for all placeholder locations across the 4 published guides.

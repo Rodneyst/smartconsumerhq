@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 12)
+**Last updated:** 2026-06-09 (Entry 16)
 
 ---
 
@@ -188,8 +188,11 @@ See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.m
 
 | Item | Status |
 |---|---|
-| Affiliate links | 11 `href="#"` placeholders in `best-home-gym-equipment.html` — see `docs/05_research/AFFILIATE_LINK_MAP.md` |
-| Amazon Associates | Not yet applied — see application checklist in AFFILIATE_LINK_MAP.md |
+| Affiliate links | All guides have `href="#"` placeholders — replace with real URLs using tag `smartconsu0ca-20` |
+| Amazon Associates | ✅ **ACTIVE** — Store ID: `smartconsu0ca-20` · Direct Deposit · USAA Checking |
+| CJ Affiliate | ✅ **ACTIVE** — Property ID: `101779331` · no advertiser programs joined yet |
+| Walmart Affiliates | ⏳ **Pending** — application submitted |
+| Impact Radius | ⏸ Skipped — verification failed; revisit later |
 | Newsletter | Form exists but not connected to a real email provider |
 | Revenue | $0 |
 
@@ -217,7 +220,7 @@ The site is built as an affiliate content business:
 | Google Search Console not verified | ~~High~~ | **RESOLVED** — Verified via Cloudflare DNS 2026-06-09; sitemap submitted |
 | GA4 not active | ~~Medium~~ | **RESOLVED** — `G-KNC6546GMH` activated 2026-06-09 |
 | Newsletter form not connected to real provider | Medium | Pending |
-| No affiliate links on any page | High | Pending — requires Amazon Associates approval |
+| Affiliate links still `href="#"` placeholders | High | Amazon Associates active (`smartconsu0ca-20`) — replace with real product URLs |
 | Money Saving and Home Products have no real guides | Medium | Pending |
 | No images on any page | Medium | Pending |
 
