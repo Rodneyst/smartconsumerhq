@@ -1077,3 +1077,57 @@ Requirements:
 After publishing: update PROJECT_STATUS.md, TODO.md, CONTENT_ROADMAP.md,
 AI_HANDOFF.md, session log. Copy to local Mac. Commit. Push.
 ```
+
+---
+
+## Entry 9
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Install Microsoft Clarity heatmap and session recording tracker on all pages.
+
+**Prompt Summary:**
+User provided Microsoft Clarity snippet with Project ID `x4ihicw52o`. Install on all pages.
+
+---
+
+### Actions Log
+
+- [x] Added Clarity as IIFE #11 in `script.js` — loads on all 14 pages ✓
+- [x] Updated `docs/01_product/PROJECT_STATUS.md` — Clarity row added to analytics table ✓
+- [x] Appended Entry 9 to session log ✓
+- [x] Copied session log to local Mac ✓
+- [x] Committed and pushed ✓
+
+---
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `script.js` | Added IIFE #11 — Microsoft Clarity loader, Project ID `x4ihicw52o` |
+| `docs/01_product/PROJECT_STATUS.md` | Clarity row added to analytics table; Entry 9 added to work log |
+| `docs/99_session_logs/2026-06-09-session-log.md` | Appended Entry 9 (this entry) |
+
+---
+
+### Analytics Stack (complete)
+
+| Platform | Type | ID / Status |
+|---|---|---|
+| Google Analytics 4 | Pageviews, acquisition, conversions | `G-KNC6546GMH` — active |
+| Microsoft Clarity | Heatmaps, session recordings, rage clicks | `x4ihicw52o` — active |
+| Google Search Console | Impressions, clicks, coverage | Verified via DNS |
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push)* | `feat: install microsoft clarity heatmap and session recording` |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — Cloudflare auto-deploy triggered.

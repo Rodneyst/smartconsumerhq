@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 8)
+**Last updated:** 2026-06-09 (Entry 9)
 
 ---
 
@@ -177,6 +177,7 @@ smartconsumerhq/
 | Platform | Status | Notes |
 |---|---|---|
 | GA4 | **ACTIVE** — `G-KNC6546GMH` live since 2026-06-09 | Monitor traffic in GA4 → Reports → Realtime and Acquisition |
+| Microsoft Clarity | **ACTIVE** — Project ID `x4ihicw52o` installed 2026-06-09 | Heatmaps + session recordings on all pages via `script.js` IIFE #11 |
 | Google Search Console | **VERIFIED + SITEMAP SUBMITTED** — 2026-06-09 | Verified via Cloudflare DNS TXT record; 14-URL sitemap indexed; monitor coverage in GSC |
 
 See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.md` for full setup history.
@@ -239,6 +240,7 @@ The site is built as an affiliate content business:
 | 2026-06-09 | *(Entry 6)* | **Activate GA4** — replaced `G-XXXXXXXXXX` with `G-KNC6546GMH` in `script.js`; tracking live on all pages |
 | 2026-06-09 | *(Entry 7)* | **Infrastructure complete** — GSC verified (DNS), sitemap submitted, GA4 confirmed active; create CONTENT_ROADMAP.md + MONETIZATION_PLAN.md |
 | 2026-06-09 | *(Entry 8)* | **Audit pass** — Verified `best-home-gym-equipment.html` meets all requirements: 3,681 words, SEO complete, FAQ + Article schema, affiliate-ready, sitemap ✓, category page ✓ |
+| 2026-06-09 | *(Entry 9)* | **Microsoft Clarity installed** — Project ID `x4ihicw52o` added to `script.js` IIFE #11; heatmaps + session recordings live on all pages |
 
 ---
 

@@ -308,3 +308,18 @@
   gtag('config', GA4_ID);
 })();
 
+
+/* ================================================
+   11. MICROSOFT CLARITY
+   Active — Project ID: x4ihicw52o
+   Installed 2026-06-09. Heatmaps, session recordings,
+   user behaviour analytics.
+   ================================================ */
+(function initClarity() {
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window,document,'clarity','script','x4ihicw52o');
+})();
+
