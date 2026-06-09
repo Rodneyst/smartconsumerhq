@@ -24,7 +24,7 @@ This document defines the top 20 buying guides to publish, in priority order. Gu
 
 | # | Guide Title | Category | Target Keyword | Intent | Mon. Score | Est. Searches | Est. Traffic | Status |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Best Budget Standing Desks Under $400 | Home Office | best standing desks under 400 | CI | ★★★★★ | 18,000 | 540–1,440 | Placeholder |
+| 1 | Best Budget Standing Desks Under $400 | Home Office | best standing desks under 400 | CI | ★★★★★ | 18,000 | 540–1,440 | **Complete** |
 | 2 | Best Smartwatches Under $300 | Tech & Gadgets | best smartwatches under 300 | CI | ★★★★★ | 22,000 | 660–1,760 | Placeholder |
 | 3 | Best Family SUVs for Value | Family & Parenting | best family SUVs for the money | CI | ★★★★☆ | 14,000 | 420–1,120 | Placeholder |
 | 4 | Best Cashback Apps 2026 | Money Saving | best cashback apps | CI | ★★★★☆ | 27,000 | 810–2,160 | Not started |

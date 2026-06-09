@@ -2,7 +2,7 @@
 
 This document is the primary entry point for any AI agent beginning work on this project. Read this first, then read the files listed in "Required Reading."
 
-**Last updated:** 2026-06-09 (Entry 7)
+**Last updated:** 2026-06-09 (Entry 10)
 
 ---
 
@@ -129,6 +129,7 @@ The full workflow is documented in `tools/content-workflow.md`. The short versio
 | robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
 | Google Search Console | **VERIFIED** — Cloudflare DNS TXT record 2026-06-09; sitemap submitted |
 | GA4 | **ACTIVE** — `G-KNC6546GMH` firing `page_view` on all 14 pages since 2026-06-09 |
+| Microsoft Clarity | **ACTIVE** — Project ID `x4ihicw52o` in `script.js` IIFE #11; heatmaps + session recordings |
 | Schema.org JSON-LD | Present on all pages |
 | Canonical URLs | Present on all pages |
 | OG / Twitter Card tags | Present on all pages |
@@ -139,7 +140,7 @@ The full workflow is documented in `tools/content-workflow.md`. The short versio
 ## Current Roadmap Status
 
 - **Phase 1 (Foundation):** **100% complete.** sitemap.xml, robots.txt, Cloudflare deployment, GSC verified, sitemap submitted, GA4 active.
-- **Phase 2 (Content):** 1 of 4 placeholder guides complete (best-home-gym-equipment). Next: best-budget-standing-desks. Full plan in `docs/01_product/CONTENT_ROADMAP.md`.
+- **Phase 2 (Content):** 2 of 4 placeholder guides complete (best-home-gym-equipment, best-budget-standing-desks). Next: best-smartwatches-under-300. Full plan in `docs/01_product/CONTENT_ROADMAP.md`.
 - **Phase 3 (SEO):** Foundation complete. GA4 collecting data. Organic rankings to develop as content grows.
 - **Phases 4–5 (Monetization):** Not started. Plan in `docs/01_product/MONETIZATION_PLAN.md`. Amazon Associates requires 2+ more complete guides first.
 
@@ -155,8 +156,8 @@ See `docs/01_product/ROADMAP.md` for the full 5-phase plan.
 
 **AI next tasks (priority order):**
 3. ~~Write full content for `guides/best-home-gym-equipment.html`~~ — **Done 2026-06-09** ✓
-4. **Write `guides/best-budget-standing-desks.html`** — next immediate task
-5. Write `guides/best-smartwatches-under-300.html`
+4. ~~Write `guides/best-budget-standing-desks.html`~~ — **Done 2026-06-09** ✓ (4,663 words)
+5. **Write `guides/best-smartwatches-under-300.html`** — next immediate task
 6. Write `guides/best-family-suvs-for-value.html`
 7. Apply for Amazon Associates (after 3 complete guides) — checklist in `docs/05_research/AFFILIATE_LINK_MAP.md`
 8. Write first Money Saving guide + first Home Products guide
@@ -171,7 +172,7 @@ See `docs/01_product/TODO.md` for the complete task list.
 
 | Issue | Severity | Notes |
 |---|---|---|
-| 3 guide pages still contain placeholder content | High | Next AI task |
+| 2 guide pages still contain placeholder content | High | Next AI task — smartwatches, family SUVs |
 | No affiliate links on any page — zero revenue potential | High | Blocked on Amazon Associates approval |
 | Newsletter form not connected to real provider | Medium | Pending — Mailchimp or ConvertKit |
 | Money Saving and Home Products have zero real guides | Medium | Guides 5–7 in content roadmap |
@@ -185,7 +186,7 @@ See `docs/01_product/TODO.md` for the complete task list.
 
 **Infrastructure complete.** All Phase 1 setup tasks are done.
 
-**AI next task:** Write `guides/best-budget-standing-desks.html` full content (Priority #1 in CONTENT_ROADMAP.md). Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md`. Target: 5 products, comparison table, buying guide section, FAQ, internal links to home-office category.
+**AI next task:** Write `guides/best-smartwatches-under-300.html` full content (Priority #2 in CONTENT_ROADMAP.md). Use `content/templates/buying-guide-template.md`. Follow `tools/content-workflow.md`. Target: 5 products, comparison table, buying guide section, FAQ, internal links to tech-gadgets category.
 
 **User action after 3 complete guides:** Apply for Amazon Associates — checklist at `docs/05_research/AFFILIATE_LINK_MAP.md`.
 

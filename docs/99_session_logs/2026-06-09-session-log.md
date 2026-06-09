@@ -1131,3 +1131,81 @@ User provided Microsoft Clarity snippet with Project ID `x4ihicw52o`. Install on
 ### GitHub Pushes Completed
 
 1 push to `origin main` — Cloudflare auto-deploy triggered.
+
+---
+
+## Entry 10
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Publish Guide #2: `guides/best-budget-standing-desks.html` — full 3,000+ word article targeting "best standing desks under $400".
+
+---
+
+### Work Completed
+
+1. **Wrote and published `guides/best-budget-standing-desks.html`** — Full rewrite of placeholder file. 4,663 words (HTML-stripped), 703 lines.
+
+2. **Article structure:**
+   - SEO `<title>` targeting "best standing desks under $400"
+   - Canonical URL: `https://smartconsumerhq.com/guides/best-budget-standing-desks` (extension-free — fixed from placeholder `.html` version)
+   - Affiliate disclosure above the fold
+   - Introduction (3 paragraphs)
+   - Quick picks table (5 desks)
+   - 5 full product reviews with pros/cons: FlexiSpot E7, Autonomous SmartDesk Pro, VIVO Electric 55", SHW Electric Desk, FlexiSpot E5
+   - Full comparison table (7 columns)
+   - Buying guide section (5 factors: single vs dual motor, weight capacity, height range, memory presets, desktop size)
+   - Common mistakes section (5 items)
+   - 6-question FAQ accordion
+   - Verdict box with final recommendation
+   - Internal links to home-office category, home gym guide, smartwatches guide
+
+3. **Schema.org JSON-LD:**
+   - `Article` schema with `datePublished: 2026-06-09`
+   - `FAQPage` schema — 6 Q&A pairs
+
+4. **Affiliate links:** 10 `href="#" rel="nofollow sponsored" target="_blank"` placeholders (5 product cards + 5 sidebar quick picks)
+
+5. **Updated documentation:**
+   - `docs/01_product/PROJECT_STATUS.md` — guide status updated to "Live — 4,663 words", count updated to 2 of 4 guides complete
+   - `docs/01_product/TODO.md` — standing desks marked `[x]` complete
+   - `docs/01_product/CONTENT_ROADMAP.md` — Guide #1 status changed Placeholder → Complete
+   - `docs/02_development/AI_HANDOFF.md` — phase 2 updated (2 of 4 guides complete), next task updated to smartwatches, Clarity added to analytics table
+
+---
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `guides/best-budget-standing-desks.html` | Full rewrite — 703 lines, 4,663 words |
+| `docs/01_product/PROJECT_STATUS.md` | Guide status + count updated |
+| `docs/01_product/TODO.md` | Standing desks marked complete |
+| `docs/01_product/CONTENT_ROADMAP.md` | Guide #1 status: Placeholder → Complete |
+| `docs/02_development/AI_HANDOFF.md` | Phase 2 progress, next task, Clarity added |
+
+---
+
+### Content Metrics
+
+| Metric | Value |
+|---|---|
+| Word count | 4,663 |
+| Products reviewed | 5 |
+| FAQ questions | 6 |
+| Affiliate link placeholders | 10 |
+| JSON-LD schemas | 2 (Article + FAQPage) |
+| Comparison tables | 2 (Quick Picks + Full Specs) |
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push)* | `feat: publish best-budget-standing-desks guide (4663 words, 5 products, full SEO)` |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — Cloudflare auto-deploy triggered.

@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 9)
+**Last updated:** 2026-06-09 (Entry 10)
 
 ---
 
@@ -125,11 +125,11 @@ smartconsumerhq/
 | Guide | Category | URL | Status |
 |---|---|---|---|
 | Best Home Gym Equipment for Beginners | Home Fitness | `/guides/best-home-gym-equipment` | **Live — 3,681 words; verified 2026-06-09. SEO, FAQ schema, affiliate links, comparison tables complete** |
-| Best Budget Standing Desks Under $400 | Home Office | `/guides/best-budget-standing-desks` | Live — placeholder content only |
+| Best Budget Standing Desks Under $400 | Home Office | `/guides/best-budget-standing-desks` | **Live — 4,663 words; verified 2026-06-09. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide, common mistakes complete** |
 | Best Smart Watches Under $300 | Tech & Gadgets | `/guides/best-smartwatches-under-300` | Live — placeholder content only |
 | Best Family SUVs for Value | Family & Parenting | `/guides/best-family-suvs-for-value` | Live — placeholder content only |
 
-1 of 4 guides has full published content. 3 guides remain with placeholder content.
+2 of 4 guides have full published content. 2 guides remain with placeholder content.
 
 ---
 
@@ -213,7 +213,7 @@ The site is built as an affiliate content business:
 
 | Issue | Severity | Status |
 |---|---|---|
-| 3 guide pages still contain placeholder content only | High | Pending — home-gym guide now complete |
+| 2 guide pages still contain placeholder content only | High | Pending — home-gym and standing-desks guides complete |
 | Google Search Console not verified | ~~High~~ | **RESOLVED** — Verified via Cloudflare DNS 2026-06-09; sitemap submitted |
 | GA4 not active | ~~Medium~~ | **RESOLVED** — `G-KNC6546GMH` activated 2026-06-09 |
 | Newsletter form not connected to real provider | Medium | Pending |
@@ -241,6 +241,7 @@ The site is built as an affiliate content business:
 | 2026-06-09 | *(Entry 7)* | **Infrastructure complete** — GSC verified (DNS), sitemap submitted, GA4 confirmed active; create CONTENT_ROADMAP.md + MONETIZATION_PLAN.md |
 | 2026-06-09 | *(Entry 8)* | **Audit pass** — Verified `best-home-gym-equipment.html` meets all requirements: 3,681 words, SEO complete, FAQ + Article schema, affiliate-ready, sitemap ✓, category page ✓ |
 | 2026-06-09 | *(Entry 9)* | **Microsoft Clarity installed** — Project ID `x4ihicw52o` added to `script.js` IIFE #11; heatmaps + session recordings live on all pages |
+| 2026-06-09 | *(Entry 10)* | **Guide #2 published** — `guides/best-budget-standing-desks.html` full content: 4,663 words, 5 desks reviewed, dual comparison tables, FAQ + Article JSON-LD schema, buying guide, common mistakes, affiliate link placeholders |
 
 ---
 
