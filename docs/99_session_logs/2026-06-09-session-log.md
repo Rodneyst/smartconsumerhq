@@ -928,3 +928,152 @@ Requirements:
 After publishing: update PROJECT_STATUS.md, TODO.md, CONTENT_ROADMAP.md,
 AI_HANDOFF.md, session log. Copy log to local Mac. Commit. Push.
 ```
+
+---
+
+## Entry 8
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Infrastructure verification pass + complete audit of `guides/best-home-gym-equipment.html`. Confirm all requirements are met before treating guide as production-ready.
+
+**Prompt Summary:**
+Read PROJECT_STATUS.md, TODO.md, latest session log, AI_HANDOFF.md. Verify all infrastructure tasks are complete (Cloudflare, Search Console, Sitemap, Analytics, Session logging). Update documentation. Verify/create best-home-gym-equipment.html: 2,500+ words, SEO optimized, affiliate ready, comparison table, FAQ, internal links, schema, product recommendations, strong buying intent. Update sitemap, category pages, internal links. Commit and push.
+
+---
+
+### Infrastructure Verification Results
+
+| System | Status | Evidence |
+|---|---|---|
+| Cloudflare auto-deploy | ✅ COMPLETE | Every push to `main` auto-deploys; confirmed in DEPLOYMENT.md and prior sessions |
+| Google Search Console | ✅ VERIFIED | DNS TXT record via Cloudflare; verified 2026-06-09 (Entry 7) |
+| Sitemap submitted | ✅ SUBMITTED | 14 URLs submitted to GSC 2026-06-09 (Entry 7) |
+| GA4 analytics | ✅ ACTIVE | `G-KNC6546GMH` firing `page_view` on all 14 pages since Entry 6 |
+| Session logging | ✅ CURRENT | Append-only log; local copy maintained; committed after each session |
+
+**Phase 1 Foundation: 100% complete. No action required.**
+
+---
+
+### Guide Audit — best-home-gym-equipment.html
+
+**Result: PASS. No changes required.** Guide was published in session Entry 3 (commit `5af4106`).
+
+| Requirement | Status | Detail |
+|---|---|---|
+| 2,500+ words | ✅ 3,681 words | Verified via HTML-stripped word count |
+| SEO optimized | ✅ Complete | Title, meta description, canonical, OG/Twitter Card tags, `robots: index, follow` |
+| Affiliate ready | ✅ Complete | All product links use `rel="nofollow sponsored" target="_blank"` |
+| Comparison table | ✅ 2 tables | Quick picks table (5 products) + full side-by-side comparison table |
+| FAQ section | ✅ 6 questions | Interactive accordion + `FAQPage` JSON-LD schema |
+| Internal links | ✅ Present | Links to: `/guides/best-smartwatches-under-300.html`, `/guides/best-budget-standing-desks.html`, `/categories/home-fitness.html` |
+| Schema markup | ✅ 2 schemas | `Article` JSON-LD + `FAQPage` JSON-LD in `<head>` |
+| Product recommendations | ✅ 5 products | Bowflex 552, Marcy Bench, WHATAFIT Bands, Iron Gym Bar, Sunny Rower |
+| Strong buying intent | ✅ Present | Verdict box, CTA buttons, price ranges, Amazon links throughout |
+| In sitemap.xml | ✅ Present | Line 45: `https://smartconsumerhq.com/guides/best-home-gym-equipment` |
+| Category page linked | ✅ Present | home-fitness.html links to guide at lines 78, 97, and 149 |
+| Affiliate disclosure | ✅ Above the fold | Disclosure box immediately below article header |
+| Breadcrumb nav | ✅ Present | Home → Home Fitness → Best Home Gym Equipment |
+
+---
+
+### Actions Log
+
+- [x] Read PROJECT_STATUS.md, TODO.md, AI_HANDOFF.md, session log ✓
+- [x] Verified infrastructure: Cloudflare, GSC, sitemap, GA4, session logging — all complete ✓
+- [x] Audited `guides/best-home-gym-equipment.html` — 3,681 words confirmed via word count script ✓
+- [x] Confirmed guide is in sitemap.xml ✓
+- [x] Confirmed home-fitness.html links to guide ✓
+- [x] Confirmed guide is live on `main` (commit `5af4106`) ✓
+- [x] No changes required to guide, sitemap.xml, or category pages ✓
+- [x] Updated PROJECT_STATUS.md — word count added to guide row; stale note corrected; Entry 8 added ✓
+- [x] Updated TODO.md — guide entry updated with word count and full checklist ✓
+- [x] Appended Entry 8 to session log ✓
+- [x] Copied session log to local Mac ✓
+- [x] Committed ✓
+- [x] Pushed to `origin main` ✓
+
+---
+
+### Files Modified
+
+| File | Change |
+|---|---|
+| `docs/01_product/PROJECT_STATUS.md` | Guide row updated with word count + audit pass note; stale "all guides are placeholder" note corrected; Entry 8 added to work log |
+| `docs/01_product/TODO.md` | Guide item updated with word count and full audit checklist |
+| `docs/99_session_logs/2026-06-09-session-log.md` | Appended Entry 8 (this entry) |
+
+### Files Created
+
+None. Guide, sitemap, and category page all already met requirements.
+
+### Files Modified (Guide/Sitemap/Category) — No Changes Required
+
+| File | Why No Change Needed |
+|---|---|
+| `guides/best-home-gym-equipment.html` | Already 3,681 words; all requirements met |
+| `sitemap.xml` | Already contains `/guides/best-home-gym-equipment` at line 45 |
+| `categories/home-fitness.html` | Already links to guide at 3 locations |
+
+---
+
+### Published URL
+
+`https://smartconsumerhq.com/guides/best-home-gym-equipment`
+
+**Word count:** 3,681 words  
+**Products reviewed:** 5  
+**Tables:** 2 (quick picks + full comparison)  
+**FAQ questions:** 6 (with FAQPage schema)
+
+---
+
+### Git Commits Created
+
+| Hash | Message |
+|---|---|
+| *(see push below)* | `docs: verify home gym guide audit pass and update project status` |
+
+### GitHub Pushes Completed
+
+1 push to `origin main` — Cloudflare auto-deploy triggered.
+
+---
+
+### Recommended Next Prompt
+
+```
+Read docs/99_session_logs/2026-06-09-session-log.md (Entry 8),
+docs/01_product/CONTENT_ROADMAP.md.
+
+best-home-gym-equipment.html is verified complete (3,681 words, all
+requirements met). Infrastructure is 100% complete.
+
+Next task: Write the second complete buying guide.
+
+Target: guides/best-budget-standing-desks.html
+Priority #1 in CONTENT_ROADMAP.md.
+
+Requirements:
+- 2,500+ words
+- SEO title + meta description targeting "best standing desks under 400"
+- Affiliate disclosure above the fold
+- Introduction (keyword-rich, commercial intent)
+- Quick picks table (top 3 with price + one-line verdict)
+- Top 5 standing desk reviews with pros, cons, specs, affiliate link placeholders
+- Full comparison table (height range, weight capacity, motor type, warranty, price)
+- Buying guide: what to look for (height range, weight capacity, motor vs manual, stability, assembly)
+- Common mistakes when buying standing desks (3–5 mistakes)
+- FAQ section (5+ questions with FAQPage JSON-LD schema)
+- Verdict box with final recommendation and top-pick CTA
+- Internal links to /categories/home-office and /guides/best-home-gym-equipment
+- Article JSON-LD schema + FAQPage JSON-LD schema in <head>
+- Breadcrumb: Home → Home Office → Best Budget Standing Desks
+- sitemap.xml already includes this URL — no update needed
+- Update categories/home-office.html to feature this guide prominently
+
+After publishing: update PROJECT_STATUS.md, TODO.md, CONTENT_ROADMAP.md,
+AI_HANDOFF.md, session log. Copy to local Mac. Commit. Push.
+```

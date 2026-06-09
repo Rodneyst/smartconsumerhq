@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 7)
+**Last updated:** 2026-06-09 (Entry 8)
 
 ---
 
@@ -124,12 +124,12 @@ smartconsumerhq/
 
 | Guide | Category | URL | Status |
 |---|---|---|---|
-| Best Home Gym Equipment for Beginners | Home Fitness | `/guides/best-home-gym-equipment` | **Live — full content published 2026-06-09** |
+| Best Home Gym Equipment for Beginners | Home Fitness | `/guides/best-home-gym-equipment` | **Live — 3,681 words; verified 2026-06-09. SEO, FAQ schema, affiliate links, comparison tables complete** |
 | Best Budget Standing Desks Under $400 | Home Office | `/guides/best-budget-standing-desks` | Live — placeholder content only |
 | Best Smart Watches Under $300 | Tech & Gadgets | `/guides/best-smartwatches-under-300` | Live — placeholder content only |
 | Best Family SUVs for Value | Family & Parenting | `/guides/best-family-suvs-for-value` | Live — placeholder content only |
 
-All 4 guides contain intro copy and "coming soon" placeholders. Full article content has not yet been written.
+1 of 4 guides has full published content. 3 guides remain with placeholder content.
 
 ---
 
@@ -238,6 +238,7 @@ The site is built as an affiliate content business:
 | 2026-06-09 | *(Entry 5)* | Analytics foundation: GA4 code + GSC meta tag installed; AFFILIATE_LINK_MAP.md, GA4_SETUP.md, SEARCH_CONSOLE_SETUP.md created |
 | 2026-06-09 | *(Entry 6)* | **Activate GA4** — replaced `G-XXXXXXXXXX` with `G-KNC6546GMH` in `script.js`; tracking live on all pages |
 | 2026-06-09 | *(Entry 7)* | **Infrastructure complete** — GSC verified (DNS), sitemap submitted, GA4 confirmed active; create CONTENT_ROADMAP.md + MONETIZATION_PLAN.md |
+| 2026-06-09 | *(Entry 8)* | **Audit pass** — Verified `best-home-gym-equipment.html` meets all requirements: 3,681 words, SEO complete, FAQ + Article schema, affiliate-ready, sitemap ✓, category page ✓ |
 
 ---
 
