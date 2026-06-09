@@ -75,12 +75,12 @@ The affiliate link infrastructure is centralized in two files. No affiliate IDs 
 
 ### Active Networks
 
-| Network | Status | ID |
-|---|---|---|
-| Amazon Associates | **Active** | Store ID: `smartconsu0ca-20` |
-| CJ Affiliate | **Active** | Property ID: `101779331` |
-| Walmart Affiliates | Pending | Application submitted |
-| Impact Radius | Disabled | Verification failed — revisit later |
+| Network | Status | ID | Links Live |
+|---|---|---|---|
+| Amazon Associates | **Active** | Store ID: `smartconsu0ca-20` | 33 links across 3 guides |
+| CJ Affiliate | **Active** | Property ID: `101779331` | 0 — no advertiser programs joined yet |
+| Walmart Affiliates | Pending | Application submitted | 0 |
+| Impact Radius | Disabled | Verification failed — revisit later | 0 |
 
 ### Key Functions
 
@@ -238,12 +238,12 @@ Full details: `docs/02_development/DEPLOYMENT.md`
 | Phase | Status |
 |---|---|
 | Phase 1: Foundation | **Complete** — hosting, DNS, GSC, GA4, Clarity, sitemap |
-| Phase 2: Content Engine | **Active** — 4 guides live; affiliate config + content templates built |
-| Phase 3: SEO | **Active** — GSC verified, sitemap indexed, schema on all pages |
-| Phase 4: Monetization | **Active** — Amazon Associates active (`smartconsu0ca-20`); replace affiliate link placeholders |
-| Phase 5: Scale | Not started |
+| Phase 2: Content Engine | **Complete** — 4 guides live, affiliate links active, content pipeline built |
+| Phase 3: SEO | **Active** — GSC verified, sitemap indexed, schema on all pages; awaiting rankings |
+| Phase 4: Monetization | **Active** — 33 Amazon affiliate links live (`smartconsu0ca-20`); CJ needs advertiser programs |
+| Phase 5: Scale | Not started — requires traffic |
 
-**Immediate next step:** Replace all `href="#"` affiliate link placeholders in the 4 published guides with real Amazon product URLs using `tag=smartconsu0ca-20`.
+**Immediate next step:** Upgrade Amazon search URLs to direct ASINs (SiteStripe), apply to CJ advertiser programs, and generate next article from content queue (q001: best-ergonomic-office-chairs-under-300).
 
 Full roadmap: `docs/01_product/ROADMAP.md`
 

@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 19)
+**Last updated:** 2026-06-09 (Entry 19 — post-deployment verified)
 
 ---
 
@@ -170,7 +170,7 @@ smartconsumerhq/
 
 | Item | Status |
 |---|---|
-| sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — 14 URLs |
+| sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — **19 URLs** (updated Phase 2A) |
 | robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
 | Google Search Console | **VERIFIED** — Confirmed 2026-06-09 via Cloudflare DNS TXT record; sitemap submitted |
 | GA4 | **ACTIVE** — Measurement ID `G-KNC6546GMH` installed in `script.js` IIFE #10; tracking live |
@@ -187,7 +187,7 @@ smartconsumerhq/
 |---|---|---|
 | GA4 | **ACTIVE** — `G-KNC6546GMH` live since 2026-06-09 | Monitor traffic in GA4 → Reports → Realtime and Acquisition |
 | Microsoft Clarity | **ACTIVE** — Project ID `x4ihicw52o` installed 2026-06-09 | Heatmaps + session recordings on all pages via `script.js` IIFE #11 |
-| Google Search Console | **VERIFIED + SITEMAP SUBMITTED** — 2026-06-09 | Verified via Cloudflare DNS TXT record; 14-URL sitemap indexed; monitor coverage in GSC |
+| Google Search Console | **VERIFIED + SITEMAP SUBMITTED** — 2026-06-09 | Verified via Cloudflare DNS TXT record; sitemap submitted (now 19 URLs — resubmit); monitor coverage in GSC |
 
 See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.md` for full setup history.
 
@@ -203,7 +203,8 @@ See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.m
 | Walmart Affiliates | ⏳ **Pending** — application submitted |
 | Impact Radius | ⏸ Skipped — verification failed; revisit later |
 | Newsletter | Form exists but not connected to a real email provider |
-| Revenue | $0 |
+| Revenue | $0 — site is earning-eligible; awaiting organic traffic |
+| Deployment verified | ✅ All 23 URLs return HTTP 200; all 33 affiliate links confirmed live in production HTML — 2026-06-09 |
 
 ---
 

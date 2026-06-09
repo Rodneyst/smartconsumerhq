@@ -1,6 +1,6 @@
 # TODO — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 19)
+**Last updated:** 2026-06-09 (Entry 19 — post-deployment verified)
 
 ---
 
@@ -72,10 +72,14 @@
 - [x] **Activate GA4** — `G-KNC6546GMH` active since 2026-06-09 ✓
 - [x] **Submit updated sitemap** — 19 URLs as of Phase 2A. Resubmit to GSC.
 - [ ] **Resubmit sitemap to GSC** — sitemap now has 19 URLs (was 14); resubmit at search.google.com/search-console
+- [ ] **Run Lighthouse audit** — static HTML should score 90+; confirm no regressions
+- [ ] **Submit to Bing Webmaster Tools** — additional search engine coverage
 
 ### Monetization
 - [x] **Amazon Associates active** — Store ID `smartconsu0ca-20` ✓
 - [x] **CJ Affiliate active** — Property ID `101779331` ✓
+- [x] **33 affiliate links live in production** — post-deployment verified 2026-06-09 ✓
+- [ ] **Upgrade 29 Amazon search URLs to direct ASINs** — Use SiteStripe to get verified current ASINs. Priority: FlexiSpot E7, Apple Watch SE 2, Samsung Galaxy Watch 6, Marcy Bench, WHATAFIT Bands. Direct ASINs convert ~2× better.
 - [ ] **Apply to CJ advertiser programs** — Best Buy, Target, Home Depot via CJ dashboard
 - [ ] **Monitor Walmart Affiliates approval** — application submitted; activate links when approved
 - [ ] **Connect newsletter form to real email provider** — Mailchimp or ConvertKit

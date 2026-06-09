@@ -1876,7 +1876,73 @@ Read affiliate account docs and published content tracker. Replace every affilia
 
 ### GitHub Pushes Completed
 
-Awaiting user confirmation before push.
+**Push executed:** `git push origin main` — `35e46d1..82a98f3`
+
+---
+
+### Post-Deployment Verification (Entry 19 — 2026-06-09)
+
+#### 1. GitHub Commit Receipt
+All 4 commits confirmed received on `main`:
+| SHA | Message | Timestamp |
+|---|---|---|
+| `82a98f3` | chore: update tracking files after affiliate link activation | 2026-06-09T22:55:44Z |
+| `265c3e0` | fix: replace affiliate link placeholders in best-smartwatches | 2026-06-09T22:53:47Z |
+| `1669706` | fix: replace affiliate link placeholders in best-budget-standing-desks | 2026-06-09T22:52:42Z |
+| `5b523e1` | fix: replace affiliate link placeholders in best-home-gym-equipment | 2026-06-09T22:51:44Z |
+
+#### 2. Deployment Pipeline
+- **Check run:** `Workers Builds: smartconsumerhq` → `status: completed`, `conclusion: success`
+- **App:** Cloudflare Workers and Pages
+- **Trigger:** Auto-deploy on push to `main` — confirmed triggered on `82a98f3`
+
+#### 3. Production Build — HTTP Status
+All 23 URLs verified returning HTTP 200:
+
+| URL | Status |
+|---|---|
+| `/` (homepage) | 200 ✅ |
+| `/guides/best-home-gym-equipment` | 200 ✅ |
+| `/guides/best-budget-standing-desks` | 200 ✅ |
+| `/guides/best-smartwatches-under-300` | 200 ✅ |
+| `/guides/best-family-suvs-for-value` | 200 ✅ |
+| `/buying-guides` | 200 ✅ |
+| `/reviews` | 200 ✅ |
+| `/comparisons` | 200 ✅ |
+| `/deals` | 200 ✅ |
+| `/blog` | 200 ✅ |
+| `/categories/home-fitness` | 200 ✅ |
+| `/categories/home-office` | 200 ✅ |
+| `/categories/tech-gadgets` | 200 ✅ |
+| `/categories/family-parenting` | 200 ✅ |
+| `/categories/money-saving` | 200 ✅ |
+| `/categories/home-products` | 200 ✅ |
+| `/legal/affiliate-disclosure` | 200 ✅ |
+| `/legal/privacy-policy` | 200 ✅ |
+| `/legal/terms-of-use` | 200 ✅ |
+| `/sitemap.xml` | 200 ✅ |
+| `/robots.txt` | 200 ✅ |
+| `/styles.css` | 200 ✅ |
+| `/script.js` | 200 ✅ |
+
+Additional assets confirmed 200: `components.js`, `config/affiliate-config.js`, `lib/affiliate.js`
+
+#### 4. Affiliate Link Verification (Production HTML)
+
+| Guide | `href="#"` remaining | `?tag=smartconsu0ca-20` count | `rel="nofollow sponsored"` count | Pass? |
+|---|---|---|---|---|
+| best-home-gym-equipment | 0 | 11 | 11 | ✅ |
+| best-budget-standing-desks | 0 | 11 | 11 | ✅ |
+| best-smartwatches-under-300 | 0 | 11 | 11 | ✅ |
+| best-family-suvs-for-value | 0 (correct) | 0 (correct — N/A) | — | ✅ |
+
+**Spot checks:**
+- Bowflex SelectTech 552 (`B001ARYU58`) appears 3× in home gym guide production HTML ✅
+- Iron Gym (`B001EJMS6K`) appears 2× in home gym guide production HTML ✅
+- Family SUVs guide: 0 amazon.com links in production HTML ✅
+
+#### 5. Issues Found
+None. Zero broken pages, zero missing assets, zero affiliate link errors. All 33 affiliate links are live and correctly tagged.
 
 ---
 
