@@ -323,3 +323,16 @@
   })(window,document,'clarity','script','x4ihicw52o');
 })();
 
+
+/* ================================================
+   12. IMPACT RADIUS SITE VERIFICATION
+   Active — value: 8cd897e2-197c-4834-b4e7-0b269ff012cf
+   Installed 2026-06-09. Injects meta tag into <head> on every page.
+   ================================================ */
+(function initImpactVerification() {
+  var meta = document.createElement('meta');
+  meta.name = 'impact-site-verification';
+  meta.setAttribute('value', '8cd897e2-197c-4834-b4e7-0b269ff012cf');
+  document.head.appendChild(meta);
+})();
+
