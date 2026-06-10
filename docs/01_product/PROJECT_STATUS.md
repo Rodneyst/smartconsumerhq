@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 20)
+**Last updated:** 2026-06-09 (Entry 22)
 
 ---
 
@@ -197,7 +197,7 @@ See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.m
 
 | Item | Status |
 |---|---|
-| Affiliate links | ✅ **ACTIVE** — 3 of 4 guides have real Amazon URLs (tag `smartconsu0ca-20`). Guide 4 (Family SUVs) is N/A — Edmunds research links only. |
+| Affiliate links | ✅ **ACTIVE + AUDITED** — 3 of 4 guides have real Amazon URLs (tag `smartconsu0ca-20`). 4 non-Amazon products replaced (MR-01–MR-04). Guide 4 (Family SUVs) is N/A. |
 | Amazon Associates | ✅ **ACTIVE** — Store ID: `smartconsu0ca-20` · Direct Deposit · USAA Checking |
 | CJ Affiliate | ✅ **ACTIVE** — Property ID: `101779331` · no advertiser programs joined yet |
 | Walmart Affiliates | ⏳ **Pending** — application submitted |
@@ -263,6 +263,8 @@ The site is built as an affiliate content business:
 | 2026-06-09 | `1669706` | **Affiliate links active (standing desks)** — 11 placeholders replaced in `best-budget-standing-desks.html` |
 | 2026-06-09 | `265c3e0` | **Affiliate links active (smartwatches)** — 11 placeholders replaced in `best-smartwatches-under-300.html` |
 | 2026-06-09 | *(Entry 20)* | **10 drafts generated** — q001–q010 in `content/drafts/`, status: review_needed. 6,265 lines of HTML, 110 affiliate links ready. |
+| 2026-06-09 | *(Entry 21)* | **Affiliate link audit** — 148 links scanned. 3 broken ASIN links auto-fixed. 9 manual review items identified. Created `docs/affiliate-audit.md`. |
+| 2026-06-09 | *(Entry 22)* | **MR-01–MR-04 product replacements** — Autonomous SmartDesk Pro → FEZIBO 55" (published guide + deals.html); Lululemon 5mm → Yoga Design Lab Combo Mat (yoga draft); Liforme → Manduka eKO Lite (yoga draft); Autonomous ErgoChair Pro → SIDIZ T50 (chairs draft). All 4 replacements are Amazon-native products. |
 
 ---
 

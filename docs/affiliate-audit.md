@@ -1,6 +1,7 @@
 # Affiliate Link Audit — Smart Consumer HQ
 
 **Audit date:** 2026-06-09 (Entry 21)  
+**Last updated:** 2026-06-09 (Entry 22) — MR-01 through MR-04 resolved  
 **Auditor:** Automated scan + HTTP verification  
 **Scope:** All published guides, all draft articles, all section pages, templates
 
@@ -18,8 +19,8 @@
 | **Missing affiliate tag** | **0** |
 | **Redirect anomalies** | **0** |
 | **URL inconsistencies** | **1** → auto-fixed |
-| **Products with limited Amazon availability** | **6 products across 4 files** |
-| **Manual review required** | **9 items** |
+| **Products with limited Amazon availability** | ~~6 products across 4 files~~ → **2 remaining (MR-05, MR-06 baby monitors)** |
+| **Manual review required** | ~~9 items~~ → **5 remaining (MR-05 through MR-09)** |
 
 ---
 
@@ -75,40 +76,31 @@ The following products raise concerns about Amazon availability or content accur
 
 ---
 
-### MR-01 — Autonomous SmartDesk Pro (Published Guide)
+### MR-01 — Autonomous SmartDesk Pro (Published Guide) ✅ RESOLVED (Entry 22)
 **Severity:** High — live published content  
-**File:** `guides/best-budget-standing-desks.html`  
-**Lines:** 290 (product card footer), 664 (sidebar), and 94 in `deals.html`  
-**Issue:** Autonomous AI products are sold primarily through [autonomous.ai](https://www.autonomous.ai). Amazon search results for "Autonomous SmartDesk Pro" return third-party resellers, refurbished units, or unrelated products at inflated prices. A visitor clicking the Amazon link expecting the product at $329 may find listings at $450–$600 from third-party sellers or see no relevant results.  
-**Impact:** Broken user experience, no Amazon commission if visitor buys from autonomous.ai directly.  
-**Recommended fix:** Replace the Autonomous SmartDesk Pro with an Amazon-native desk at a similar price point. Options: **Flexispot E6 Plus** (~$330, available on Amazon), **Vari Electric 48"** (~$350, available on Amazon), or **Fezibo 55" Electric Desk** (~$250–300). Alternatively, keep the product but change the link to a direct Autonomous referral URL (requires Autonomous affiliate signup).
+**File:** `guides/best-budget-standing-desks.html` and `deals.html`  
+**Resolution:** Replaced with **FEZIBO 55" Electric Height-Adjustable Standing Desk** across all occurrences in both files. Full product card rewritten (8 locations in standing desks guide + 1 in deals.html). Affiliate link: `s?k=FEZIBO+55+inch+Electric+Height+Adjustable+Standing+Desk&tag=smartconsu0ca-20`
 
 ---
 
-### MR-02 — Lululemon 5mm "The Mat" (Draft)
+### MR-02 — Lululemon 5mm "The Mat" (Draft) ✅ RESOLVED (Entry 22)
 **Severity:** High — affects draft before publishing  
 **File:** `content/drafts/best-yoga-mats-under-100.html`  
-**Lines:** 378 (product card), 642 (sidebar)  
-**Issue:** Lululemon does **not** sell products through Amazon. Amazon search results show knock-offs, counterfeit products, and unrelated items. Sending visitors to Amazon for a Lululemon product damages editorial credibility and generates zero commissions from Lululemon.  
-**Recommended fix:** Replace Lululemon with an Amazon-available alternative. Options: **Manduka eKO Superlite** (~$72), **Gaiam Studio Select** (~$55), **Yoga Design Lab Combo Mat** (~$90), or **ProsourceFit Extra Thick** (~$30). If Lululemon is kept in the guide, link directly to lululemon.com and note it is not available on Amazon.
+**Resolution:** Replaced with **Yoga Design Lab Combo Mat 3.5mm** (PU/rubber, hot yoga grip, $78–$95, Amazon-native). Full product card rewritten plus all in-body references updated (comparison table ×2, verdict, sidebar, buying guide text). Affiliate link: `s?k=Yoga+Design+Lab+Combo+Mat+3.5mm&tag=smartconsu0ca-20`
 
 ---
 
-### MR-03 — Liforme Original Yoga Mat (Draft)
+### MR-03 — Liforme Original Yoga Mat (Draft) ✅ RESOLVED (Entry 22)
 **Severity:** Medium — affects draft before publishing  
 **File:** `content/drafts/best-yoga-mats-under-100.html`  
-**Lines:** 286 (product card), 640 (sidebar)  
-**Issue:** Liforme sells primarily through their own website (liforme.com) and selected retailers. Amazon listings are sparse and handled by third-party resellers at prices well above MSRP ($145–$200 vs. $110–$120 direct). The product is technically within the $100 guide ceiling when bought direct, but Amazon pricing puts it over.  
-**Recommended fix:** Replace with **Manduka PRO Lite 4.7mm** (already #1 pick) or **B Yoga B Mat Strong** (~$68 on Amazon). If Liforme is kept, note the price discrepancy and direct to liforme.com.
+**Resolution:** Replaced with **Manduka eKO Lite Natural Rubber Yoga Mat 4mm** (natural rubber, eco-sourced, immediate grip, $68–$85, Amazon-native). Full product card rewritten plus all in-body references updated (comparison table ×2, sidebar, buying guide text). Affiliate link: `s?k=Manduka+eKO+Lite+Yoga+Mat+4mm&tag=smartconsu0ca-20`
 
 ---
 
-### MR-04 — Autonomous ErgoChair Pro (Draft)
+### MR-04 — Autonomous ErgoChair Pro (Draft) ✅ RESOLVED (Entry 22)
 **Severity:** Medium — affects draft before publishing  
 **File:** `content/drafts/best-ergonomic-office-chairs-under-300.html`  
-**Lines:** 290 (product card), 643 (sidebar/verdict)  
-**Issue:** Same as MR-01 — Autonomous AI products are not sold through Amazon. Amazon search shows third-party listings at inflated prices ($350–$450 vs. $299 direct).  
-**Recommended fix:** Replace with **Hbada Ergonomic Chair** (already in guide as #4), **Branch Ergonomic Chair** (~$329 on Amazon), or **SIDIZ T50** (~$280 on Amazon). Alternatively: **Flexispot C7** (~$250) which IS available on Amazon.
+**Resolution:** Replaced with **SIDIZ T50 Fully Adjustable Ergonomic Office Chair** (40-year commercial manufacturer, seat depth adjustment, 4D armrests, 2D lumbar, $280–$320, Amazon-native). Full product card rewritten plus all in-body references updated (comparison table ×2, verdict, sidebar, buying guide text). Affiliate link: `s?k=SIDIZ+T50+Ergonomic+Office+Chair&tag=smartconsu0ca-20`
 
 ---
 
@@ -181,13 +173,13 @@ The following products raise concerns about Amazon availability or content accur
 | Line | Product | URL | Type | Status |
 |---|---|---|---|---|
 | 245 | FlexiSpot E7 (card) | `s?k=FlexiSpot+E7+Electric+Standing+Desk` | search | ✅ Valid |
-| 290 | Autonomous SmartDesk Pro (card) | `s?k=Autonomous+SmartDesk+Pro` | search | ⚠️ MR-01 |
+| 290 | FEZIBO 55" Electric Desk (card) | `s?k=FEZIBO+55+inch+Electric+Height+Adjustable+Standing+Desk` | search | ✅ Fixed (MR-01) |
 | 336 | VIVO Electric 55" (card) | `s?k=VIVO+Electric+55+Standing+Desk` | search | ✅ Valid |
 | 383 | SHW Electric Desk (card) | `s?k=SHW+Electric+Height+Adjustable+Standing+Desk` | search | ✅ Valid |
 | 428 | FlexiSpot E5 (card) | `s?k=FlexiSpot+E5+Electric+Standing+Desk` | search | ✅ Valid |
 | 643 | FlexiSpot E7 (verdict CTA) | `s?k=FlexiSpot+E7+Electric+Standing+Desk` | search | ✅ Valid |
 | 663 | FlexiSpot E7 (sidebar) | `s?k=FlexiSpot+E7+Electric+Standing+Desk` | search | ✅ Valid |
-| 664 | Autonomous SmartDesk Pro (sidebar) | `s?k=Autonomous+SmartDesk+Pro` | search | ⚠️ MR-01 |
+| 664 | FEZIBO 55" (sidebar) | `s?k=FEZIBO+55+inch+Electric+Height+Adjustable+Standing+Desk` | search | ✅ Fixed (MR-01) |
 | 665 | VIVO Electric 55" (sidebar) | `s?k=VIVO+Electric+55+Standing+Desk` | search | ✅ Valid |
 | 666 | SHW Electric Desk (sidebar) | `s?k=SHW+Electric+Height+Adjustable+Standing+Desk` | search | ✅ Valid |
 | 667 | FlexiSpot E5 (sidebar) | `s?k=FlexiSpot+E5+Electric+Standing+Desk` | search | ✅ Valid |
@@ -220,7 +212,7 @@ No affiliate links applicable (Edmunds research links only — by design).
 | Line | Product | URL | Type | Status |
 |---|---|---|---|---|
 | 80 | FlexiSpot E7 | `s?k=FlexiSpot+E7+Electric+Standing+Desk` | search | ✅ Fixed (was short URL) |
-| 94 | Autonomous SmartDesk Pro | `s?k=Autonomous+SmartDesk+Pro` | search | ⚠️ MR-01 |
+| 94 | FEZIBO 55" Electric Desk | `s?k=FEZIBO+55+inch+Electric+Height+Adjustable+Standing+Desk` | search | ✅ Fixed (MR-01) |
 | 112 | Apple Watch SE 2nd Gen | `s?k=Apple+Watch+SE+2nd+generation` | search | ✅ Valid |
 | 126 | Garmin Forerunner 255 | `s?k=Garmin+Forerunner+255` | search | ✅ Valid |
 | 144 | Bowflex SelectTech 552 | `s?k=Bowflex+SelectTech+552` | search | ✅ Valid |
@@ -231,12 +223,12 @@ No affiliate links applicable (Edmunds research links only — by design).
 
 | Draft | Links | Auto-Fix | Manual Review | Status |
 |---|---|---|---|---|
-| best-ergonomic-office-chairs-under-300 | 11 | None | MR-04 (Autonomous ErgoChair) | ⚠️ Review before publish |
+| best-ergonomic-office-chairs-under-300 | 11 | None | ~~MR-04~~ → SIDIZ T50 (fixed) | ✅ MR-04 resolved — ready to review |
 | best-air-fryers-under-150 | 11 | None | None | ✅ Ready to review |
 | best-wireless-earbuds-under-100 | 11 | None | None | ✅ Ready to review |
 | best-resistance-bands-home-workouts | 11 | None | None | ✅ Ready to review |
 | best-instant-pots-pressure-cookers | 11 | None | None | ✅ Ready to review |
-| best-yoga-mats-under-100 | 11 | None | MR-02 (Lululemon), MR-03 (Liforme) | ⚠️ Review before publish |
+| best-yoga-mats-under-100 | 11 | None | ~~MR-02, MR-03~~ → YDL Combo + eKO Lite (fixed) | ✅ MR-02 + MR-03 resolved — ready to review |
 | best-coffee-makers-under-100 | 11 | None | None | ✅ Ready to review |
 | best-laptop-stands-work-from-home | 11 | None | None | ✅ Ready to review |
 | best-baby-monitors-2026 | 11 | None | MR-05 (Nanit), MR-06 (Owlet) | ⚠️ Review before publish |
@@ -267,10 +259,10 @@ No affiliate links applicable (Edmunds research links only — by design).
 ### What Needs Manual Editorial Review
 | ID | File | Product | Issue | Priority |
 |---|---|---|---|---|
-| MR-01 | best-budget-standing-desks.html + deals.html | Autonomous SmartDesk Pro | Not on Amazon; third-party only | **High** |
-| MR-02 | best-yoga-mats-under-100.html (draft) | Lululemon 5mm The Mat | Not sold on Amazon | **High** |
-| MR-03 | best-yoga-mats-under-100.html (draft) | Liforme Original | Third-party only, inflated price | **Medium** |
-| MR-04 | best-ergonomic-office-chairs-under-300.html (draft) | Autonomous ErgoChair Pro | Not on Amazon | **Medium** |
+| MR-01 | best-budget-standing-desks.html + deals.html | ~~Autonomous SmartDesk Pro~~ → FEZIBO 55" | ✅ Resolved Entry 22 | ~~High~~ |
+| MR-02 | best-yoga-mats-under-100.html (draft) | ~~Lululemon 5mm~~ → Yoga Design Lab Combo | ✅ Resolved Entry 22 | ~~High~~ |
+| MR-03 | best-yoga-mats-under-100.html (draft) | ~~Liforme Original~~ → Manduka eKO Lite | ✅ Resolved Entry 22 | ~~Medium~~ |
+| MR-04 | best-ergonomic-office-chairs-under-300.html (draft) | ~~Autonomous ErgoChair Pro~~ → SIDIZ T50 | ✅ Resolved Entry 22 | ~~Medium~~ |
 | MR-05 | best-baby-monitors-2026.html (draft) | Nanit Pro Complete | Verify availability + disclose subscription | **Low** |
 | MR-06 | best-baby-monitors-2026.html (draft) | Owlet Dream Duo | Verify FDA-compliant model is listed | **Low** |
 | MR-07 | best-home-gym-equipment.html | Bowflex SelectTech 552 | Upgrade search URL to verified ASIN via SiteStripe | **Low** |
@@ -281,14 +273,15 @@ No affiliate links applicable (Edmunds research links only — by design).
 
 ## Recommended Actions by Priority
 
-**Before publishing any draft:**
-1. Resolve MR-01: Replace Autonomous SmartDesk Pro in published guide and deals.html with Amazon-available alternative
-2. Resolve MR-02: Replace Lululemon in yoga mats draft (not on Amazon)
-3. Resolve MR-03: Evaluate Liforme replacement in yoga mats draft
+**Completed (Entry 22):**
+1. ✅ MR-01: Autonomous SmartDesk Pro → FEZIBO 55" (published guide + deals.html)
+2. ✅ MR-02: Lululemon 5mm The Mat → Yoga Design Lab Combo Mat (yoga mats draft)
+3. ✅ MR-03: Liforme Original → Manduka eKO Lite (yoga mats draft)
+4. ✅ MR-04: Autonomous ErgoChair Pro → SIDIZ T50 (chairs draft)
 
-**Before publishing specific drafts:**
-4. Resolve MR-04 before publishing ergonomic chairs draft
-5. Resolve MR-05 and MR-06 before publishing baby monitors draft
+**Before publishing baby monitors draft:**
+5. Resolve MR-05: Add Nanit Pro subscription cost disclosure
+6. Resolve MR-06: Verify Owlet Dream Duo is FDA-compliant 2023+ model
 
 **Ongoing maintenance:**
 6. Use Amazon SiteStripe to get verified ASINs for all top-pick products (MR-07)

@@ -1,6 +1,6 @@
 # TODO — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 20)
+**Last updated:** 2026-06-09 (Entry 22)
 
 ---
 
@@ -46,6 +46,11 @@
 
 ### Affiliate Links
 - [x] **Replace `href="#"` affiliate placeholders in guides 1–3** with real Amazon URLs `?tag=smartconsu0ca-20`. 33 links replaced across `best-home-gym-equipment.html`, `best-budget-standing-desks.html`, `best-smartwatches-under-300.html`. Guide 4 (Family SUVs) skipped — Edmunds research links, N/A. ✓ (Entry 19)
+- [x] **Full affiliate-link audit** — 148 links scanned, 3 broken fixed, 9 MR items identified. Created `docs/affiliate-audit.md`. ✓ (Entry 21)
+- [x] **Replace MR-01: Autonomous SmartDesk Pro** → FEZIBO 55" Electric Desk in `best-budget-standing-desks.html` and `deals.html`. ✓ (Entry 22)
+- [x] **Replace MR-02: Lululemon 5mm The Mat** → Yoga Design Lab Combo Mat 3.5mm in `best-yoga-mats-under-100.html`. ✓ (Entry 22)
+- [x] **Replace MR-03: Liforme Original Yoga Mat** → Manduka eKO Lite 4mm in `best-yoga-mats-under-100.html`. ✓ (Entry 22)
+- [x] **Replace MR-04: Autonomous ErgoChair Pro** → SIDIZ T50 in `best-ergonomic-office-chairs-under-300.html`. ✓ (Entry 22)
 
 ### Content Automation Pipeline (Phase 2B — complete)
 - [x] **Content queue created** — `content/content-queue.json` — 20 articles, priorities 1–20 ✓
@@ -79,7 +84,7 @@
 - [x] **Amazon Associates active** — Store ID `smartconsu0ca-20` ✓
 - [x] **CJ Affiliate active** — Property ID `101779331` ✓
 - [x] **33 affiliate links live in production** — post-deployment verified 2026-06-09 ✓
-- [ ] **Upgrade 29 Amazon search URLs to direct ASINs** — Use SiteStripe to get verified current ASINs. Priority: FlexiSpot E7, Apple Watch SE 2, Samsung Galaxy Watch 6, Marcy Bench, WHATAFIT Bands. Direct ASINs convert ~2× better.
+- [ ] **Upgrade top-pick search URLs to direct ASINs via SiteStripe** — Priority: (1) Bowflex SelectTech 552 in `best-home-gym-equipment.html` ×3 links; (2) FlexiSpot E7 in `best-budget-standing-desks.html` ×3 links; (3) Apple Watch SE 2 in `best-smartwatches-under-300.html` ×3 links. ASIN curl-testing blocked by Amazon bot detection — requires SiteStripe in-browser verification. Do not push until verified. Direct ASINs convert ~2× better than search URLs.
 - [ ] **Apply to CJ advertiser programs** — Best Buy, Target, Home Depot via CJ dashboard
 - [ ] **Monitor Walmart Affiliates approval** — application submitted; activate links when approved
 - [ ] **Connect newsletter form to real email provider** — Mailchimp or ConvertKit

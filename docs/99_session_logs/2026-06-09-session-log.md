@@ -2117,3 +2117,85 @@ Full affiliate link audit across all published guides, draft articles, section p
 4. **[BEFORE PUBLISHING baby monitors draft]** — Add subscription disclosure for Nanit, verify Owlet model (MR-05, MR-06).
 
 5. **[ONGOING]** — Use Amazon SiteStripe to get verified ASINs for top-pick products and upgrade search URLs to direct links.
+
+---
+
+## Entry 22
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Replace all products identified as MR-01 through MR-04 in the affiliate audit with Amazon-native alternatives. Attempt top-pick ASIN verification for published guides. Update audit document, PROJECT_STATUS.md, and TODO.md.
+
+**Task: MR-01 — Autonomous SmartDesk Pro Replacement**
+
+**Replacement product:** FEZIBO 55" Electric Height-Adjustable Standing Desk ($200–$270, Amazon-native, desktop included, 8,000+ reviews at 4.4/5, 3 memory presets, anti-collision)
+
+**Files changed:**
+- `guides/best-budget-standing-desks.html` — complete product card rewritten; comparison table ×2; buying guide body ×4; verdict ×1; sidebar ×1 (8 locations total)
+- `deals.html` — product card rewritten (name, description, price, affiliate link)
+
+**Task: MR-02 — Lululemon 5mm The Mat Replacement**
+
+**Replacement product:** Yoga Design Lab Combo Mat 3.5mm ($78–$95, PU/rubber combo, immediate wet grip, no break-in, 6,000+ reviews at 4.5/5)
+
+**Files changed:**
+- `content/drafts/best-yoga-mats-under-100.html` — product card rewritten; comparison table ×2; verdict ×1; sidebar ×1; buying guide body ×2
+
+**Task: MR-03 — Liforme Original Yoga Mat Replacement**
+
+**Replacement product:** Manduka eKO Lite Natural Rubber Yoga Mat 4mm ($68–$85, natural rubber, eco-sourced, immediate grip, no break-in, 3,500+ reviews at 4.5/5)
+
+**Files changed:**
+- `content/drafts/best-yoga-mats-under-100.html` — product card rewritten; comparison table ×2; sidebar ×1; buying guide body ×3; slot repositioned "Best for Alignment" → "Best Natural Rubber Pick"
+
+**Task: MR-04 — Autonomous ErgoChair Pro Replacement**
+
+**Replacement product:** SIDIZ T50 Fully Adjustable Ergonomic Office Chair ($280–$320, 40-year commercial manufacturer, seat depth adjustment, 3-position tilt lock, 4D armrests, 2D lumbar, 4,000+ reviews at 4.5/5)
+
+**Files changed:**
+- `content/drafts/best-ergonomic-office-chairs-under-300.html` — product card rewritten; comparison table ×2; verdict ×1; sidebar ×1; buying guide body ×1
+
+**Task: Top-Pick ASIN Verification**
+
+Attempted curl-based ASIN verification for Bowflex SelectTech 552, FlexiSpot E7, and Apple Watch SE 2nd Gen. Result: Amazon returns HTTP 404 for all direct ASIN curl requests (confirmed bot-blocking behavior — even known-valid products returned 404 via curl). ASINs cannot be verified programmatically.
+
+**Status:** Top-pick links remain as Amazon search URLs. Direct ASIN upgrades require SiteStripe in-browser verification before implementation. 9 affected links across 3 published guides:
+- `best-home-gym-equipment.html`: Bowflex 552 ×3 links (lines 243, 630, 650)
+- `best-budget-standing-desks.html`: FlexiSpot E7 ×3 links (lines 245, 643, 663)
+- `best-smartwatches-under-300.html`: Apple Watch SE 2 ×3 links (lines 239, 643, 662)
+
+**Push blocked** until SiteStripe verification complete for top-pick ASINs.
+
+**Documentation Updated:**
+- `docs/affiliate-audit.md` — MR-01–MR-04 marked resolved; link inventory tables updated; recommended actions updated
+- `docs/01_product/PROJECT_STATUS.md` — Entry 22 added to work log; affiliate readiness updated
+- `docs/01_product/TODO.md` — MR-01–MR-04 marked complete; top-pick ASIN upgrade clarified
+
+---
+
+### Files Changed (Not Pushed)
+
+| File | Change |
+|---|---|
+| `guides/best-budget-standing-desks.html` | Autonomous SmartDesk Pro → FEZIBO 55" (8 locations) |
+| `deals.html` | Autonomous SmartDesk Pro → FEZIBO 55" (product card) |
+| `content/drafts/best-yoga-mats-under-100.html` | Liforme → Manduka eKO Lite (#2); Lululemon → YDL Combo (#4); all cross-references updated |
+| `content/drafts/best-ergonomic-office-chairs-under-300.html` | Autonomous ErgoChair Pro → SIDIZ T50 (all locations) |
+| `docs/affiliate-audit.md` | MR-01–MR-04 resolved; tables updated |
+| `docs/01_product/PROJECT_STATUS.md` | Entry 22 logged |
+| `docs/01_product/TODO.md` | MR tasks marked complete; ASIN upgrade clarified |
+
+---
+
+### Recommended Next Steps
+
+1. **[REQUIRED BEFORE PUSH]** Open Amazon.com, log in to Amazon Associates, navigate to each top-pick product page, use SiteStripe to get verified ASIN, and provide ASINs for:
+   - Bowflex SelectTech 552 Adjustable Dumbbells (current model)
+   - FlexiSpot E7 Electric Standing Desk (current frame listing)
+   - Apple Watch SE 2nd Gen (40mm GPS — most common configuration)
+   
+2. **[THEN]** Push commits for affiliate audit + MR-01–MR-04 replacements (currently 2 unpushed commits: fe32417 + new Entry 22 commit).
+
+3. **[NEXT]** Begin reviewing and publishing approved drafts from `content/drafts/`. Start with `best-air-fryers-under-150.html` — no MR issues, ready to review.
+
