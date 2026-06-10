@@ -2037,3 +2037,83 @@ Awaiting commit and push.
 4. **[MEDIUM] Upgrade Amazon search URLs to direct ASINs** — Use SiteStripe on published guides to get verified ASINs.
 
 5. **[MEDIUM] Apply to CJ advertiser programs** — Best Buy, Target, Home Depot (Property ID: 101779331).
+
+---
+
+## Entry 21
+
+**Timestamp:** 2026-06-09
+
+**Session Objective:**
+Full affiliate link audit across all published guides, draft articles, section pages, and templates. Test every link. Categorize. Fix what can be auto-repaired. Document manual review items. Do not push.
+
+---
+
+### Work Completed
+
+1. **Scanned all HTML files for Amazon affiliate links**
+   - Files scanned: 3 published guides + 10 drafts + 1 section page (deals.html) + 1 template
+   - Total links found: **148** (+ 1 placeholder in template)
+   - Tool: Python regex extraction across all scoped HTML files
+
+2. **Tested all links**
+   - Direct ASIN links (5): HTTP-tested individually with curl + redirect following
+   - Search links (143): Spot-checked format + 4 representative HTTP tests
+   - Result: All search URLs → 200. Direct ASINs: B001EJMS6K → 200, B001ARYU58 → **404**
+
+3. **Categorized all 148 links**
+   - Direct ASIN (verified valid): 2 (B001EJMS6K × 2)
+   - Direct ASIN (broken 404): 3 (B001ARYU58 × 3) → **auto-fixed**
+   - Amazon search URL: 143 → all HTTP 200
+   - Missing affiliate tag: 0
+   - URL inconsistency: 1 (FlexiSpot E7 short term) → **auto-fixed**
+   - Placeholder: 1 (template, by design)
+
+4. **Auto-Fix 1 — Broken Bowflex ASIN (B001ARYU58)** — Critical
+   - File: `guides/best-home-gym-equipment.html`
+   - Lines fixed: 243, 630, 650
+   - Old: `https://www.amazon.com/dp/B001ARYU58?tag=smartconsu0ca-20` (HTTP 404)
+   - New: `https://www.amazon.com/s?k=Bowflex+SelectTech+552+Adjustable+Dumbbells&tag=smartconsu0ca-20`
+   - Verification: 3 occurrences replaced, 0 remaining, tag confirmed present
+
+5. **Auto-Fix 2 — FlexiSpot E7 URL inconsistency** — Minor
+   - File: `deals.html` line 80
+   - Old: `s?k=FlexiSpot+E7`
+   - New: `s?k=FlexiSpot+E7+Electric+Standing+Desk` (matches guides)
+
+6. **Identified 9 manual review items** across 6 products:
+   - **MR-01 (HIGH)**: Autonomous SmartDesk Pro in published guide + deals.html — not on Amazon
+   - **MR-02 (HIGH)**: Lululemon 5mm The Mat in yoga mats draft — not on Amazon
+   - **MR-03 (MEDIUM)**: Liforme Original in yoga mats draft — third-party only, inflated price
+   - **MR-04 (MEDIUM)**: Autonomous ErgoChair Pro in chairs draft — not on Amazon
+   - **MR-05 (LOW)**: Nanit Pro — verify availability + subscription disclosure needed
+   - **MR-06 (LOW)**: Owlet Dream Duo — verify FDA-compliant model is current listing
+   - **MR-07 (LOW)**: Bowflex 552 — upgrade search URL to direct ASIN via SiteStripe
+   - **MR-08 (LOW)**: Iron Gym B001EJMS6K — schedule 60-day re-verification
+   - **MR-09**: Template placeholder — no action needed
+
+7. **Created `docs/affiliate-audit.md`** — full audit document with complete link inventory, fix descriptions, and recommended actions
+
+---
+
+### Files Changed (Not Pushed)
+
+| File | Change |
+|---|---|
+| `guides/best-home-gym-equipment.html` | 3 broken ASIN links replaced with search URLs |
+| `deals.html` | FlexiSpot E7 search term corrected |
+| `docs/affiliate-audit.md` | Created — full audit record |
+
+---
+
+### Recommended Next Steps
+
+1. **[IMMEDIATE] Address MR-01** — Replace Autonomous SmartDesk Pro in `best-budget-standing-desks.html` (published) and `deals.html` with an Amazon-available desk at same price point. Suggested replacement: Flexispot E6 Plus or Vari Electric 48".
+
+2. **[BEFORE PUBLISHING yoga mats draft]** — Replace Lululemon and evaluate Liforme replacement (MR-02, MR-03).
+
+3. **[BEFORE PUBLISHING chairs draft]** — Replace Autonomous ErgoChair Pro (MR-04).
+
+4. **[BEFORE PUBLISHING baby monitors draft]** — Add subscription disclosure for Nanit, verify Owlet model (MR-05, MR-06).
+
+5. **[ONGOING]** — Use Amazon SiteStripe to get verified ASINs for top-pick products and upgrade search URLs to direct links.
