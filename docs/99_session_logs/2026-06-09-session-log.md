@@ -2199,3 +2199,93 @@ Attempted curl-based ASIN verification for Bowflex SelectTech 552, FlexiSpot E7,
 
 3. **[NEXT]** Begin reviewing and publishing approved drafts from `content/drafts/`. Start with `best-air-fryers-under-150.html` — no MR issues, ready to review.
 
+
+---
+
+## Entry 23
+
+**Timestamp:** 2026-06-09
+
+**Task: Top-Pick ASIN Upgrades (SiteStripe Verified)**
+
+User provided 3 SiteStripe-verified amzn.to links. Extracted ASINs via redirect follow:
+
+| Product | ASIN | amzn.to source |
+|---|---|---|
+| Bowflex SelectTech 552 | B0FRNG2N5H | amzn.to/4xi66j5 |
+| FlexiSpot E7 Electric Standing Desk | B0F62ZTBBP | amzn.to/4vEMy71 |
+| Apple Watch SE 2nd Gen 44mm GPS | B08KDBXX1S | amzn.to/4oodsh8 |
+
+**Files changed:**
+- `guides/best-home-gym-equipment.html` — 3 Bowflex links → `dp/B0FRNG2N5H`
+- `guides/best-budget-standing-desks.html` — 3 FlexiSpot E7 links → `dp/B0F62ZTBBP`
+- `guides/best-smartwatches-under-300.html` — 3 Apple Watch SE links → `dp/B08KDBXX1S`
+- `deals.html` — 3 top-pick links upgraded (one per product)
+
+**Commits pushed:**
+- `ac33912` — MR-01–04 product replacements
+- `de6d872` — Top-pick ASIN upgrades (SiteStripe verified)
+
+**Status:** All 3 published guides now use direct product page links for top picks. No search URLs remain for any top-pick product. Production deployment in progress (~60–90s after push).
+
+
+---
+
+## Entry 24
+
+**Timestamp:** 2026-06-09
+
+**Task: Impact Affiliate Network Site Verification**
+
+Added Impact-Site-Verification string to homepage as requested.
+
+**Changes to `index.html`:**
+- `<head>` line 15: `<meta name="impact-site-verification" content="54d171db-7ba1-47dd-a0cd-6d70b0ee077c" />`
+- Before `</body>` line 383: `<span hidden>Impact-Site-Verification: 54d171db-7ba1-47dd-a0cd-6d70b0ee077c</span>`
+
+**Commit:** `3bd6e61` — pushed and deployed
+
+**Live verification:** Both strings confirmed present at `https://smartconsumerhq.com/` via curl after deployment.
+
+
+---
+
+## Entry 25
+
+**Timestamp:** 2026-06-09
+
+**Task: Impact Verification Fix (Urgent)**
+
+Previous `<span hidden>` approach was insufficient — Impact crawler requires rendered visible text. Replaced with a visible `<p>` in the footer and removed the hidden span. Meta tag retained.
+
+**Changes to `index.html`:**
+- Removed: `<span hidden>Impact-Site-Verification: 54d171db-7ba1-47dd-a0cd-6d70b0ee077c</span>`
+- Added to footer-bottom: `<p style="font-size:11px;color:#9ca3af;margin-top:8px;">Impact-Site-Verification: 54d171db-7ba1-47dd-a0cd-6d70b0ee077c</p>`
+- Meta tag retained: `<meta name="impact-site-verification" content="54d171db-7ba1-47dd-a0cd-6d70b0ee077c" />`
+
+**Commit:** `18e3e77` — pushed and deployed
+
+**Live verification:** String confirmed visible in rendered HTML at `https://smartconsumerhq.com/`
+
+
+---
+
+## Entry 26
+
+**Timestamp:** 2026-06-09
+
+**Task: Impact Verification — UUID Fix + Correct Placement**
+
+Root cause of all previous failures: UUID was `54d171db` in all prior commits — correct value is `54d171cb` (7th character `d`→`c`).
+
+**Changes to `index.html`:**
+- `<head>` line 15: meta tag updated to correct UUID `54d171cb-7ba1-47dd-a0cd-6d70b0ee077c`
+- Line 52 (top of `<body>`): `<p>Impact-Site-Verification: 54d171cb-7ba1-47dd-a0cd-6d70b0ee077c</p>` — plain visible text, no hiding
+- Removed old footer `<p>` with wrong UUID
+
+**Commit:** `7a24385` — pushed and deployed
+
+**Live verification:** Both strings confirmed at `https://smartconsumerhq.com/` with correct UUID.
+
+**CF cache purge:** No stored credentials — user to purge via Cloudflare dashboard (Caching → Configuration → Purge Everything) if needed.
+

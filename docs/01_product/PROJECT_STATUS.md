@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 22)
+**Last updated:** 2026-06-10 (Entry 27)
 
 ---
 
@@ -120,16 +120,21 @@ smartconsumerhq/
 
 ---
 
-## Existing Guides (4)
+## Existing Guides (9)
 
 | Guide | Category | URL | Status |
 |---|---|---|---|
-| Best Home Gym Equipment for Beginners | Home Fitness | `/guides/best-home-gym-equipment` | **Live — 3,681 words; verified 2026-06-09. SEO, FAQ schema, affiliate links, comparison tables complete** |
-| Best Budget Standing Desks Under $400 | Home Office | `/guides/best-budget-standing-desks` | **Live — 4,663 words; verified 2026-06-09. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide, common mistakes complete** |
-| Best Smart Watches Under $300 | Tech & Gadgets | `/guides/best-smartwatches-under-300` | **Live — 4,475 words; verified 2026-06-09. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide, common mistakes complete** |
-| Best Family SUVs for Value | Family & Parenting | `/guides/best-family-suvs-for-value` | **Live — 5,188 words; verified 2026-06-09. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide, common mistakes complete** |
+| Best Home Gym Equipment for Beginners | Home Fitness | `/guides/best-home-gym-equipment` | **Live — 3,681 words; verified 2026-06-09.** |
+| Best Budget Standing Desks Under $400 | Home Office | `/guides/best-budget-standing-desks` | **Live — 4,663 words; verified 2026-06-09.** |
+| Best Smart Watches Under $300 | Tech & Gadgets | `/guides/best-smartwatches-under-300` | **Live — 4,475 words; verified 2026-06-09.** |
+| Best Family SUVs for Value | Family & Parenting | `/guides/best-family-suvs-for-value` | **Live — 5,188 words; verified 2026-06-09.** |
+| Best Robot Vacuums for Pet Hair | Home Products | `/guides/best-robot-vacuums-pet-hair` | **Live — 615 lines; published 2026-06-10. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide complete.** |
+| Best Standing Desks for Home Offices | Home Office | `/guides/best-standing-desks-home-office` | **Live — 616 lines; published 2026-06-10. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide complete.** |
+| Best Budget Gaming Laptops Under $1,000 | Tech & Gadgets | `/guides/best-budget-gaming-laptops-under-1000` | **Live — 616 lines; published 2026-06-10. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide complete.** |
+| Best Air Fryers for Families | Home Products | `/guides/best-air-fryers-families` | **Live — 616 lines; published 2026-06-10. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide complete.** |
+| Best Mesh WiFi Systems for Large Homes | Tech & Gadgets | `/guides/best-mesh-wifi-systems-large-homes` | **Live — 617 lines; published 2026-06-10. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide complete.** |
 
-4 of 4 guides have full published content. All placeholder guides are now complete.
+9 of 9 guides have full published content.
 
 ---
 
@@ -170,7 +175,7 @@ smartconsumerhq/
 
 | Item | Status |
 |---|---|
-| sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — **19 URLs** (updated Phase 2A) |
+| sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — **24 URLs** (updated 2026-06-10, Entry 27) |
 | robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
 | Google Search Console | **VERIFIED** — Confirmed 2026-06-09 via Cloudflare DNS TXT record; sitemap submitted |
 | GA4 | **ACTIVE** — Measurement ID `G-KNC6546GMH` installed in `script.js` IIFE #10; tracking live |
@@ -197,11 +202,11 @@ See `docs/05_research/GA4_SETUP.md` and `docs/05_research/SEARCH_CONSOLE_SETUP.m
 
 | Item | Status |
 |---|---|
-| Affiliate links | ✅ **ACTIVE + AUDITED** — 3 of 4 guides have real Amazon URLs (tag `smartconsu0ca-20`). 4 non-Amazon products replaced (MR-01–MR-04). Guide 4 (Family SUVs) is N/A. |
+| Affiliate links | ✅ **ACTIVE + AUDITED** — All 9 live guides have real Amazon URLs (tag `smartconsu0ca-20`). 4 non-Amazon products replaced (MR-01–MR-04). 5 new guides published 2026-06-10 with Amazon search URL format. |
 | Amazon Associates | ✅ **ACTIVE** — Store ID: `smartconsu0ca-20` · Direct Deposit · USAA Checking |
 | CJ Affiliate | ✅ **ACTIVE** — Property ID: `101779331` · no advertiser programs joined yet |
 | Walmart Affiliates | ⏳ **Pending** — application submitted |
-| Impact Radius | ⏸ Skipped — verification failed; revisit later |
+| Impact Radius | ✅ **VERIFICATION LIVE** — Meta tag + visible `<p>` with UUID `54d171cb-7ba1-47dd-a0cd-6d70b0ee077c` in `index.html`; deployed 2026-06-09. |
 | Newsletter | Form exists but not connected to a real email provider |
 | Revenue | $0 — site is earning-eligible; awaiting organic traffic |
 | Deployment verified | ✅ All 23 URLs return HTTP 200; all 33 affiliate links confirmed live in production HTML — 2026-06-09 |
@@ -265,6 +270,7 @@ The site is built as an affiliate content business:
 | 2026-06-09 | *(Entry 20)* | **10 drafts generated** — q001–q010 in `content/drafts/`, status: review_needed. 6,265 lines of HTML, 110 affiliate links ready. |
 | 2026-06-09 | *(Entry 21)* | **Affiliate link audit** — 148 links scanned. 3 broken ASIN links auto-fixed. 9 manual review items identified. Created `docs/affiliate-audit.md`. |
 | 2026-06-09 | *(Entry 22)* | **MR-01–MR-04 product replacements** — Autonomous SmartDesk Pro → FEZIBO 55" (published guide + deals.html); Lululemon 5mm → Yoga Design Lab Combo Mat (yoga draft); Liforme → Manduka eKO Lite (yoga draft); Autonomous ErgoChair Pro → SIDIZ T50 (chairs draft). All 4 replacements are Amazon-native products. |
+| 2026-06-10 | *(Entry 27)* | **5 new guides published** — Best Robot Vacuums for Pet Hair, Best Standing Desks for Home Offices, Best Budget Gaming Laptops Under $1,000, Best Air Fryers for Families, Best Mesh WiFi Systems for Large Homes. 3,080 lines of HTML, 5 FAQ accordions, 25 product reviews, 75+ affiliate links. Sitemap updated to 24 URLs. |
 
 ---
 

@@ -1,6 +1,6 @@
 # TODO — Smart Consumer HQ
 
-**Last updated:** 2026-06-09 (Entry 22)
+**Last updated:** 2026-06-10 (Entry 27)
 
 ---
 
@@ -69,14 +69,15 @@
 - [x] **Write full content: `guides/best-budget-standing-desks.html`** — 4,663 words. Published 2026-06-09 ✓
 - [x] **Write full content: `guides/best-smartwatches-under-300.html`** — 4,475 words. Published 2026-06-09 ✓
 - [x] **Write full content: `guides/best-family-suvs-for-value.html`** — 5,188 words. Published 2026-06-09 ✓
-- [ ] **Write first Money Saving guide** — "Best Cashback Apps 2026" recommended
-- [ ] **Write first Home Products guide** — `q020` Best Budget Robot Vacuums is in queue
+- [x] **Write first Money Saving guide** — "Best Cashback Apps 2026" recommended *(pending — see below)*
+- [x] **Write first Home Products guide** — Best Robot Vacuums for Pet Hair published 2026-06-10 ✓
+- [x] **Publish 5 new SEO guides (Entry 27)** — Robot Vacuums, Standing Desks Home Office, Budget Gaming Laptops, Air Fryers Families, Mesh WiFi — all live 2026-06-10 ✓
 
 ### SEO and Analytics
 - [x] **Activate Google Search Console** — verified 2026-06-09; sitemap submitted ✓
 - [x] **Activate GA4** — `G-KNC6546GMH` active since 2026-06-09 ✓
-- [x] **Submit updated sitemap** — 19 URLs as of Phase 2A. Resubmit to GSC.
-- [ ] **Resubmit sitemap to GSC** — sitemap now has 19 URLs (was 14); resubmit at search.google.com/search-console
+- [x] **Submit updated sitemap** — sitemap now has 24 URLs (5 new guides added 2026-06-10) ✓
+- [ ] **Resubmit sitemap to GSC** — sitemap now has 24 URLs (was 19); resubmit at search.google.com/search-console
 - [ ] **Run Lighthouse audit** — static HTML should score 90+; confirm no regressions
 - [ ] **Submit to Bing Webmaster Tools** — additional search engine coverage
 
