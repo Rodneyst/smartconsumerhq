@@ -310,7 +310,42 @@
 
 
 /* ================================================
-   11. MICROSOFT CLARITY
+   11. AFFILIATE LINK CLICK TRACKING
+   Fires a GA4 'affiliate_click' event on every Amazon link click.
+   Reports in GA4 → Reports → Engagement → Events → affiliate_click
+   ================================================ */
+(function initAffiliateTracking() {
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[rel~="sponsored"]');
+    if (!link) return;
+    var href = link.href || '';
+    if (!href.includes('amazon.com')) return;
+
+    var productName = link.textContent.trim() ||
+                      (link.closest('.product-card') && link.closest('.product-card').querySelector('h3, h2')) ?
+                      (link.closest('.product-card').querySelector('h3, h2') || {}).textContent || '' :
+                      '';
+    productName = productName.trim().substring(0, 100);
+
+    var asinMatch = href.match(/\/dp\/([A-Z0-9]{10})/);
+    var asin = asinMatch ? asinMatch[1] : 'search';
+
+    var pagePath = window.location.pathname;
+
+    if (window.gtag) {
+      window.gtag('event', 'affiliate_click', {
+        affiliate_product: productName,
+        affiliate_asin: asin,
+        affiliate_url: href.substring(0, 200),
+        page_path: pagePath
+      });
+    }
+  });
+})();
+
+
+/* ================================================
+   13. MICROSOFT CLARITY
    Active — Project ID: x4ihicw52o
    Installed 2026-06-09. Heatmaps, session recordings,
    user behaviour analytics.
