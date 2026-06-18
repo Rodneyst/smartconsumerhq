@@ -1,6 +1,6 @@
 # TODO — Smart Consumer HQ
 
-**Last updated:** 2026-06-10 (Entry 27)
+**Last updated:** 2026-06-18 (Entry 32)
 
 ---
 
@@ -61,8 +61,8 @@
 - [x] **AUTOMATED_CONTENT_AGENT.md** — full agent handoff documentation ✓
 - [x] **ARTICLE_REVIEW_CHECKLIST.md** — human review checklist before publishing ✓
 - [x] **Generate next 10 articles** — q001–q010 drafted in `content/drafts/`, status: review_needed (Entry 20) ✓
-- [ ] **Review and approve drafts** — use `docs/02_development/ARTICLE_REVIEW_CHECKLIST.md`. Start with q001 (ergonomic chairs) — highest commercial intent
-- [ ] **Publish approved drafts** — run publish workflow for each approved item; commit each guide separately
+- [x] **Review and approve drafts** — all 10 drafts (q001–q010) reviewed, ASIN-upgraded, and published 2026-06-18 ✓
+- [x] **Publish approved drafts** — all 10 live as of 2026-06-18 ✓
 
 ### Content (Phase 2 — published guides)
 - [x] **Write full content: `guides/best-home-gym-equipment.html`** — 3,681 words. Audited 2026-06-09 ✓
@@ -72,12 +72,16 @@
 - [x] **Write first Money Saving guide** — "Best Cashback Apps 2026" recommended *(pending — see below)*
 - [x] **Write first Home Products guide** — Best Robot Vacuums for Pet Hair published 2026-06-10 ✓
 - [x] **Publish 5 new SEO guides (Entry 27)** — Robot Vacuums, Standing Desks Home Office, Budget Gaming Laptops, Air Fryers Families, Mesh WiFi — all live 2026-06-10 ✓
+- [x] **Fix GA4 Measurement ID** — corrected typo `G-KNC6546GMH` → `G-KNC6S46GMH` 2026-06-18 ✓
+- [x] **Add affiliate click tracking** — GA4 `affiliate_click` event live 2026-06-18 ✓
+- [x] **Publish 10 new buying guides (q001–q010)** — all live with verified SiteStripe ASINs 2026-06-18 ✓
 
 ### SEO and Analytics
 - [x] **Activate Google Search Console** — verified 2026-06-09; sitemap submitted ✓
-- [x] **Activate GA4** — `G-KNC6546GMH` active since 2026-06-09 ✓
+- [x] **Activate GA4** — `G-KNC6S46GMH` active since 2026-06-18 (ID typo fixed) ✓
 - [x] **Submit updated sitemap** — sitemap now has 24 URLs (5 new guides added 2026-06-10) ✓
-- [ ] **Resubmit sitemap to GSC** — sitemap now has 24 URLs (was 19); resubmit at search.google.com/search-console
+- [x] **Resubmit sitemap to GSC** — resubmitted 2026-06-18 with full URL; now 34 URLs ✓
+- [ ] **Resubmit sitemap again** — sitemap grew to 34 URLs after guide publishing; resubmit `https://smartconsumerhq.com/sitemap.xml`
 - [ ] **Run Lighthouse audit** — static HTML should score 90+; confirm no regressions
 - [ ] **Submit to Bing Webmaster Tools** — additional search engine coverage
 

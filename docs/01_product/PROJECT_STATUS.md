@@ -1,6 +1,6 @@
 # Project Status — Smart Consumer HQ
 
-**Last updated:** 2026-06-10 (Entry 27)
+**Last updated:** 2026-06-18 (Entry 32)
 
 ---
 
@@ -134,7 +134,7 @@ smartconsumerhq/
 | Best Air Fryers for Families | Home Products | `/guides/best-air-fryers-families` | **Live — 616 lines; published 2026-06-10. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide complete.** |
 | Best Mesh WiFi Systems for Large Homes | Tech & Gadgets | `/guides/best-mesh-wifi-systems-large-homes` | **Live — 617 lines; published 2026-06-10. SEO, FAQ schema, Article schema, affiliate links, comparison tables, buying guide complete.** |
 
-9 of 9 guides have full published content.
+19 of 19 guides have full published content.
 
 ---
 
@@ -175,7 +175,7 @@ smartconsumerhq/
 
 | Item | Status |
 |---|---|
-| sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — **24 URLs** (updated 2026-06-10, Entry 27) |
+| sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — **34 URLs** (updated 2026-06-18, Entry 32) |
 | robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
 | Google Search Console | **VERIFIED** — Confirmed 2026-06-09 via Cloudflare DNS TXT record; sitemap submitted |
 | GA4 | **ACTIVE** — Measurement ID `G-KNC6S46GMH` installed in `script.js` IIFE #10; tracking live |
@@ -271,6 +271,9 @@ The site is built as an affiliate content business:
 | 2026-06-09 | *(Entry 21)* | **Affiliate link audit** — 148 links scanned. 3 broken ASIN links auto-fixed. 9 manual review items identified. Created `docs/affiliate-audit.md`. |
 | 2026-06-09 | *(Entry 22)* | **MR-01–MR-04 product replacements** — Autonomous SmartDesk Pro → FEZIBO 55" (published guide + deals.html); Lululemon 5mm → Yoga Design Lab Combo Mat (yoga draft); Liforme → Manduka eKO Lite (yoga draft); Autonomous ErgoChair Pro → SIDIZ T50 (chairs draft). All 4 replacements are Amazon-native products. |
 | 2026-06-10 | *(Entry 27)* | **5 new guides published** — Best Robot Vacuums for Pet Hair, Best Standing Desks for Home Offices, Best Budget Gaming Laptops Under $1,000, Best Air Fryers for Families, Best Mesh WiFi Systems for Large Homes. 3,080 lines of HTML, 5 FAQ accordions, 25 product reviews, 75+ affiliate links. Sitemap updated to 24 URLs. |
+| 2026-06-18 | `feb86b4` | **GA4 ID typo fixed** — corrected `G-KNC6546GMH` → `G-KNC6S46GMH`. Tracking was broken since launch. Data collection begins 2026-06-18. |
+| 2026-06-18 | `8d94212` | **Affiliate click tracking added** — GA4 `affiliate_click` event fires on every Amazon link click. Tracks product name, ASIN, URL, page path. |
+| 2026-06-18 | `bcee80c` | **10 new guides published** — Ergonomic Chairs, Air Fryers Under $150, Wireless Earbuds, Resistance Bands, Instant Pots, Yoga Mats, Coffee Makers, Laptop Stands (Roost), Baby Monitors, Portable Chargers. All top picks upgraded to verified SiteStripe ASINs. Sitemap updated to 34 URLs. |
 
 ---
 
