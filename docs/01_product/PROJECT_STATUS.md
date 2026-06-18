@@ -178,7 +178,7 @@ smartconsumerhq/
 | sitemap.xml | Live — `https://smartconsumerhq.com/sitemap.xml` — **24 URLs** (updated 2026-06-10, Entry 27) |
 | robots.txt | Live — `https://smartconsumerhq.com/robots.txt` |
 | Google Search Console | **VERIFIED** — Confirmed 2026-06-09 via Cloudflare DNS TXT record; sitemap submitted |
-| GA4 | **ACTIVE** — Measurement ID `G-KNC6546GMH` installed in `script.js` IIFE #10; tracking live |
+| GA4 | **ACTIVE** — Measurement ID `G-KNC6S46GMH` installed in `script.js` IIFE #10; tracking live |
 | Schema.org JSON-LD | Present on all pages |
 | Canonical URLs | Present on all pages, correctly set |
 | Meta tags (OG, Twitter Card) | Present on all pages |
@@ -190,7 +190,7 @@ smartconsumerhq/
 
 | Platform | Status | Notes |
 |---|---|---|
-| GA4 | **ACTIVE** — `G-KNC6546GMH` live since 2026-06-09 | Monitor traffic in GA4 → Reports → Realtime and Acquisition |
+| GA4 | **ACTIVE** — `G-KNC6S46GMH` live since 2026-06-09 | Monitor traffic in GA4 → Reports → Realtime and Acquisition |
 | Microsoft Clarity | **ACTIVE** — Project ID `x4ihicw52o` installed 2026-06-09 | Heatmaps + session recordings on all pages via `script.js` IIFE #11 |
 | Google Search Console | **VERIFIED + SITEMAP SUBMITTED** — 2026-06-09 | Verified via Cloudflare DNS TXT record; sitemap submitted (now 19 URLs — resubmit); monitor coverage in GSC |
 
@@ -233,7 +233,7 @@ The site is built as an affiliate content business:
 |---|---|---|
 | 2 guide pages still contain placeholder content only | High | Pending — home-gym and standing-desks guides complete |
 | Google Search Console not verified | ~~High~~ | **RESOLVED** — Verified via Cloudflare DNS 2026-06-09; sitemap submitted |
-| GA4 not active | ~~Medium~~ | **RESOLVED** — `G-KNC6546GMH` activated 2026-06-09 |
+| GA4 not active | ~~Medium~~ | **RESOLVED** — `G-KNC6S46GMH` activated 2026-06-09 |
 | Newsletter form not connected to real provider | Medium | Pending |
 | ~~Affiliate links still `href="#"` placeholders~~ | ~~High~~ | **RESOLVED** — Real Amazon URLs active in guides 1–3. Guide 4 (Family SUVs) has Edmunds links only (N/A). |
 | Money Saving and Home Products have no real guides | Medium | Pending |
@@ -255,7 +255,7 @@ The site is built as an affiliate content business:
 | 2026-06-09 | *(Entry 2)* | Build content engine foundation (templates, backlog, workflow, system docs) |
 | 2026-06-09 | *(Entry 3)* | Write full buying guide: guides/best-home-gym-equipment.html (5 products, ~2,400 words) |
 | 2026-06-09 | *(Entry 5)* | Analytics foundation: GA4 code + GSC meta tag installed; AFFILIATE_LINK_MAP.md, GA4_SETUP.md, SEARCH_CONSOLE_SETUP.md created |
-| 2026-06-09 | *(Entry 6)* | **Activate GA4** — replaced `G-XXXXXXXXXX` with `G-KNC6546GMH` in `script.js`; tracking live on all pages |
+| 2026-06-09 | *(Entry 6)* | **Activate GA4** — replaced `G-XXXXXXXXXX` with `G-KNC6S46GMH` in `script.js`; tracking live on all pages |
 | 2026-06-09 | *(Entry 7)* | **Infrastructure complete** — GSC verified (DNS), sitemap submitted, GA4 confirmed active; create CONTENT_ROADMAP.md + MONETIZATION_PLAN.md |
 | 2026-06-09 | *(Entry 8)* | **Audit pass** — Verified `best-home-gym-equipment.html` meets all requirements: 3,681 words, SEO complete, FAQ + Article schema, affiliate-ready, sitemap ✓, category page ✓ |
 | 2026-06-09 | *(Entry 9)* | **Microsoft Clarity installed** — Project ID `x4ihicw52o` added to `script.js` IIFE #11; heatmaps + session recordings live on all pages |
@@ -278,7 +278,7 @@ The site is built as an affiliate content business:
 
 **Immediate (this session or next):**
 1. ~~Complete GSC verification~~ — **DONE** Verified via Cloudflare DNS 2026-06-09; sitemap submitted
-2. ~~Activate GA4~~ — **DONE** `G-KNC6546GMH` active as of 2026-06-09
+2. ~~Activate GA4~~ — **DONE** `G-KNC6S46GMH` active as of 2026-06-09
 3. Write next full guide: `guides/best-budget-standing-desks.html` — see `docs/01_product/CONTENT_ROADMAP.md`
 
 **Short term:**
